@@ -1,0 +1,55 @@
+.font-futura {
+    font-family: Futura;
+}
+
+.font-TTNorms {
+    font-family: TTNorms;
+}
+
+.font-TTNormsLight {
+    font-family: TTNorms-Light;
+}
+
+.font-Audrey {
+    font-family: Audrey;
+}
+
+.color-primary {
+    color: $elephant;
+}
+
+.background-primary {
+    background-color: $elephant;
+}
+
+.color-secondary {
+    color: $vistaWhite;
+}
+
+.background-secondary {
+    background-color: $vistaWhite;
+}
+
+.button-primary {
+    background-color: $elephant;
+    padding: 18px 66px;
+    font-family: TTNorms;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    border-radius: 0px;
+    color: white;
+}
+
+.button-secondary {
+    // @include linear-gradient(270.23deg, #f1cda8 0.19%, #f6dec6 99.82%);
+    color: $elephant;
+    padding: 18px 66px;
+    font-family: TTNorms;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    border-radius: 0px;
+}

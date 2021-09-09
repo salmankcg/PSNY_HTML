@@ -1,0 +1,28 @@
+header {
+    .navbar-brand {
+        margin-right: 7px;
+    } 
+
+    .brand-text {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    
+    .nav-item {
+        font-size: 14px;
+        line-height: 16px;
+        color: $elephant;
+        padding: 5px 0 5px 45px;
+
+        @include media-breakpoint-between(lg, xl) {
+            padding: 5px 0 5px 20px;
+        }
+    }
+
+    .navbar-nav {
+        @include media-breakpoint-between(xs, lg) {
+            background: white;
+            @include box-shadow(0px 0px 4px 0px #eee);
+        }
+    }
+}

@@ -656,7 +656,7 @@ progress {
 }
 @media (min-width: 1400px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1290px;
+    max-width: 1310px;
   }
 }
 .row {
@@ -11282,10 +11282,6 @@ textarea.form-control-lg {
   src: url("/assets/fonts/TTNorms-Light.woff2") format("woff2");
   src: url("/assets/fonts/TTNorms-Light.woff") format("woff");
 }
-@font-face {
-  font-family: "Audrey";
-  src: url("/assets/fonts/Audrey-Normal.woff") format("woff");
-}
 .font-futura {
   font-family: Futura;
 }
@@ -11296,10 +11292,6 @@ textarea.form-control-lg {
 
 .font-TTNormsLight {
   font-family: TTNorms-Light;
-}
-
-.font-Audrey {
-  font-family: Audrey;
 }
 
 .color-primary {
@@ -11321,24 +11313,13 @@ textarea.form-control-lg {
 .button-primary {
   background-color: #0C3046;
   padding: 18px 66px;
-  font-family: TTNorms;
+  font-family: TT Norms;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 24px;
   border-radius: 0px;
   color: white;
-}
-
-.button-secondary {
-  color: #0C3046;
-  padding: 18px 66px;
-  font-family: TTNorms;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 24px;
-  border-radius: 0px;
 }
 
 header .navbar-brand {
@@ -11410,11 +11391,11 @@ header .nav-item {
 }
 
 .about__inner {
-  -webkit-background: radial-gradient(95.8% 137.27% at 0% 1.86%, #124260 0%, #0c3046 100%);
-  -moz-background: radial-gradient(95.8% 137.27% at 0% 1.86%, #124260 0%, #0c3046 100%);
-  -ms-background: radial-gradient(95.8% 137.27% at 0% 1.86%, #124260 0%, #0c3046 100%);
-  -o-background: radial-gradient(95.8% 137.27% at 0% 1.86%, #124260 0%, #0c3046 100%);
-  background: radial-gradient(95.8% 137.27% at 0% 1.86%, #124260 0%, #0c3046 100%);
+  -webkit-background: radial-gradient(95.8% 137.27% at 0% 1.86%, #124260 0%, #0C3046 100%);
+  -moz-background: radial-gradient(95.8% 137.27% at 0% 1.86%, #124260 0%, #0C3046 100%);
+  -ms-background: radial-gradient(95.8% 137.27% at 0% 1.86%, #124260 0%, #0C3046 100%);
+  -o-background: radial-gradient(95.8% 137.27% at 0% 1.86%, #124260 0%, #0C3046 100%);
+  background: radial-gradient(95.8% 137.27% at 0% 1.86%, #124260 0%, #0C3046 100%);
   width: 774px;
   padding: 90px 70px 100px;
   z-index: 10;
@@ -11511,11 +11492,12 @@ header .nav-item {
   }
 }
 .contact__info button {
-  -webkit-background: linear-gradient(270.23deg, #f1cda8 0.19%, #f6dec6 99.82%);
-  -moz-background: linear-gradient(270.23deg, #f1cda8 0.19%, #f6dec6 99.82%);
-  -ms-background: linear-gradient(270.23deg, #f1cda8 0.19%, #f6dec6 99.82%);
-  -o-background: linear-gradient(270.23deg, #f1cda8 0.19%, #f6dec6 99.82%);
-  background: linear-gradient(270.23deg, #f1cda8 0.19%, #f6dec6 99.82%);
+  -webkit-background: linear-gradient(270.23deg, #F1CDA8 0.19%, #F6DEC6 99.82%);
+  -moz-background: linear-gradient(270.23deg, #F1CDA8 0.19%, #F6DEC6 99.82%);
+  -ms-background: linear-gradient(270.23deg, #F1CDA8 0.19%, #F6DEC6 99.82%);
+  -o-background: linear-gradient(270.23deg, #F1CDA8 0.19%, #F6DEC6 99.82%);
+  background: linear-gradient(270.23deg, #F1CDA8 0.19%, #F6DEC6 99.82%);
+  color: #0C3046;
 }
 @media (max-width: 991.98px) {
   .contact__info button {
@@ -11584,251 +11566,44 @@ header .nav-item {
 .slides {
   margin: 156px 0 224px;
 }
-@media (max-width: 991.98px) {
-  .slides {
-    margin-bottom: 160px;
-  }
-}
 .slides .slide {
   padding: 77px 112px 50px 121px;
-  -webkit-background: radial-gradient(95.8% 137.27% at 0% 1.86%, #124260 0%, #0c3046 100%);
-  -moz-background: radial-gradient(95.8% 137.27% at 0% 1.86%, #124260 0%, #0c3046 100%);
-  -ms-background: radial-gradient(95.8% 137.27% at 0% 1.86%, #124260 0%, #0c3046 100%);
-  -o-background: radial-gradient(95.8% 137.27% at 0% 1.86%, #124260 0%, #0c3046 100%);
-  background: radial-gradient(95.8% 137.27% at 0% 1.86%, #124260 0%, #0c3046 100%);
-}
-@media (max-width: 991.98px) {
-  .slides .slide {
-    padding: 50px 35px;
-  }
+  -webkit-background: radial-gradient(95.8% 137.27% at 0% 1.86%, #124260 0%, #0C3046 100%);
+  -moz-background: radial-gradient(95.8% 137.27% at 0% 1.86%, #124260 0%, #0C3046 100%);
+  -ms-background: radial-gradient(95.8% 137.27% at 0% 1.86%, #124260 0%, #0C3046 100%);
+  -o-background: radial-gradient(95.8% 137.27% at 0% 1.86%, #124260 0%, #0C3046 100%);
+  background: radial-gradient(95.8% 137.27% at 0% 1.86%, #124260 0%, #0C3046 100%);
 }
 .slides .slide__col {
   width: 937px;
 }
-@media (min-width: 1200px) and (max-width: 1399.98px) {
-  .slides .slide__col {
-    width: 65vw;
-  }
-}
-@media (max-width: 1199.98px) {
-  .slides .slide__col {
-    width: 100%;
-  }
-}
 .slides .carousel-item__text {
   font-size: 22px;
   line-height: 42px;
-  padding-bottom: 33px;
-  opacity: 0.7;
-}
-.slides .carousel-item .author-designation {
-  font-size: 22px;
-  line-height: 42px;
-  opacity: 0.4;
-}
-.slides .carousel-item .author-name {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 27px;
-  line-height: 32px;
-  text-transform: uppercase;
 }
 .slides .carousel-item__image {
   width: 385px;
-  left: -70%;
+  left: -65%;
   bottom: -36%;
-}
-@media (min-width: 1200px) and (max-width: 1399.98px) {
-  .slides .carousel-item__image {
-    width: 50%;
-    left: -55%;
-  }
-}
-@media (max-width: 1199.98px) {
-  .slides .carousel-item__image {
-    width: 100%;
-    position: relative !important;
-    left: 0;
-    margin-top: 30px;
-  }
 }
 .slides .carousel-inner {
   overflow: visible;
 }
-.slides .carousel-control-prev,
-.slides .carousel-control-next {
+.slides .carousel-control-prev, .slides .carousel-control-next {
   align-items: flex-end;
   justify-content: flex-end;
-  width: 92.5%;
+  width: 96.5%;
   opacity: 1;
-  bottom: -93px;
+  bottom: -58px;
 }
-@media only screen and (max-width: 1200px) {
-  .slides .carousel-control-prev,
-.slides .carousel-control-next {
-    width: 92.6%;
-  }
-}
-@media only screen and (max-width: 991px) {
-  .slides .carousel-control-prev,
-.slides .carousel-control-next {
-    width: 90%;
-  }
-}
-.slides .carousel-control-prev span,
-.slides .carousel-control-next span {
+.slides .carousel-control-prev span, .slides .carousel-control-next span {
   border: 1px solid #0C3046;
 }
-.slides .carousel-control-prev-icon,
-.slides .carousel-control-next-icon {
-  width: 70px;
-  height: 70px;
-}
 .slides .carousel-control-prev-icon {
-  background-image: url(/assets/images/arrowPrev.png);
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: url(/assets/images/arrowPrev.png) no-repeat center center;
+  background-size: contain;
 }
 .slides .carousel-control-next-icon {
-  background-image: url(/assets/images/arrowNext.png);
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.contact-form {
-  margin-top: 376px;
-}
-@media (max-width: 991.98px) {
-  .contact-form {
-    margin-top: 0px;
-  }
-}
-.contact-form__inner {
-  padding: 42px 64px;
-  border: 1px solid #F4D1AE;
-}
-.contact-form .booking {
-  margin-bottom: 41px;
-  padding-bottom: 43px;
-}
-.contact-form .booking::before {
-  position: absolute;
-  content: "";
-  width: calc(100% - 20px);
-  background-color: #F4D1AE;
-  height: 1px;
-  bottom: 0;
-  left: 10px;
-}
-.contact-form__title {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 25px;
-  line-height: 30px;
-  letter-spacing: 0.185em;
-  text-transform: uppercase;
-}
-@media (max-width: 991.98px) {
-  .contact-form__title {
-    padding-bottom: 30px;
-    text-align: center;
-  }
-}
-.contact-form__info {
-  width: 540px;
-}
-@media (max-width: 991.98px) {
-  .contact-form__info {
-    width: 100%;
-  }
-}
-.contact-form__info::before {
-  position: absolute;
-  content: "";
-  width: 1px;
-  height: 50px;
-  background: #F4D1AE;
-  left: 54%;
-  top: 5px;
-}
-@media (max-width: 991.98px) {
-  .contact-form__info::before {
-    left: 55%;
-  }
-}
-.contact-form__info button {
-  -webkit-background: linear-gradient(270.23deg, #f1cda8 0.19%, #f6dec6 99.82%);
-  -moz-background: linear-gradient(270.23deg, #f1cda8 0.19%, #f6dec6 99.82%);
-  -ms-background: linear-gradient(270.23deg, #f1cda8 0.19%, #f6dec6 99.82%);
-  -o-background: linear-gradient(270.23deg, #f1cda8 0.19%, #f6dec6 99.82%);
-  background: linear-gradient(270.23deg, #f1cda8 0.19%, #f6dec6 99.82%);
-}
-@media (max-width: 991.98px) {
-  .contact-form__info button {
-    margin-bottom: 20px;
-  }
-}
-.contact-form__info span {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 18px;
-}
-.contact-form__info p {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 22px;
-  line-height: 26px;
-  letter-spacing: 0.145em;
-}
-.contact-form .form p {
-  font-size: 22px;
-  line-height: 26px;
-}
-.contact-form .form input,
-.contact-form .form textarea,
-.contact-form .form select {
-  height: 44px;
-  width: 575px;
-  border-radius: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 15px;
-}
-@media only screen and (max-width: 1400px) {
-  .contact-form .form input,
-.contact-form .form textarea,
-.contact-form .form select {
-    width: 100%;
-  }
-}
-.contact-form .form .form-floating > label {
-  padding: 10px;
-}
-.contact-form .form .row input,
-.contact-form .form .row select {
-  width: 278px;
-}
-@media only screen and (max-width: 1400px) {
-  .contact-form .form .row input,
-.contact-form .form .row select {
-    width: 100%;
-  }
-}
-@media (max-width: 767.98px) {
-  .contact-form .form .row select {
-    margin-bottom: 16px;
-  }
-}
-.contact-form .form-img {
-  width: 500px;
-}
-@media (max-width: 1199.98px) {
-  .contact-form .form-img {
-    margin-top: 35px;
-    width: 100%;
-  }
+  background-image: url(/assets/images/arrowNext.png) no-repeat center center;
+  background-size: contain;
 }

@@ -3,7 +3,15 @@ $container-max-widths: (
     md: 720px,
     lg: 960px,
     xl: 1140px,
-    xxl: 1310px
+    xxl: 1290px
 );
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+@import "./base/colors";
+@import "./base/typography";
+@import "./base/universalStyles";
+
+@import "./components/mixin";
+@import "./components/header";
+@import "./components/homepage";
