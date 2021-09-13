@@ -347,6 +347,10 @@
   &__inner {
     padding: 42px 64px;
     border: 1px solid $wheat;
+
+    @include media-breakpoint-between(xs, md) {
+      padding: 35px;
+    }
   }
 
   .booking {

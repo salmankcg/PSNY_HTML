@@ -11829,6 +11829,11 @@ header .nav-item {
   padding: 42px 64px;
   border: 1px solid #F4D1AE;
 }
+@media (max-width: 767.98px) {
+  .contact-form__inner {
+    padding: 35px;
+  }
+}
 .contact-form .booking {
   margin-bottom: 41px;
   padding-bottom: 43px;
