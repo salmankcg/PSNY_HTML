@@ -11368,6 +11368,141 @@ header .nav-item {
   }
 }
 
+.footer {
+  margin-top: 134px;
+  padding: 142px 0 49px;
+}
+.footer__logo {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -25%);
+}
+.footer__logo p {
+  font-size: 12px;
+  line-height: 14px;
+}
+.footer__menu p {
+  color: #F4D1AE;
+  font-size: 14px;
+  line-height: 17px;
+}
+.footer__menu .menu ul {
+  padding: 0;
+  list-style: none;
+}
+.footer__menu .menu ul li > a {
+  font-family: "TTNorms";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 38px;
+  font-feature-settings: "liga" off;
+  color: #CCD8DF;
+  text-decoration: none;
+}
+.footer__socials {
+  width: 356px;
+  border: 1px solid #CCD8DF;
+  padding: 17px 0 15px;
+}
+@media (max-width: 991.98px) {
+  .footer__socials {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 575.98px) {
+  .footer__socials {
+    width: 100%;
+  }
+}
+.footer__socials span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  padding-left: 39px;
+  color: #CCD8DF;
+  font-family: "TTNorms";
+  color: #CCD8DF;
+}
+.footer__socials p {
+  font-family: "TTNorms";
+  padding-left: 41px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: 0.055em;
+  color: #F4D1AE;
+  margin-bottom: 28px;
+  border-bottom: 1px solid #F4D1AE;
+  padding-bottom: 21px;
+  margin: 0 24px 16px;
+  padding-left: 14px;
+}
+.footer__socials .socials {
+  margin: 0 24px 18px;
+  border-bottom: 1px solid #CCD8DF;
+  padding-bottom: 21px;
+}
+.footer__socials .socials span {
+  font-family: "TTNorms";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #CCD8DF;
+  padding-left: 18px;
+}
+.footer__socials .socials div {
+  display: flex;
+  padding: 0 43px;
+  padding-left: 18px;
+}
+.footer__socials .socials div a {
+  margin-right: 44px;
+  text-decoration: none;
+}
+.footer__socials .mail-info span {
+  font-family: "TTNorms";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #CCD8DF;
+}
+.footer__socials .mail-info a {
+  font-family: "TTNorms";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.145em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #F4D1AE;
+  padding: 5px 39px;
+}
+.footer__copyright {
+  margin-top: 42px;
+  color: #CCD8DF;
+}
+.footer__copyright p {
+  font-family: "Futura";
+  font-size: 11px;
+  line-height: 13px;
+  color: #CCD8DF;
+}
+.footer__copyright a {
+  font-family: "Futura";
+  font-size: 11px;
+  line-height: 13px;
+  color: #CCD8DF;
+  text-decoration: none;
+}
+
 .banner {
   padding: 130px 0 283px;
   background: url(/assets/images/banner.png) no-repeat right top;
@@ -11579,6 +11714,7 @@ header .nav-item {
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
+  text-decoration: none;
 }
 
 .slides {
