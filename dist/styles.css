@@ -11408,10 +11408,6 @@ header .nav-item {
 @media (max-width: 991.98px) {
   .footer__socials {
     margin: 0 auto;
-  }
-}
-@media (max-width: 575.98px) {
-  .footer__socials {
     width: 100%;
   }
 }

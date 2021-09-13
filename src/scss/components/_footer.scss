@@ -50,9 +50,6 @@
 
         @include media-breakpoint-between(xs, lg) {
             margin: 0 auto;
-        }
-
-        @include media-breakpoint-between(xs, sm) {
             width: 100%;
         }
 
