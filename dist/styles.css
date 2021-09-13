@@ -11747,6 +11747,15 @@ header .nav-item {
     width: 100%;
   }
 }
+.slides .slide__btns {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 55px;
+}
+.slides .slide__btns button {
+  background-color: transparent;
+  border-color: #0C3046;
+}
 .slides .carousel-item__text {
   font-size: 22px;
   line-height: 42px;
@@ -11787,29 +11796,8 @@ header .nav-item {
 .slides .carousel-inner {
   overflow: visible;
 }
-.slides .carousel-control-prev,
-.slides .carousel-control-next {
-  align-items: flex-end;
-  justify-content: flex-end;
-  width: 92.5%;
-  opacity: 1;
-  bottom: -93px;
-}
-@media only screen and (max-width: 1200px) {
-  .slides .carousel-control-prev,
-.slides .carousel-control-next {
-    width: 92.6%;
-  }
-}
-@media only screen and (max-width: 991px) {
-  .slides .carousel-control-prev,
-.slides .carousel-control-next {
-    width: 90%;
-  }
-}
-.slides .carousel-control-prev span,
-.slides .carousel-control-next span {
-  border: 1px solid #0C3046;
+.slides .carousel-control-prev {
+  right: 70px;
 }
 .slides .carousel-control-prev-icon,
 .slides .carousel-control-next-icon {
