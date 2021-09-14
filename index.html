@@ -7,16 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PSNY</title>
 
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="assets/vendors/animate-css/animate.css">
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="assets/vendors/bootstrap/bootstrap.min.css">
     <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="dist/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
     <!-- Header Starts -->
-    <header class="position-absolute w-100">
+    <header class="position-fixed left-0 top-0 w-100 header">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
-                <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center animated fadeInLeft">
                     <a class="navbar-brand" href="#">
                         <img src="assets/images/logo.png" alt="PSNY Logo" class="img-fluid">
                     </a>
@@ -32,7 +36,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 animated fadeInRight">
                         <li class="nav-item">
                             <a class="nav-link font-futura color-primary text-uppercase" aria-current="page" href="#">About us</a>
                         </li>
@@ -62,32 +66,34 @@
     <section class="banner">
         <div class="container">
             <div class="row">
-                <div class="col d-flex">
-                    <svg class="notice-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M7.38346 10.5303L7.07519 4H8.92481L8.61654 10.5303H7.38346ZM9 12.1829C9 12.4058 8.90226 12.5977 8.69925 12.7586C8.50376 12.9195 8.27068 13 8 13C7.73684 13 7.50376 12.9195 7.30075 12.7586C7.10526 12.5977 7 12.4058 7 12.1829C7 11.9601 7.10526 11.7682 7.30075 11.6011C7.50376 11.4402 7.73684 11.3535 8 11.3535C8.27068 11.3535 8.50376 11.4402 8.69925 11.6011C8.90226 11.7682 9 11.9601 9 12.1829Z"
-                            fill="#EB5757" />
-                        <circle cx="8" cy="8" r="7.65" stroke="#EB5757" stroke-width="0.7" />
-                    </svg>
-                    <div class="notice">
-                        <p class="font-TTNorms color-primary mb-0">
-                            we're are opened.
-                            <br>
-                            we're supporting you.
-                        </p>
-                        <a href="#" class="font-TTNorms color-primary">more info</a>
+                <div class="notice-inner">
+                    <div class="col d-flex">
+                        <svg class="notice-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7.38346 10.5303L7.07519 4H8.92481L8.61654 10.5303H7.38346ZM9 12.1829C9 12.4058 8.90226 12.5977 8.69925 12.7586C8.50376 12.9195 8.27068 13 8 13C7.73684 13 7.50376 12.9195 7.30075 12.7586C7.10526 12.5977 7 12.4058 7 12.1829C7 11.9601 7.10526 11.7682 7.30075 11.6011C7.50376 11.4402 7.73684 11.3535 8 11.3535C8.27068 11.3535 8.50376 11.4402 8.69925 11.6011C8.90226 11.7682 9 11.9601 9 12.1829Z"
+                                fill="#EB5757" />
+                            <circle cx="8" cy="8" r="7.65" stroke="#EB5757" stroke-width="0.7" />
+                        </svg>
+                        <div class="notice">
+                            <p class="font-TTNorms color-primary mb-0">
+                                we're are opened.
+                                <br>
+                                we're supporting you.
+                            </p>
+                            <a href="#" class="font-TTNorms color-primary">more info</a>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12">
-                    <h2 class="banner__title color-primary mb-0 font-futura">
+                    <h2 class="banner__title color-primary mb-0 font-futura animated fadeInUp">
                         Elevate
                         <br>
                         your image
                     </h2>
-                    <p class="banner__subtitle font-TTNormsLight">Timeless aes thetics, sculpted and defined.</p>
-                    <button class="button-primary">
+                    <p class="banner__subtitle font-TTNormsLight animated fadeInUp">Timeless aes thetics, sculpted and defined.</p>
+                    <button class="button-primary animated fadeInUp">
                         Contact us
                     </button>
                 </div>
@@ -136,7 +142,7 @@
                     <div class="col-12">
                         <div class="contact__info position-relative">
                             <div class="d-flex justify-content-between align-items-center flex-column flex-md-row">
-                                <button class="btn button-primary button-secondary">
+                                <button class="btn button-secondary">
                                     Contact Us
                                 </button>
                                 <div>
@@ -158,204 +164,224 @@
         <div class="container text-center">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <img src="assets/images/face.png" alt="Surgical Category" class="img-fluid">
+                    <img src="assets/images/home/face.png" alt="Surgical Category" class="img-fluid categories__image">
                 </div>
                 <div class="col-md-6">
-                    <p class="categories__title font-TTNorms color-primary">Face</p>
-                    <p class="categoris__description font-TTNorms color-primary">
-                        Accentuate and preserve the natural beauty of your face. Explore surgical and non-surgical
-                        facial procedures including facelifts, injectables and rhinoplasty.
-                    </p>
-                    <a href="#" class="font-TTNorms color-primary">
-                        Learn More
-                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 1L5 5L1 9" stroke="#0C3046" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </a>
+                    <div class="categories__inner">
+                        <p class="categories__title font-TTNorms color-primary">Face</p>
+                        <p class="categories__description font-TTNorms color-primary">
+                            Accentuate and preserve the natural beauty of your face. Explore surgical and non-surgical
+                            facial procedures including facelifts, injectables and rhinoplasty.
+                        </p>
+                        <a href="#" class="font-TTNorms color-primary">
+                            Learn More
+                            <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L5 5L1 9" stroke="#0C3046" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
 
             <div class="row align-items-center">
                 <div class="col-md-6 order-0 order-md-1">
-                    <img src="assets/images/breast.png" alt="Surgical Categories" class="img-fluid">
+                    <img src="assets/images/home/breast.png" alt="Surgical Categories" class="img-fluid categories__image">
                 </div>
                 <div class="col-md-6 order-1 order-md-0">
-                    <p class="categories__title font-TTNorms color-primary">Breast</p>
-                    <p class="categories__description font-TTNorms color-primary">
-                        Create your ideal breast shape and size with procedures including breast lift, breast reduction
-                        and breast augmentation. Attain natural-looking and high-quality results.
-                    </p>
-                    <a href="#" class="font-TTNorms color-primary">
-                        Learn More
-                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 1L5 5L1 9" stroke="#0C3046" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </a>
+                    <div class="categories__inner">
+                        <p class="categories__title font-TTNorms color-primary">Breast</p>
+                        <p class="categories__description font-TTNorms color-primary">
+                            Create your ideal breast shape and size with procedures including breast lift, breast reduction
+                            and breast augmentation. Attain natural-looking and high-quality results.
+                        </p>
+                        <a href="#" class="font-TTNorms color-primary">
+                            Learn More
+                            <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L5 5L1 9" stroke="#0C3046" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
 
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <img src="assets/images/tummyTuck.png" alt="Surgical Categories" class="img-fluid">
+                    <img src="assets/images/home/tummyTuck.png" alt="Surgical Categories" class="img-fluid categories__image">
                 </div>
                 <div class="col-md-6">
-                    <p class="categories__title font-TTNorms color-primary">
-                        Liposuc tion &
-                        <br>
-                        Tummy Tuck
-                    </p>
-                    <p class="categoris__description font-TTNorms color-primary">
-                        Achieve the figure you’ve always dreamed of. Discover Liposuction’s contour improvement, toning
-                        and sculpting effect.
-                    </p>
-                    <a href="#" class="font-TTNorms color-primary">
-                        Learn More
-                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 1L5 5L1 9" stroke="#0C3046" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
-
-            <div class="row align-items-center">
-                <div class="col-md-6 order-md-1">
-                    <img src="assets/images/moreSurgical.png" alt="Surgical Categories" class="img-fluid">
-                </div>
-                <div class="col-md-6 order-md-0">
-                    <p class="categories__title font-TTNorms color-primary">More Surgical</p>
-                    <p class="categories__description font-TTNorms color-primary">
-                        Surgical enhancement enables you to achieve long-lasting cosmetic change. From rhinoplasties to
-                        tummy tucks, browse our range of options.
-                    </p>
-                    <a href="#" class="font-TTNorms color-primary">
-                        Learn More
-                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 1L5 5L1 9" stroke="#0C3046" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
-
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <img src="assets/images/nonSurgical.png" alt="Surgical Categories"  class="img-fluid">
-                </div>
-                <div class="col-md-6">
-                    <p class="categories__title font-TTNorms color-primary">Non-Surgical</p>
-                    <p class="categories__description font-TTNorms color-primary">
-                        Our suite of non-surgical services covers premium skincare, botox, Juvederm, laser, and more.
-                    </p>
-                    <a href="#" class="font-TTNorms color-primary">
-                        Learn More
-                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 1L5 5L1 9" stroke="#0C3046" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </a>
+                    <div class="categories__inner">
+                        <p class="categories__title font-TTNorms color-primary">
+                            Liposuc tion &
+                            <br>
+                            Tummy Tuck
+                        </p>
+                        <p class="categoris__description font-TTNorms color-primary">
+                            Achieve the figure you’ve always dreamed of. Discover Liposuction’s contour improvement, toning
+                            and sculpting effect.
+                        </p>
+                        <a href="#" class="font-TTNorms color-primary">
+                            Learn More
+                            <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L5 5L1 9" stroke="#0C3046" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
 
             <div class="row align-items-center">
                 <div class="col-md-6 order-md-1">
-                    <img src="assets/images/hair.png" alt="Surgical Categories" class="img-fluid">
+                    <img src="assets/images/home/moreSurgical.png" alt="Surgical Categories" class="img-fluid categories__image">
                 </div>
                 <div class="col-md-6 order-md-0">
-                    <p class="categories__title font-TTNorms color-primary">Hair</p>
-                    <p class="categories__description font-TTNorms color-primary">
-                        Achieve soft, shiny and thicker-looking hair with procedures including FUT, FUE and
-                        Micropigmentation.
-                    </p>
-                    <a href="#" class="font-TTNorms color-primary">
-                        Learn More
-                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 1L5 5L1 9" stroke="#0C3046" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </a>
+                    <div class="categories__inner">
+                        <p class="categories__title font-TTNorms color-primary">More Surgical</p>
+                        <p class="categories__description font-TTNorms color-primary">
+                            Surgical enhancement enables you to achieve long-lasting cosmetic change. From rhinoplasties to
+                            tummy tucks, browse our range of options.
+                        </p>
+                        <a href="#" class="font-TTNorms color-primary">
+                            Learn More
+                            <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L5 5L1 9" stroke="#0C3046" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
 
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <img src="assets/images/injectables.png" alt="Surgical Categories"  class="img-fluid">
+                    <img src="assets/images/home/nonSurgical.png" alt="Surgical Categories"  class="img-fluid categories__image">
                 </div>
                 <div class="col-md-6">
-                    <p class="categories__title font-TTNorms color-primary">Injectables</p>
-                    <p class="categories__description font-TTNorms color-primary">
-                        Reduce wrinkles and create a firmer, more youthful appearance with our expertly delivered
-                        injectables including Botox and Juvederm.
-                    </p>
-                    <a href="#" class="font-TTNorms color-primary">
-                        Learn More
-                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 1L5 5L1 9" stroke="#0C3046" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </a>
+                    <div class="categories__inner">
+                        <p class="categories__title font-TTNorms color-primary">Non-Surgical</p>
+                        <p class="categories__description font-TTNorms color-primary">
+                            Our suite of non-surgical services covers premium skincare, botox, Juvederm, laser, and more.
+                        </p>
+                        <a href="#" class="font-TTNorms color-primary">
+                            Learn More
+                            <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L5 5L1 9" stroke="#0C3046" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
 
             <div class="row align-items-center">
                 <div class="col-md-6 order-md-1">
-                    <img src="assets/images/reconstruction.png" alt="Surgical Categories"  class="img-fluid">
+                    <img src="assets/images/home/hair.png" alt="Surgical Categories" class="img-fluid categories__image">
                 </div>
                 <div class="col-md-6 order-md-0">
-                    <p class="categories__title font-TTNorms color-primary">Reconstruction</p>
-                    <p class="categories__description font-TTNorms color-primary">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since.
-                    </p>
-                    <a href="#" class="font-TTNorms color-primary">
-                        Learn More
-                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 1L5 5L1 9" stroke="#0C3046" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </a>
+                    <div class="categories__inner">
+                        <p class="categories__title font-TTNorms color-primary">Hair</p>
+                        <p class="categories__description font-TTNorms color-primary">
+                            Achieve soft, shiny and thicker-looking hair with procedures including FUT, FUE and
+                            Micropigmentation.
+                        </p>
+                        <a href="#" class="font-TTNorms color-primary">
+                            Learn More
+                            <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L5 5L1 9" stroke="#0C3046" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
 
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <img src="assets/images/emergency.png" alt="Surgical Categories"  class="img-fluid">
+                    <img src="assets/images/home/injectables.png" alt="Surgical Categories"  class="img-fluid categories__image">
                 </div>
                 <div class="col-md-6">
-                    <p class="categories__title font-TTNorms color-primary">Emergency</p>
-                    <p class="categories__description font-TTNorms color-primary">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard.
-                    </p>
-                    <a href="#" class="font-TTNorms color-primary">
-                        Learn More
-                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 1L5 5L1 9" stroke="#0C3046" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </a>
+                    <div class="categories__inner">
+                        <p class="categories__title font-TTNorms color-primary">Injectables</p>
+                        <p class="categories__description font-TTNorms color-primary">
+                            Reduce wrinkles and create a firmer, more youthful appearance with our expertly delivered
+                            injectables including Botox and Juvederm.
+                        </p>
+                        <a href="#" class="font-TTNorms color-primary">
+                            Learn More
+                            <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L5 5L1 9" stroke="#0C3046" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
 
             <div class="row align-items-center">
                 <div class="col-md-6 order-md-1">
-                    <img src="assets/images/hand.png" alt="Surgical Categories"  class="img-fluid">
+                    <img src="assets/images/home/reconstruction.png" alt="Surgical Categories"  class="img-fluid categories__image">
                 </div>
                 <div class="col-md-6 order-md-0">
-                    <p class="categories__title font-TTNorms color-primary">Hand</p>
-                    <p class="categories__description font-TTNorms color-primary">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since.
-                    </p>
-                    <a href="#" class="font-TTNorms color-primary">
-                        Learn More
-                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 1L5 5L1 9" stroke="#0C3046" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </a>
+                    <div class="categories__inner">
+                        <p class="categories__title font-TTNorms color-primary">Reconstruction</p>
+                        <p class="categories__description font-TTNorms color-primary">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                            the industry's standard dummy text ever since.
+                        </p>
+                        <a href="#" class="font-TTNorms color-primary">
+                            Learn More
+                            <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L5 5L1 9" stroke="#0C3046" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="assets/images/home/emergency.png" alt="Surgical Categories"  class="img-fluid categories__image">
+                </div>
+                <div class="col-md-6">
+                    <div class="categories__inner">
+                        <p class="categories__title font-TTNorms color-primary">Emergency</p>
+                        <p class="categories__description font-TTNorms color-primary">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                            the industry's standard.
+                        </p>
+                        <a href="#" class="font-TTNorms color-primary">
+                            Learn More
+                            <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L5 5L1 9" stroke="#0C3046" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-md-6 order-md-1">
+                    <img src="assets/images/home/hand.png" alt="Surgical Categories"  class="img-fluid categories__image">
+                </div>
+                <div class="col-md-6 order-md-0">
+                    <div class="categories__inner">
+                        <p class="categories__title font-TTNorms color-primary">Hand</p>
+                        <p class="categories__description font-TTNorms color-primary">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                            the industry's standard dummy text ever since.
+                        </p>
+                        <a href="#" class="font-TTNorms color-primary">
+                            Learn More
+                            <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L5 5L1 9" stroke="#0C3046" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -384,7 +410,7 @@
                                 </div>
                                 <p class="author-name font-Audrey text-white mb-0">Susie Howell</p>
                                 <span class="author-designation font-futura text-white">Lorem ipsum dolor sit amet</span>
-                                <img src="assets/images/sliderImg.jpg" class="carousel-item__image position-absolute" alt="Slider Item">
+                                <img src="assets/images/home/sliderImg.jpg" class="carousel-item__image position-absolute" alt="Slider Item">
                             </div>
                         </div>
                     </div>
@@ -401,18 +427,6 @@
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
-                </div>
-                <div class="col-12">
-                    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button> -->
                 </div>
             </div>
         </div>
@@ -481,7 +495,7 @@
                             </form>
                         </div>
                         <div class="col-md-6 justify-content-end d-flex">
-                            <img src="assets/images/form.png" alt="Form Image"  class="form-img">
+                            <img src="assets/images/home/form.png" alt="Form Image"  class="form-img">
                         </div>
                     </div>
                 </div>
@@ -593,7 +607,7 @@
     <!-- Footer Ends -->
 
     <!-- Main Script -->
-    <script src="dist/app.js"></script>
+    <script src="assets/js/app.js"></script>
 </body>
 
 </html>

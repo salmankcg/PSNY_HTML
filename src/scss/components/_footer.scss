@@ -1,157 +1,153 @@
 .footer {
     margin-top: 134px;
     padding: 142px 0 49px;
+}
 
-    &__logo {
-        top: 0;
-        left: 50%;
-        transform: translate(-50%, -25%);
+.footer__logo {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -25%);
 
-        p {
-            font-size: 12px;
-            line-height: 14px;
-        }
+    p {
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
+
+.footer__menu {
+    p {
+        color: $wheat;
+        font-size: 14px;
+        line-height: 17px;
     }
 
-    &__menu {
-        @include media-breakpoint-between(xs, sm) {
-            // text-align: center;
-        }
+    .menu {
+        ul {
+            padding: 0;
+            list-style: none;
 
-        p {
-            color: $wheat;
-            font-size: 14px;
-            line-height: 17px;
-        }
-
-        .menu {
-            ul {
-                padding: 0;
-                list-style: none;
-
-                li > a {
-                    font-family: 'TTNorms';
-                    font-style: normal;
-                    font-weight: 300;
-                    font-size: 16px;
-                    line-height: 38px;
-                    font-feature-settings: 'liga' off;
-                    color: $geyser;
-                    text-decoration: none;
-                }
+            li > a {
+                font-family: 'TTNorms';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 38px;
+                font-feature-settings: 'liga' off;
+                color: $geyser;
+                text-decoration: none;
             }
         }
     }
+}
 
-    &__socials {
-        width: 356px;
-        border: 1px solid $geyser;
-        padding: 17px 0 15px;
+.footer__socials {
+    width: 356px;
+    border: 1px solid $geyser;
+    padding: 17px 0 15px;
 
-        @include media-breakpoint-between(xs, lg) {
-            margin: 0 auto;
-            width: 100%;
-        }
+    @media only screen and (max-width: $md) {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    span {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        padding-left: 39px;
+        color: $geyser;
+        font-family: 'TTNorms';
+        color: $geyser;
+    }
+
+    p {
+        font-family: 'TTNorms';
+        padding-left: 41px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 35px;
+        letter-spacing: 0.055em;
+        color: $wheat;
+        margin-bottom: 28px;
+        border-bottom: 1px solid $wheat;
+        padding-bottom: 21px;
+        margin: 0 24px 16px;
+        padding-left: 14px;
+    }
+
+    .socials {
+        margin: 0 24px 18px;
+        border-bottom: 1px solid $geyser;
+        padding-bottom: 21px;
 
         span {
+            font-family: 'TTNorms';
             font-style: normal;
             font-weight: normal;
             font-size: 14px;
             line-height: 17px;
-            padding-left: 39px;
+            text-transform: uppercase;
             color: $geyser;
-            font-family: 'TTNorms';
-            color: $geyser;
+            padding-left: 18px;
         }
 
-        p {
-            font-family: 'TTNorms';
-            padding-left: 41px;
-            font-style: normal;
-            font-weight: 300;
-            font-size: 30px;
-            line-height: 35px;
-            letter-spacing: 0.055em;
-            color: $wheat;
-            margin-bottom: 28px;
-            border-bottom: 1px solid $wheat;
-            padding-bottom: 21px;
-            margin: 0 24px 16px;
-            padding-left: 14px;
-        }
-
-        .socials {
-            margin: 0 24px 18px;
-            border-bottom: 1px solid $geyser;
-            padding-bottom: 21px;
-
-            span {
-                font-family: 'TTNorms';
-                font-style: normal;
-                font-weight: normal;
-                font-size: 14px;
-                line-height: 17px;
-                text-transform: uppercase;
-                color: $geyser;
-                padding-left: 18px;
-            }
-
-            div {
-                display: flex;
-                padding: 0 43px;
-                padding-left: 18px;
-
-                a {
-                    margin-right: 44px;
-                    text-decoration: none;
-                }
-            }
-        }
-
-        .mail-info {
-            span {
-                font-family: 'TTNorms';
-                font-style: normal;
-                font-weight: normal;
-                font-size: 14px;
-                line-height: 17px;
-                text-transform: uppercase;
-                color: $geyser;
-
-            }
+        div {
+            display: flex;
+            padding: 0 43px;
+            padding-left: 18px;
 
             a {
-                font-family: 'TTNorms';
-                font-style: normal;
-                font-weight: 300;
-                font-size: 22px;
-                line-height: 26px;
-                letter-spacing: 0.145em;
-                text-transform: uppercase;
+                margin-right: 44px;
                 text-decoration: none;
-                color: $wheat;
-                padding: 5px 39px;
             }
         }
     }
 
-    &__copyright {
-        margin-top: 42px;
-        color: $geyser;
-        
-        p {
-            font-family: 'Futura';
-            font-size: 11px;
-            line-height: 13px;
+    .mail-info {
+        span {
+            font-family: 'TTNorms';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            text-transform: uppercase;
             color: $geyser;
+
         }
 
         a {
-            font-family: 'Futura';
-            font-size: 11px;
-            line-height: 13px;
-            color: $geyser;
+            font-family: 'TTNorms';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 26px;
+            letter-spacing: 0.145em;
+            text-transform: uppercase;
             text-decoration: none;
+            color: $wheat;
+            padding: 5px 39px;
         }
+    }
+}
+
+.footer__copyright {
+    margin-top: 42px;
+    color: $geyser;
+    
+    p {
+        font-family: 'Futura';
+        font-size: 11px;
+        line-height: 13px;
+        color: $geyser;
+    }
+
+    a {
+        font-family: 'Futura';
+        font-size: 11px;
+        line-height: 13px;
+        color: $geyser;
+        text-decoration: none;
     }
 }

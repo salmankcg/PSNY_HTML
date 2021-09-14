@@ -1,3 +1,45 @@
+h2 {
+    font-family: 'TTNorms';
+    font-size: 50px;
+    color: #0C3046;
+    font-weight: 300;
+}
+
+p {
+    font-family: 'TTNorms';
+    font-weight: 300;
+    font-size: 20px;
+    color: #0C3046;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+p.secondary {
+    font-family: 'TTNorms';
+    font-weight: 300;
+    color: #0C3046;
+    font-size: 22px !important;
+    line-height: 30px;
+}
+
+a {
+    font-family: 'TTNorms';
+    font-weight: 500;
+    color: #0C3046;
+    font-size: 20px;
+
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+.container {
+    @media only screen and (min-width: $xl) {
+        max-width: 1290px;
+    }
+}
+
 .font-futura {
     font-family: Futura;
 }
@@ -30,8 +72,8 @@
     background-color: $vistaWhite;
 }
 
-.button-primary {
-    background-color: $elephant;
+.button-primary,
+.button-secondary {
     padding: 18px 66px;
     font-family: TTNorms;
     font-style: normal;
@@ -40,16 +82,96 @@
     line-height: 24px;
     border-radius: 0px;
     color: white;
+    position: relative;
+}
+
+.button-primary {
+    background-color: $elephant;
+    @extend .btn-hover-primary;
 }
 
 .button-secondary {
-    // @include linear-gradient(270.23deg, #f1cda8 0.19%, #f6dec6 99.82%);
+    @extend .background-secondary;
+    @extend .btn-hover-secondary;
     color: $elephant;
-    padding: 18px 66px;
-    font-family: TTNorms;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 24px;
-    border-radius: 0px;
+}
+
+.link-hover-top,
+.link-hover-bottom {
+    &::before {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 3px;
+        background: #0e3751;
+        transition: all 0.5s ease;
+    }
+
+    &:hover {
+        &::before {
+            width: 100%;
+            transition: all 0.5s ease;
+        }
+    }
+}
+
+.link-hover-top {
+    &::before {
+        top: 0;
+    }
+}
+
+.link-hover-bottom {
+    &::before {
+        bottom: 0;
+    }
+}
+
+.btn-hover-primary,
+.btn-hover-secondary {
+    &::before, 
+    &::after {
+        content: '';
+        position: absolute;
+        width: 0%;
+        height: 0%;
+        opacity: 0;
+        transition: width 0.2s linear, height 0.15s 0.2s ease-out, opacity 0s 0.35s;
+    }
+
+    &::before {
+        top: -15px;
+        left: -15px;
+        border-top: 3px solid $elephant;
+        border-left: 3px solid $elephant;
+    }
+
+    &::after {
+        bottom: -15px;
+        right: -15px;
+        border-bottom: 3px solid $elephant;
+        border-right: 3px solid $elephant;
+    }
+
+    &:hover::before, 
+    &:hover::after {
+        width: 30%;
+        height: 100%;
+        opacity: 1;
+        transition: width 0.2s 0.15s ease-out, height 0.15s ease-in, opacity 0s;
+    }
+}
+
+.btn-hover-secondary {
+    &::before {
+        border-top: 3px solid $wheat;
+        border-left: 3px solid $wheat;
+    }
+
+    &::after {
+        bottom: -15px;
+        right: -15px;
+        border-bottom: 3px solid $wheat;
+        border-right: 3px solid $wheat;
+    }
 }

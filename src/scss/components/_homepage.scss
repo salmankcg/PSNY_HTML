@@ -1,214 +1,217 @@
 .banner {
   padding: 130px 0 283px;
-  background: url(/assets/images/banner.png) no-repeat right top;
+  background: url(/assets/images/home/banner.png) no-repeat right top;
   background-size: contain;
 
-  @include media-breakpoint-between(xs, lg) {
+  @media only screen and (max-width: $md) {
     padding-bottom: 150px;
-  }
-
-  .notice-icon {
-    margin-top: 6px;
-  }
-
-  .notice {
-    padding-left: 6px;
-
-    p {
-      font-style: normal;
-      font-weight: 300;
-      font-size: 18px;
-      line-height: 21px;
-    }
-
-    a {
-      font-size: 12px;
-      line-height: 14px;
-    }
-  }
-
-  &__title {
-    padding-top: 84px;
-    font-size: 72px;
-    line-height: 90px;
-    letter-spacing: 0.265em;
-    text-transform: uppercase;
-  }
-
-  &__subtitle {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 30px;
-    line-height: 35px;
-    margin-bottom: 62px;
   }
 }
 
-.about {
-  &__inner {
-    @include radial-gradient(
-      95.8% 137.27% at 0% 1.86%,
-      #124260 0%,
-      #0c3046 100%
-    );
-    width: 774px;
-    padding: 90px 70px 100px;
-    z-index: 10;
-    margin-top: -128px;
-    position: absolute;
-
-    @include media-breakpoint-between(xs, lg) {
-      padding: 30px;
-      margin-top: 0px;
-      position: relative;
-      width: 100%;
-    }
+.notice-icon {
+    margin-top: 6px;
   }
 
-  &__title {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 35px;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: white;
-  }
+.notice {
+  padding-left: 6px;
 
-  &__description {
+  p {
     font-style: normal;
     font-weight: 300;
-    font-size: 20px;
-    line-height: 30px;
-    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    line-height: 21px;
+  }
 
-    span {
-      font-size: 24px;
-      font-weight: 500;
-      color: white;
+  a {
+    font-size: 12px;
+    line-height: 14px;
+
+    &:hover {
+      text-decoration: underline;
     }
+  }
+}
+
+.banner__title {
+  padding-top: 84px;
+  font-size: 72px;
+  line-height: 90px;
+  letter-spacing: 0.265em;
+  text-transform: uppercase;
+}
+
+.banner__subtitle {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 35px;
+  margin-bottom: 62px;
+}
+
+.about__inner {
+  @include radial-gradient(
+    95.8% 137.27% at 0% 1.86%,
+    #124260 0%,
+    #0c3046 100%
+  );
+  width: 774px;
+  padding: 90px 70px 100px;
+  z-index: 10;
+  margin-top: -128px;
+  position: absolute;
+
+  @media only screen and (max-width: $md) {
+    padding: 30px;
+    margin-top: 0px;
+    position: relative;
+    width: 100%;
+  }
+}
+
+.about__title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: white;
+}
+
+.about__description {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.8);
+
+  span {
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
   }
 }
 
 .contact {
   overflow: hidden;
+}
 
-  &__inner {
-    z-index: -1;
-    margin-top: 285px;
+.contact__inner {
+  margin-top: 285px;
+  position: absolute;
+  width: 1427px;
+  right: 0;
+  padding: 188px 141px 142px;
+
+  @media only screen and (max-width: 1800px) {
+    width: 80vw;
+  }
+
+  @media only screen and (max-width: $md) {
+    width: 100%;
+    position: relative;
+    margin-top: 70px;
+    padding: 50px 35px;
+  }
+}
+
+.contact__title {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 59px;
+}
+
+.contact__description {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 30px;
+  margin-bottom: 43px;
+}
+
+.contact__info {
+  width: 540px;
+
+  @media only screen and (max-width: $md) {
+    width: 100%;
+  }
+
+  &::before {
     position: absolute;
-    width: 1427px;
-    right: 0;
-    padding: 188px 141px 142px;
+    content: "";
+    width: 1px;
+    height: 50px;
+    background: $wheat;
+    left: 54%;
+    top: 5px;
 
-    @media only screen and (max-width: 1800px) {
-      width: 80vw;
-    }
-
-    @include media-breakpoint-between(xs, lg) {
-      width: 100%;
-      position: relative;
-      margin-top: 70px;
-      padding: 50px 35px;
+    @media only screen and (max-width: $md) {
+      left: 55%;
     }
   }
 
-  &__title {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 50px;
-    line-height: 59px;
+  button {
+    @include linear-gradient(270.23deg, #f1cda8 0.19%, #f6dec6 99.82%);
+
+    @media only screen and (max-width: $md) {
+      margin-bottom: 20px;
+    }
   }
 
-  &__description {
+  span {
     font-style: normal;
-    font-weight: 300;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  p {
+    font-style: normal;
+    font-weight: normal;
     font-size: 22px;
-    line-height: 30px;
-    margin-bottom: 43px;
+    line-height: 26px;
+    letter-spacing: 0.145em;
   }
 
-  &__info {
-    width: 540px;
-
-    @include media-breakpoint-between(xs, lg) {
-      width: 100%;
-    }
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 1px;
-      height: 50px;
-      background: $wheat;
-      left: 54%;
-      top: 5px;
-
-      @include media-breakpoint-between(xs, lg) {
-        left: 55%;
-      }
-    }
-
-    button {
-      @include linear-gradient(270.23deg, #f1cda8 0.19%, #f6dec6 99.82%);
-
-      @include media-breakpoint-between(xs, lg) {
-        margin-bottom: 20px;
-      }
-    }
-
-    span {
-      font-style: normal;
-      font-weight: normal;
-      font-size: 15px;
-      line-height: 18px;
-    }
-
-    p {
-      font-style: normal;
-      font-weight: normal;
-      font-size: 22px;
-      line-height: 26px;
-      letter-spacing: 0.145em;
-    }
-
-    a {
-      margin-top: 33px;
-      border-top: 1px solid $vistaWhite;
-      padding-top: 22px;
-      font-size: 22px;
-      line-height: 26px;
-    }
+  a {
+    margin-top: 33px;
+    border-top: 1px solid $vistaWhite;
+    padding-top: 22px;
+    font-size: 22px;
+    line-height: 26px;
   }
 }
 
 .categories {
   margin-top: 1190px;
 
-  @include media-breakpoint-between(xs, lg) {
+  @media only screen and (max-width: $md) {
     margin-top: 50px;
   }
 
   .row {
     margin-bottom: 47px;
   }
+}
 
-  img {
+.categories__inner {
+  .categories__image {
     width: 618px;
-
-    @include media-breakpoint-between(xs, lg) {
+  
+    @media only screen and (max-width: $md){
       margin: 45px 0;
     }
   }
 
-  &__title {
+  .categories__title {
     font-style: normal;
     font-weight: 300;
     font-size: 50px;
     line-height: 59px;
   }
 
-  &__description {
+  .categories__description {
     font-style: normal;
     font-weight: 300;
     font-size: 22px;
@@ -227,85 +230,8 @@
 .slides {
   margin: 156px 0 224px;
 
-  @include media-breakpoint-between(xs, lg) {
+  @media only screen and (max-width: $md) {
     margin-bottom: 160px;
-  }
-
-  .slide {
-    padding: 77px 112px 50px 121px;
-    @include radial-gradient(
-      95.8% 137.27% at 0% 1.86%,
-      #124260 0%,
-      #0c3046 100%
-    );
-
-    @include media-breakpoint-between(xs, lg) {
-      padding: 50px 35px;
-    }
-
-    &__col {
-      width: 937px;
-
-      @include media-breakpoint-between(xl, xxl) {
-        width: 65vw;
-      }
-
-      @include media-breakpoint-between(xs, xl) {
-        width: 100%;
-      }
-    }
-
-    &__btns {
-      display: flex;
-      justify-content: flex-end;
-      margin-top: 55px;
-
-      button {
-        background-color: transparent;
-        border-color: $elephant;
-      }
-    }
-  }
-
-  .carousel-item {
-    &__text {
-      font-size: 22px;
-      line-height: 42px;
-      padding-bottom: 33px;
-      opacity: 0.7;
-    }
-
-    .author-designation {
-      font-size: 22px;
-      line-height: 42px;
-      opacity: 0.4;
-    }
-
-    .author-name {
-      font-style: normal;
-      font-weight: normal;
-      font-size: 27px;
-      line-height: 32px;
-      text-transform: uppercase;
-    }
-
-    &__image {
-      width: 385px;
-      left: -70%;
-      bottom: -36%;
-
-      @include media-breakpoint-between(xl, xxl) {
-        width: 50%;
-        left: -55%;
-      }
-
-      @include media-breakpoint-between(xs, xl) {
-        width: 100%;
-        position: relative !important;
-        left: 0;
-        margin-top: 30px;
-      }
-    }
   }
 
   .carousel-inner {
@@ -315,20 +241,20 @@
   .carousel-control-prev {
     right: 70px;
   }
-
+  
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
     width: 70px;
     height: 70px;
   }
-
+  
   .carousel-control-prev-icon {
     background-image: url(/assets/images/arrowPrev.png);
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
   }
-
+  
   .carousel-control-next-icon {
     background-image: url(/assets/images/arrowNext.png);
     background-size: auto;
@@ -337,20 +263,97 @@
   }
 }
 
+.slide {
+  padding: 77px 112px 50px 121px;
+  @include radial-gradient(
+    95.8% 137.27% at 0% 1.86%,
+    #124260 0%,
+    #0c3046 100%
+  );
+
+  @media only screen and (max-width: $md) {
+    padding: 50px 35px;
+  }
+
+  &__col {
+    width: 937px;
+
+    @media only screen and (min-width: $md) and (max-width: $lg) {
+      width: 65vw;
+    }
+
+    @media only screen and (max-width: $lg) {
+      width: 100%;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 55px;
+
+    button {
+      background-color: transparent;
+      border-color: $elephant;
+    }
+  }
+}
+
+.carousel-item {
+  &__text {
+    font-size: 22px;
+    line-height: 42px;
+    padding-bottom: 33px;
+    opacity: 0.7;
+  }
+
+  .author-designation {
+    font-size: 22px;
+    line-height: 42px;
+    opacity: 0.4;
+  }
+
+  .author-name {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 32px;
+    text-transform: uppercase;
+  }
+
+  &__image {
+    width: 385px;
+    left: -70%;
+    bottom: -36%;
+
+    @media only screen and (min-width: $md) and (max-width: $lg) {
+      width: 50%;
+      left: -55%;
+    }
+
+    @media only screen and (max-width: $lg) {
+      width: 100%;
+      position: relative !important;
+      left: 0;
+      margin-top: 30px;
+    }
+  }
+}
+
 .contact-form {
   margin-top: 376px;
 
-  @include media-breakpoint-between(xs, lg) {
+  @media only screen and (max-width: $md) {
     margin-top: 0px;
   }
+}
 
-  &__inner {
-    padding: 42px 64px;
-    border: 1px solid $wheat;
+.contact-form__inner {
+  padding: 42px 64px;
+  border: 1px solid $wheat;
 
-    @include media-breakpoint-between(xs, md) {
-      padding: 35px;
-    }
+  @media only screen and (max-width: $sm) {
+    padding: 35px;
   }
 
   .booking {
@@ -367,118 +370,118 @@
       left: 10px;
     }
   }
+}
 
-  &__title {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 25px;
-    line-height: 30px;
-    letter-spacing: 0.185em;
-    text-transform: uppercase;
+.contact-form__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 0.185em;
+  text-transform: uppercase;
 
-    @include media-breakpoint-between(xs, lg) {
-      padding-bottom: 30px;
-      text-align: center;
+  @media only screen and (max-width: $md) {
+    padding-bottom: 30px;
+    text-align: center;
+  }
+}
+
+.contact-form__info {
+  width: 540px;
+
+  @media only screen and (max-width: $md) {
+    width: 100%;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 50px;
+    background: $wheat;
+    left: 54%;
+    top: 5px;
+
+    @media only screen and (max-width: $md) {
+      left: 55%;
     }
   }
 
-  &__info {
-    width: 540px;
+  button {
+    @include linear-gradient(270.23deg, #f1cda8 0.19%, #f6dec6 99.82%);
 
-    @include media-breakpoint-between(xs, lg) {
+    @media only screen and (max-width: $md) {
+      margin-bottom: 20px;
+    }
+  }
+
+  span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.145em;
+  }
+}
+
+.form {
+  p {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  input,
+  textarea,
+  select {
+    height: 44px;
+    width: 575px;
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+
+    @media only screen and (max-width: $xl) {
       width: 100%;
     }
+  }
 
-    &::before {
-      position: absolute;
-      content: "";
-      width: 1px;
-      height: 50px;
-      background: $wheat;
-      left: 54%;
-      top: 5px;
-
-      @include media-breakpoint-between(xs, lg) {
-        left: 55%;
-      }
-    }
-
-    button {
-      @include linear-gradient(270.23deg, #f1cda8 0.19%, #f6dec6 99.82%);
-
-      @include media-breakpoint-between(xs, lg) {
-        margin-bottom: 20px;
-      }
-    }
-
-    span {
-      font-style: normal;
-      font-weight: normal;
-      font-size: 15px;
-      line-height: 18px;
-    }
-
-    p {
-      font-style: normal;
-      font-weight: normal;
-      font-size: 22px;
-      line-height: 26px;
-      letter-spacing: 0.145em;
+  .form-floating {
+    & > label {
+      padding: 10px;
     }
   }
 
-  .form {
-    p {
-      font-size: 22px;
-      line-height: 26px;
-    }
-
+  .row {
     input,
-    textarea,
     select {
-      height: 44px;
-      width: 575px;
-      border-radius: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 0 15px;
+      width: 278px;
 
-      @media only screen and (max-width: 1400px){
+      @media only screen and (max-width: $xl) {
         width: 100%;
       }
     }
 
-    .form-floating {
-      & > label {
-        padding: 10px;
-      }
-    }
-
-    .row {
-      input,
-      select {
-        width: 278px;
-
-        @media only screen and (max-width: 1400px){
-          width: 100%;
-        }
-      }
-
-      select {
-        @include media-breakpoint-between(xs, md) {
-          margin-bottom: 16px;
-        }
+    select {
+      @media only screen and (max-width: $sm) {
+        margin-bottom: 16px;
       }
     }
   }
+}
 
-  .form-img {
-    width: 500px;
+.form-img {
+  width: 500px;
 
-    @include media-breakpoint-between(xs, xl) {
-      margin-top: 35px;
-      width: 100%;
-    }
+  @media only screen and (max-width: $lg) {
+    margin-top: 35px;
+    width: 100%;
   }
 }
