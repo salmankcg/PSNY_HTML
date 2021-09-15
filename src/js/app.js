@@ -1,4 +1,4 @@
-import 'bootstrap';
+new WOW().init();
 
 const header = document.querySelector('.header');
 
