@@ -5,7 +5,7 @@ new WOW().init();
 const header = document.querySelector('.header');
 
 window.onscroll = function() {
-    scrollFunction()
+    // scrollFunction()
 };
 
 function scrollFunction() {

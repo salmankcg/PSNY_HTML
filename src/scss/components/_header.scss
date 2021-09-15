@@ -46,16 +46,16 @@ header {
 .navbar-light .navbar-nav .nav-link {
     padding: .5rem 0;
     position: relative;
-    @include transition(all 0.3s ease-in-out);
+    @include transition(all 0.2s ease-in-out);
     font-size: 14px;
     line-height: 16px;
     color: $elephant;
+    font-family: futura;
+    text-transform: uppercase;
 
     &:hover {
-        color: $elephant;
-        opacity: 0.5;
         font-weight: bold;
-        @include transition(all 0.5s ease-in-out);
+        @include transition(all 0.2s ease-in-out);
     }
 }
 
@@ -63,4 +63,83 @@ header {
     font-size: 14px;
     line-height: 16px;
     color: $elephant;
+}
+
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+
+    &::after {
+        border-top: 0;
+        border-right: 0;
+        border-bottom: 0;
+        border-left: 0;
+        background-image: url(/assets/images/arrowDown.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 16px;
+        height: 16px;
+    }
+}
+
+.dropdown-menu {
+    background-color: $elephant;
+    padding: 20px 30px;
+    border-radius: 0;
+    position: relative;
+
+    li {
+        &:last-child {
+            .dropdown-item {
+                padding: 0 0 0px;
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: $wheat;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+.dropdown-item {
+    color: white;
+    text-transform: uppercase;
+    padding: 0 0 20px;
+    font-size: 14px;
+    font-family: futura;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+
+    &:hover {
+        color: $wheat;
+        background-color: transparent;
+    }
+}
+
+.level-one {
+    &::before {
+        content: "";
+        position: absolute;
+        border-top: 1em solid $elephant;
+        border-right: 1em solid transparent;
+        border-bottom: 0;
+        border-left: 1em solid transparent;
+        transform: rotate(180deg);
+        top: -10px;
+        left: 20px;
+    }
+}
+
+.navbar .nav-item:hover .dropdown-menu { 
+    display: block; 
 }

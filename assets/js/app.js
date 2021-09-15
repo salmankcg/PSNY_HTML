@@ -3102,8 +3102,7 @@ __webpack_require__.r(__webpack_exports__);
 new WOW().init();
 var header = document.querySelector('.header');
 
-window.onscroll = function () {
-  scrollFunction();
+window.onscroll = function () {// scrollFunction()
 };
 
 function scrollFunction() {
