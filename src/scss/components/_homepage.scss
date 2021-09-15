@@ -3,8 +3,9 @@
   background: url(/assets/images/home/banner.png) no-repeat right top;
   background-size: contain;
 
-  @media only screen and (max-width: $md) {
-    padding-bottom: 150px;
+  @media only screen and (max-width: $sm) {
+    padding: 95px 0 100px;
+    background-size: cover;
   }
 }
 
@@ -38,6 +39,12 @@
   line-height: 90px;
   letter-spacing: 0.265em;
   text-transform: uppercase;
+
+  @media only screen and (max-width: $sm) {
+    padding-top: 30px;
+    font-size: 28px;
+    line-height: normal;
+  }
 }
 
 .banner__subtitle {
@@ -46,6 +53,18 @@
   font-size: 30px;
   line-height: 35px;
   margin-bottom: 62px;
+
+  @media only screen and (max-width: $sm) {
+    font-size: 20px;
+    line-height: normal;
+    margin-bottom: 30px;
+  }
+}
+
+.about {
+  @media only screen and (max-width: $md) {
+    margin-top: 80px;
+  }
 }
 
 .about__inner {
@@ -76,6 +95,11 @@
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: white;
+
+  @media only screen and (max-width: $sm) {
+    font-size: 24px;
+    line-height: normal;
+  }
 }
 
 .about__description {
@@ -85,10 +109,20 @@
   line-height: 30px;
   color: rgba(255, 255, 255, 0.8);
 
+  @media only screen and (max-width: $sm) {
+    font-size: 16px;
+    line-height: normal;
+  }
+
   span {
     font-size: 24px;
     font-weight: 500;
     color: white;
+
+    @media only screen and (max-width: $sm) {
+      font-size: 20px;
+      line-height: 150%;
+    }
   }
 }
 
@@ -120,6 +154,11 @@
   font-weight: 300;
   font-size: 50px;
   line-height: 59px;
+
+  @media only screen and (max-width: $sm) {
+    font-size: 28px;
+    line-height: normal;
+  }
 }
 
 .contact__description {
@@ -128,6 +167,12 @@
   font-size: 22px;
   line-height: 30px;
   margin-bottom: 43px;
+  
+  @media only screen and (max-width: $sm) {
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 25px;
+  }
 }
 
 .contact__info {
@@ -135,6 +180,10 @@
 
   @media only screen and (max-width: $md) {
     width: 100%;
+  }
+
+  @media only screen and (max-width: $sm) {
+    text-align: center;
   }
 
   &::before {
@@ -172,6 +221,10 @@
     font-size: 22px;
     line-height: 26px;
     letter-spacing: 0.145em;
+
+    @media only screen and (max-width: $sm) {
+      font-size: 22px;
+    }
   }
 
   a {
@@ -180,6 +233,12 @@
     padding-top: 22px;
     font-size: 22px;
     line-height: 26px;
+    
+    @media only screen and (max-width: $sm) {
+      margin-top: 0;
+      padding-top: 0;
+      font-size: 16px;
+    }
   }
 }
 
@@ -192,23 +251,39 @@
 
   .row {
     margin-bottom: 47px;
+    
+    @media only screen and (max-width: $sm) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.categories__image {
+  width: 618px;
+
+  @media only screen and (max-width: $md) {
+    margin: 45px 0;
+  }
+
+  @media only screen and (max-width: $sm) {
+    width: 80%;
+    margin-bottom: 25px;
   }
 }
 
 .categories__inner {
-  .categories__image {
-    width: 618px;
   
-    @media only screen and (max-width: $md){
-      margin: 45px 0;
-    }
-  }
-
   .categories__title {
     font-style: normal;
     font-weight: 300;
     font-size: 50px;
     line-height: 59px;
+
+    @media only screen and (max-width: $sm) {
+      font-size: 30px;
+      line-height: 150%;
+      margin-bottom: 15px;
+    }
   }
 
   .categories__description {
@@ -216,6 +291,12 @@
     font-weight: 300;
     font-size: 22px;
     line-height: 30px;
+    
+    @media only screen and (max-width: $sm) {
+      margin: 15px 0 0;
+      font-size: 16px;
+      line-height: 150%;
+    }
   }
 
   a {
@@ -226,7 +307,11 @@
     text-decoration: none;
     position: relative;
 
-    @extend .link-hover-bottom
+    @extend .link-hover-bottom;
+
+    @media only screen and (max-width: $sm) {
+      font-size: 18px;
+    }
   }
 }
 
@@ -235,6 +320,10 @@
 
   @media only screen and (max-width: $md) {
     margin-bottom: 160px;
+  }
+
+  @media only screen and (max-width: $sm) {
+    margin: 60px 0;
   }
 
   .carousel-inner {
@@ -249,20 +338,23 @@
   .carousel-control-next-icon {
     width: 70px;
     height: 70px;
+
+    @media only screen and (max-width: $sm) {
+      width: 40px;
+      height: 40px;
+    }
   }
   
-  .carousel-control-prev-icon {
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
     background-image: url(/assets/images/arrowPrev.png);
     background-size: auto;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 50% 60%;
   }
   
   .carousel-control-next-icon {
     background-image: url(/assets/images/arrowNext.png);
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: center;
   }
 }
 
@@ -308,12 +400,22 @@
     line-height: 42px;
     padding-bottom: 33px;
     opacity: 0.7;
+
+    @media only screen and (max-width: $sm) {
+      font-size: 16px;
+      line-height: 150%;
+    }
   }
 
   .author-designation {
     font-size: 22px;
     line-height: 42px;
     opacity: 0.4;
+
+    @media only screen and (max-width: $sm) {
+      font-size: 18px;
+      line-height: 150%;
+    }
   }
 
   .author-name {
@@ -387,6 +489,12 @@
     padding-bottom: 30px;
     text-align: center;
   }
+
+  @media only screen and (max-width: $sm) {
+    padding-bottom: 20px;
+    font-size: 22px;
+    line-height: normal;
+  }
 }
 
 .contact-form__info {
@@ -423,6 +531,12 @@
     font-weight: normal;
     font-size: 15px;
     line-height: 18px;
+
+    @media only screen and (max-width: $sm) {
+      font-size: 14px;
+      text-align: center;
+      display: block;
+    }
   }
 
   p {
@@ -431,6 +545,12 @@
     font-size: 22px;
     line-height: 26px;
     letter-spacing: 0.145em;
+    
+    @media only screen and (max-width: $sm) {
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: 0;
+    }
   }
 }
 

@@ -1,36 +1,67 @@
+h1 {
+    font-size: 72px;
+    font-size: 72px;
+    font-family: 'TTNorms';
+
+    @media only screen and (max-width: $md) {
+        font-size: 35px;
+        line-height: normal;
+    }
+}
+
 h2 {
     font-family: 'TTNorms';
     font-size: 50px;
-    color: #0C3046;
+    color: $elephant;
     font-weight: 300;
+
+    @media only screen and (max-width: $md) {
+        font-size: 28px;
+        line-height: normal;
+    }
 }
 
 p {
     font-family: 'TTNorms';
     font-weight: 300;
     font-size: 20px;
-    color: #0C3046;
+    color: $elephant;
     line-height: 30px;
     margin-bottom: 30px;
+
+    @media only screen and (max-width: $md) {
+        font-size: 16px;
+        line-height: 150%;
+    }
 }
 
 p.secondary {
     font-family: 'TTNorms';
     font-weight: 300;
-    color: #0C3046;
+    color: $elephant;
     font-size: 22px !important;
     line-height: 30px;
+
+    @media only screen and (max-width: $md) {
+        font-size: 18px;
+        line-height: 150%;
+    }
 }
 
 a {
     font-family: 'TTNorms';
     font-weight: 500;
-    color: #0C3046;
+    color: $elephant;
     font-size: 20px;
 
     &:hover {
         text-decoration: none;
         color: inherit;
+    }
+
+    @media only screen and (max-width: $md) {
+        font-size: 16px;
+        line-height: normal;
     }
 }
 
@@ -83,6 +114,12 @@ a {
     border-radius: 0px;
     color: white;
     position: relative;
+
+    @media only screen and (max-width: $sm) {
+        padding: 10px 20px;
+        line-height: normal;
+        font-size: 16px;
+    }
 }
 
 .button-primary {

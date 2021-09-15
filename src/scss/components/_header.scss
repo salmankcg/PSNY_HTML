@@ -11,6 +11,12 @@ header {
 
 .navbar-brand {
     margin-right: 7px;
+
+    img {
+        @media only screen and (max-width: $sm) {
+            max-width: 80%;
+        }
+    }
 } 
 
 .brand-text {
