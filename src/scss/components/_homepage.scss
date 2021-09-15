@@ -224,6 +224,9 @@
     font-size: 20px;
     line-height: 30px;
     text-decoration: none;
+    position: relative;
+
+    @extend .link-hover-bottom
   }
 }
 
@@ -440,8 +443,8 @@
   input,
   textarea,
   select {
-    height: 44px;
-    width: 575px;
+    height: 44px !important;
+    width: 575px !important;
     border-radius: 0;
     display: flex;
     justify-content: center;
@@ -449,23 +452,24 @@
     padding: 0 15px;
 
     @media only screen and (max-width: $xl) {
-      width: 100%;
+      width: 100% !important;
     }
   }
 
   .form-floating {
     & > label {
       padding: 10px;
+      top: -3px;
     }
   }
 
   .row {
     input,
     select {
-      width: 278px;
+      width: 278px !important;
 
       @media only screen and (max-width: $xl) {
-        width: 100%;
+        width: 100% !important;
       }
     }
 

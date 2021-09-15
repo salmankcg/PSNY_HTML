@@ -117,13 +117,13 @@ a {
 
 .link-hover-top {
     &::before {
-        top: 0;
+        top: -5px;
     }
 }
 
 .link-hover-bottom {
     &::before {
-        bottom: 0;
+        bottom: -5px;
     }
 }
 

@@ -110,8 +110,9 @@ a:hover {
   color: #0C3046;
 }
 
-.link-hover-top::before, .navbar-light .navbar-nav .nav-link::before,
-.link-hover-bottom::before {
+.link-hover-top::before,
+.link-hover-bottom::before,
+.categories__inner a::before {
   content: "";
   position: absolute;
   width: 0;
@@ -119,18 +120,19 @@ a:hover {
   background: #0e3751;
   transition: all 0.5s ease;
 }
-.link-hover-top:hover::before, .navbar-light .navbar-nav .nav-link:hover::before,
-.link-hover-bottom:hover::before {
+.link-hover-top:hover::before,
+.link-hover-bottom:hover::before,
+.categories__inner a:hover::before {
   width: 100%;
   transition: all 0.5s ease;
 }
 
-.link-hover-top::before, .navbar-light .navbar-nav .nav-link::before {
-  top: 0;
+.link-hover-top::before {
+  top: -5px;
 }
 
-.link-hover-bottom::before {
-  bottom: 0;
+.link-hover-bottom::before, .categories__inner a::before {
+  bottom: -5px;
 }
 
 .btn-hover-primary::before, .button-primary::before, .btn-hover-primary::after, .button-primary::after,
@@ -185,11 +187,13 @@ a:hover {
 
 header {
   z-index: 999;
+  transition: all 0.5s ease-in-out;
 }
 
 .header-sticky {
   background-color: white;
   box-shadow: #d0d0d0 0px 0px 15px 0px;
+  transition: all 0.2s ease-in-out;
 }
 
 .navbar-brand {
@@ -224,6 +228,22 @@ header {
 .navbar-light .navbar-nav .nav-link {
   padding: 0.5rem 0;
   position: relative;
+  transition: all 0.3s ease-in-out;
+  font-size: 14px;
+  line-height: 16px;
+  color: #0C3046;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #0C3046;
+  opacity: 0.5;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+}
+
+.header-text {
+  font-size: 14px;
+  line-height: 16px;
+  color: #0C3046;
 }
 
 .footer {
@@ -586,6 +606,7 @@ header {
   font-size: 20px;
   line-height: 30px;
   text-decoration: none;
+  position: relative;
 }
 
 .slides {
@@ -796,8 +817,8 @@ header {
 .form input,
 .form textarea,
 .form select {
-  height: 44px;
-  width: 575px;
+  height: 44px !important;
+  width: 575px !important;
   border-radius: 0;
   display: flex;
   justify-content: center;
@@ -808,20 +829,21 @@ header {
   .form input,
 .form textarea,
 .form select {
-    width: 100%;
+    width: 100% !important;
   }
 }
 .form .form-floating > label {
   padding: 10px;
+  top: -3px;
 }
 .form .row input,
 .form .row select {
-  width: 278px;
+  width: 278px !important;
 }
 @media only screen and (max-width: 1400px) {
   .form .row input,
 .form .row select {
-    width: 100%;
+    width: 100% !important;
   }
 }
 @media only screen and (max-width: 767px) {

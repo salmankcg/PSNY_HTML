@@ -1,3 +1,5 @@
+import 'bootstrap';
+
 new WOW().init();
 
 const header = document.querySelector('.header');
@@ -7,7 +9,7 @@ window.onscroll = function() {
 };
 
 function scrollFunction() {
-  if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
     header.classList.add('header-sticky');
   } 
   else {
