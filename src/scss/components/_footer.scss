@@ -1,6 +1,10 @@
 .footer {
     margin-top: 134px;
     padding: 142px 0 49px;
+
+    @media only screen and (max-width: $sm) {
+
+    }
 }
 
 .footer__logo {
@@ -75,6 +79,10 @@
         padding-bottom: 21px;
         margin: 0 24px 16px;
         padding-left: 14px;
+
+        @media only screen and (max-width: $sm) {
+            font-size: 22px;
+        }
     }
 
     .socials {
@@ -97,10 +105,15 @@
             display: flex;
             padding: 0 43px;
             padding-left: 18px;
+            margin-top: 5px;
 
             a {
                 margin-right: 44px;
                 text-decoration: none;
+
+                @media only screen and (max-width: $sm) {
+                    margin-right: 30px;
+                }
             }
         }
     }
@@ -128,6 +141,10 @@
             text-decoration: none;
             color: $wheat;
             padding: 5px 39px;
+
+            @media only screen and (min-width: $sm) {
+                font-size: 16px;
+            }
         }
     }
 }
@@ -138,14 +155,15 @@
     
     p {
         font-family: 'Futura';
-        font-size: 11px;
+        font-size: 14px;
         line-height: 13px;
         color: $geyser;
+        margin-bottom: 0;
     }
 
     a {
         font-family: 'Futura';
-        font-size: 11px;
+        font-size: 14px;
         line-height: 13px;
         color: $geyser;
         text-decoration: none;

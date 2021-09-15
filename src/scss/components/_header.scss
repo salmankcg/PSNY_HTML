@@ -1,14 +1,22 @@
 header {
     z-index: 999;
+    @include transition(all 0.5s ease-in-out);
 }
 
 .header-sticky {
     background-color: white;
     box-shadow: rgb(208, 208, 208) 0px 0px 15px 0px;
+    @include transition(all 0.2s ease-in-out);
 }
 
 .navbar-brand {
     margin-right: 7px;
+
+    img {
+        @media only screen and (max-width: $sm) {
+            max-width: 80%;
+        }
+    }
 } 
 
 .brand-text {
@@ -38,6 +46,21 @@ header {
 .navbar-light .navbar-nav .nav-link {
     padding: .5rem 0;
     position: relative;
+    @include transition(all 0.3s ease-in-out);
+    font-size: 14px;
+    line-height: 16px;
+    color: $elephant;
 
-    @extend .link-hover-bottom;
+    &:hover {
+        color: $elephant;
+        opacity: 0.5;
+        font-weight: bold;
+        @include transition(all 0.5s ease-in-out);
+    }
+}
+
+.header-text {
+    font-size: 14px;
+    line-height: 16px;
+    color: $elephant;
 }
