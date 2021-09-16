@@ -1,0 +1,161 @@
+.team-banner {
+    background-image: url(/assets/images/team/BANNER.jpg);
+    padding-bottom: 115px;
+    background-size: 100%;
+
+    @media only screen and (max-width: $xl) {
+        padding-bottom: 75px;
+    }
+
+    @media only screen and (max-width: $sm) {
+        padding-bottom: 35px;
+    }
+
+    .subpage-banner__title {
+        @media only screen and (max-width: $lg) {
+            padding-top: 45px;
+        }
+    }
+}
+
+.team {
+    .container {
+        padding: 100px 50px 95px;
+        background-color: $vistaWhite;
+
+        &:last-of-type {
+            border: 0px;
+        }
+    }
+
+    .team-row {
+        padding-bottom: 51px;
+        margin-bottom: 51px;
+        border-bottom: 2px solid $wheat;
+    }
+}
+
+.team__image {
+    img {
+        width: 379px;
+        height: 379px;
+        padding: 19px;
+        background-color: white;
+        border: 2px solid $wheat;
+
+        @media only screen and (max-width: $md) {
+            margin: 0 auto 25px;
+        }
+    }
+}
+
+.team__inner {
+    .name {
+        font-family: TTNorms;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 36px;
+        line-height: 42px;
+
+        @media only screen and (max-width: $sm) {
+            font-size: 22px;
+        }
+    }
+
+    .designation {
+        font-family: TTNorms;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 24px;
+
+        @media only screen and (max-width: $sm) {
+            font-size: 14px;
+            line-height: normal;
+        }
+    }
+
+    .experties {
+        font-family: TTNorms;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 10px;
+
+        @media only screen and (max-width: $sm) {
+            font-size: 16px;
+            line-height: 150%;
+        }
+    }
+
+    .description {
+        font-family: TTNorms;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 0;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+}
+
+.team__btns {
+    display: flex;
+    justify-content: space-between;
+    width: max-content;
+    position: relative;
+    width: 522px;
+    border-top: 1px solid $wheat;
+    padding-top: 30px;
+    
+    @media only screen and (max-width: $sm) {
+        width: 100%;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    &::after {
+        position: absolute;
+        content: '';
+        width: 1px;
+        height: calc(100% - 30px);
+        background-color: $wheat;
+        left: 50%;
+
+        @media only screen and (max-width: $sm) {
+            width: 100%;
+            height: 1px;
+            left: 0;
+            top: calc(50% + 15px);
+        }
+    }
+
+    button {
+        @include linear-gradient(270.23deg, #F1CDA8 0.19%, #F6DEC6 99.82%);
+        width: 222px;
+        font-size: 20px;
+        line-height: 24px;
+        height: 65px;
+        padding: 0;
+
+        @media only screen and (max-width: $sm) {
+            margin: 0 auto;
+            width: 200px;
+            height: 55px;
+            font-size: 16px;
+        }
+    }
+}
+
+.team-contact-form {
+    margin-top: 174px;
+
+    @media only screen and (max-width: $sm) {
+        margin-top: 80px;
+    }
+}

@@ -81,7 +81,7 @@
         padding-left: 14px;
 
         @media only screen and (max-width: $sm) {
-            font-size: 22px;
+            font-size: 18px;
         }
     }
 
@@ -140,10 +140,10 @@
             text-transform: uppercase;
             text-decoration: none;
             color: $wheat;
-            padding: 5px 39px;
+            padding: 5px 0 0 39px;
 
-            @media only screen and (min-width: $sm) {
-                font-size: 16px;
+            @media only screen and (max-width: $sm) {
+                font-size: 18px;
             }
         }
     }

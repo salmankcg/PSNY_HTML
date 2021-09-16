@@ -156,7 +156,8 @@ a:hover {
 
 .link-hover-top::before,
 .link-hover-bottom::before,
-.categories__inner a::before {
+.categories__inner a::before,
+.active::before {
   content: "";
   position: absolute;
   width: 0;
@@ -166,9 +167,18 @@ a:hover {
 }
 .link-hover-top:hover::before,
 .link-hover-bottom:hover::before,
-.categories__inner a:hover::before {
+.categories__inner a:hover::before,
+.active:hover::before {
   width: 100%;
   transition: all 0.5s ease;
+}
+
+.active {
+  position: relative;
+}
+.active::before {
+  width: 100%;
+  bottom: -5px;
 }
 
 .link-hover-top::before {
@@ -218,6 +228,10 @@ a:hover {
   transition: width 0.2s 0.15s ease-out, height 0.15s ease-in, opacity 0s;
 }
 
+.btn-hover-secondary:hover, .button-secondary:hover {
+  color: #fff;
+}
+
 .btn-hover-secondary::before, .button-secondary::before {
   border-top: 3px solid #F4D1AE;
   border-left: 3px solid #F4D1AE;
@@ -227,6 +241,24 @@ a:hover {
   right: -15px;
   border-bottom: 3px solid #F4D1AE;
   border-right: 3px solid #F4D1AE;
+}
+
+.subpage-banner__title {
+  font-family: TTNorms;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 90px;
+  line-height: 90px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  padding-top: 166px;
+}
+@media only screen and (max-width: 767px) {
+  .subpage-banner__title {
+    padding-top: 30px;
+    font-size: 28px;
+    line-height: normal;
+  }
 }
 
 header {
@@ -436,7 +468,7 @@ header {
 }
 @media only screen and (max-width: 767px) {
   .footer__socials p {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 .footer__socials .socials {
@@ -488,11 +520,11 @@ header {
   text-transform: uppercase;
   text-decoration: none;
   color: #F4D1AE;
-  padding: 5px 39px;
+  padding: 5px 0 0 39px;
 }
-@media only screen and (min-width: 767px) {
+@media only screen and (max-width: 767px) {
   .footer__socials .mail-info a {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -1101,6 +1133,9 @@ header {
   justify-content: center;
   align-items: center;
   padding: 0 15px;
+  font-family: futura;
+  font-size: 14px;
+  line-height: 16px;
 }
 @media only screen and (max-width: 1400px) {
   .form input,
@@ -1109,6 +1144,11 @@ header {
     width: 100% !important;
   }
 }
+.form option {
+  font-family: futura;
+  font-size: 14px;
+  line-height: 16px;
+}
 .form .form-floating > label {
   padding: 10px;
   top: -3px;
@@ -1116,6 +1156,7 @@ header {
 .form .row input,
 .form .row select {
   width: 278px !important;
+  padding: 10px;
 }
 @media only screen and (max-width: 1400px) {
   .form .row input,
@@ -1136,5 +1177,179 @@ header {
   .form-img {
     margin-top: 35px;
     width: 100%;
+  }
+}
+
+.form-btn {
+  margin-top: 18px;
+  display: flex;
+  justify-content: flex-end;
+}
+.form-btn button {
+  width: 136px;
+  height: 64px;
+  padding: 0;
+}
+
+.team-banner {
+  background-image: url(/assets/images/team/BANNER.jpg);
+  padding-bottom: 115px;
+  background-size: 100%;
+}
+@media only screen and (max-width: 1400px) {
+  .team-banner {
+    padding-bottom: 75px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .team-banner {
+    padding-bottom: 35px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .team-banner .subpage-banner__title {
+    padding-top: 45px;
+  }
+}
+
+.team .container {
+  padding: 100px 50px 95px;
+  background-color: #FAF6F2;
+}
+.team .container:last-of-type {
+  border: 0px;
+}
+.team .team-row {
+  padding-bottom: 51px;
+  margin-bottom: 51px;
+  border-bottom: 2px solid #F4D1AE;
+}
+
+.team__image img {
+  width: 379px;
+  height: 379px;
+  padding: 19px;
+  background-color: white;
+  border: 2px solid #F4D1AE;
+}
+@media only screen and (max-width: 991px) {
+  .team__image img {
+    margin: 0 auto 25px;
+  }
+}
+
+.team__inner .name {
+  font-family: TTNorms;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 42px;
+}
+@media only screen and (max-width: 767px) {
+  .team__inner .name {
+    font-size: 22px;
+  }
+}
+.team__inner .designation {
+  font-family: TTNorms;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 24px;
+}
+@media only screen and (max-width: 767px) {
+  .team__inner .designation {
+    font-size: 14px;
+    line-height: normal;
+  }
+}
+.team__inner .experties {
+  font-family: TTNorms;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 767px) {
+  .team__inner .experties {
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+.team__inner .description {
+  font-family: TTNorms;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 0;
+}
+.team__inner ul {
+  padding-left: 20px;
+}
+
+.team__btns {
+  display: flex;
+  justify-content: space-between;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  position: relative;
+  width: 522px;
+  border-top: 1px solid #F4D1AE;
+  padding-top: 30px;
+}
+@media only screen and (max-width: 767px) {
+  .team__btns {
+    width: 100%;
+    flex-direction: column;
+    gap: 60px;
+  }
+}
+.team__btns::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: calc(100% - 30px);
+  background-color: #F4D1AE;
+  left: 50%;
+}
+@media only screen and (max-width: 767px) {
+  .team__btns::after {
+    width: 100%;
+    height: 1px;
+    left: 0;
+    top: calc(50% + 15px);
+  }
+}
+.team__btns button {
+  -webkit-background: linear-gradient(270.23deg, #F1CDA8 0.19%, #F6DEC6 99.82%);
+  -moz-background: linear-gradient(270.23deg, #F1CDA8 0.19%, #F6DEC6 99.82%);
+  -ms-background: linear-gradient(270.23deg, #F1CDA8 0.19%, #F6DEC6 99.82%);
+  -o-background: linear-gradient(270.23deg, #F1CDA8 0.19%, #F6DEC6 99.82%);
+  background: linear-gradient(270.23deg, #F1CDA8 0.19%, #F6DEC6 99.82%);
+  width: 222px;
+  font-size: 20px;
+  line-height: 24px;
+  height: 65px;
+  padding: 0;
+}
+@media only screen and (max-width: 767px) {
+  .team__btns button {
+    margin: 0 auto;
+    width: 200px;
+    height: 55px;
+    font-size: 16px;
+  }
+}
+
+.team-contact-form {
+  margin-top: 174px;
+}
+@media only screen and (max-width: 767px) {
+  .team-contact-form {
+    margin-top: 80px;
   }
 }

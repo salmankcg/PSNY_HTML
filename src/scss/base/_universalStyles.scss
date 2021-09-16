@@ -134,7 +134,8 @@ a {
 }
 
 .link-hover-top,
-.link-hover-bottom {
+.link-hover-bottom,
+.active {
     &::before {
         content: '';
         position: absolute;
@@ -149,6 +150,15 @@ a {
             width: 100%;
             transition: all 0.5s ease;
         }
+    }
+}
+
+.active {
+    position: relative;
+
+    &::before {
+        width: 100%;
+        bottom: -5px;
     }
 }
 
@@ -200,6 +210,12 @@ a {
 }
 
 .btn-hover-secondary {
+    &:hover {
+        color: #fff;
+    }
+}
+
+.btn-hover-secondary {
     &::before {
         border-top: 3px solid $wheat;
         border-left: 3px solid $wheat;
@@ -210,5 +226,22 @@ a {
         right: -15px;
         border-bottom: 3px solid $wheat;
         border-right: 3px solid $wheat;
+    }
+}
+
+.subpage-banner__title {
+    font-family: TTNorms;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 90px;
+    line-height: 90px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    padding-top: 166px;
+
+    @media only screen and (max-width: $sm) {
+        padding-top: 30px;
+        font-size: 28px;
+        line-height: normal;
     }
 }
