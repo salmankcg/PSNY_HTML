@@ -22,6 +22,11 @@
     .container {
         padding: 100px 50px 95px;
         background-color: $vistaWhite;
+        margin: 0 0 0 auto;
+
+        @media only screen and (max-width: $lg) {
+            margin: 0 auto;
+        }
 
         &:last-of-type {
             border: 0px;
