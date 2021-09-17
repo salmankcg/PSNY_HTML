@@ -233,11 +233,15 @@ a {
     font-family: TTNorms;
     font-style: normal;
     font-weight: 300;
-    font-size: 90px;
+    font-size: 72px;
     line-height: 90px;
     letter-spacing: 0.24em;
     text-transform: uppercase;
     padding-top: 166px;
+
+    @media only screen and (max-width: $lg) {
+        font-size: 50px;
+    }
 
     @media only screen and (max-width: $sm) {
         padding-top: 30px;

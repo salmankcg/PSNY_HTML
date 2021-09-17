@@ -6,10 +6,11 @@
 
         @media only screen and (max-width: $lg) {
             padding-top: 100px;
+            margin: 0 auto;
         }
 
-        @media only screen and (max-width: $lg) {
-            margin: 0 auto;
+        @media only screen and (max-width: $md) {
+            padding: 60px 30px;
         }
 
         &:last-of-type {

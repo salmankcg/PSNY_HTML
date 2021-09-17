@@ -247,11 +247,16 @@ a:hover {
   font-family: TTNorms;
   font-style: normal;
   font-weight: 300;
-  font-size: 90px;
+  font-size: 72px;
   line-height: 90px;
   letter-spacing: 0.24em;
   text-transform: uppercase;
   padding-top: 166px;
+}
+@media only screen and (max-width: 1200px) {
+  .subpage-banner__title {
+    font-size: 50px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .subpage-banner__title {
@@ -1254,11 +1259,12 @@ header {
 @media only screen and (max-width: 1200px) {
   .team .container {
     padding-top: 100px;
+    margin: 0 auto;
   }
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 991px) {
   .team .container {
-    margin: 0 auto;
+    padding: 60px 30px;
   }
 }
 .team .container:last-of-type {
@@ -1350,7 +1356,7 @@ header {
   .team__btns {
     width: 100%;
     flex-direction: column;
-    gap: 60px;
+    gap: 30px;
   }
 }
 .team__btns::after {
@@ -1363,10 +1369,7 @@ header {
 }
 @media only screen and (max-width: 767px) {
   .team__btns::after {
-    width: 100%;
-    height: 1px;
-    left: 0;
-    top: calc(50% + 15px);
+    display: none;
   }
 }
 .team__btns button {
@@ -1407,11 +1410,12 @@ header {
 @media only screen and (max-width: 1200px) {
   .gallery .container {
     padding-top: 100px;
+    margin: 0 auto;
   }
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 991px) {
   .gallery .container {
-    margin: 0 auto;
+    padding: 60px 30px;
   }
 }
 .gallery .container:last-of-type {
@@ -1441,4 +1445,88 @@ header {
   .gallery__image:last-of-type {
     margin-bottom: 0;
   }
+}
+
+.philosophy-banner {
+  background-image: url(/assets/images/philosophy/banner.png);
+  padding-bottom: 250px;
+  background-size: 122%;
+}
+@media only screen and (max-width: 1200px) {
+  .philosophy-banner {
+    padding-bottom: 75px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .philosophy-banner {
+    padding-bottom: 35px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .philosophy-banner .subpage-banner__title {
+    padding-top: 45px;
+  }
+}
+
+.philosophy .container {
+  padding: 200px 50px 95px;
+  background-color: #FAF6F2;
+  margin: 0 0 0 auto;
+}
+@media only screen and (max-width: 1200px) {
+  .philosophy .container {
+    padding-top: 100px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .philosophy .container {
+    padding: 60px 30px;
+  }
+}
+
+.philosophy-inner .title {
+  font-family: TTNorms;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 59px;
+  margin-bottom: 31px;
+  color: #0C3046;
+}
+@media only screen and (max-width: 767px) {
+  .philosophy-inner .title {
+    font-size: 30px;
+    line-height: normal;
+  }
+}
+.philosophy-inner .description,
+.philosophy-inner div {
+  font-family: TTNorms;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 46px;
+  width: 837px;
+  color: #0C3046;
+}
+@media only screen and (max-width: 991px) {
+  .philosophy-inner .description,
+.philosophy-inner div {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .philosophy-inner .description,
+.philosophy-inner div {
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+.philosophy-inner div {
+  margin-bottom: 100px;
+  margin-top: 20px;
+  padding-top: 43px;
+  border-top: 1px solid #F4D1AE;
 }

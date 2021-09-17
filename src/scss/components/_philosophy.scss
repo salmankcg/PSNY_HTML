@@ -1,0 +1,81 @@
+.philosophy-banner {
+    background-image: url(/assets/images/philosophy/banner.png);
+    padding-bottom: 250px;
+    background-size: 122%;
+
+    @media only screen and (max-width: $lg) {
+        padding-bottom: 75px;
+    }
+
+    @media only screen and (max-width: $sm) {
+        padding-bottom: 35px;
+    }
+
+    .subpage-banner__title {
+        @media only screen and (max-width: $lg) {
+            padding-top: 45px;
+        }
+    }
+}
+
+.philosophy {
+    .container {
+        padding: 200px 50px 95px;
+        background-color: $vistaWhite;
+        margin: 0 0 0 auto;
+
+        @media only screen and (max-width: $lg) {
+            padding-top: 100px;
+            margin: 0 auto;
+        }
+
+        @media only screen and (max-width: $md) {
+            padding: 60px 30px;
+        }
+    }
+}
+
+.philosophy-inner {
+    .title {
+        font-family: TTNorms;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 50px;
+        line-height: 59px;
+        margin-bottom: 31px;
+        color: $elephant;
+
+        @media only screen and (max-width: $sm) {
+            font-size: 30px;
+            line-height: normal;
+        }
+    }
+
+    .description,
+    div {
+        font-family: TTNorms;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 46px;
+        width: 837px;
+        color: $elephant;
+
+        @media only screen and (max-width: $md) {
+            width: 100%;
+        }   
+
+        @media only screen and (max-width: $sm) {
+            font-size: 16px;
+            line-height: 150%;
+        }
+    }
+
+    div {
+        margin-bottom: 100px;
+        margin-top: 20px;
+        padding-top: 43px;
+        border-top: 1px solid $wheat;
+    }
+}
