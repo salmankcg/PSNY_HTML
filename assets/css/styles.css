@@ -261,6 +261,14 @@ a:hover {
   }
 }
 
+.img-hover, .gallery__image {
+  transition: all 0.5s ease;
+}
+.img-hover:hover, .gallery__image:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease;
+}
+
 header {
   z-index: 999;
   transition: all 0.5s ease-in-out;
@@ -1235,6 +1243,7 @@ header {
   font-size: 20px;
   line-height: 30px;
   color: #0C3046;
+  margin-left: -20px;
 }
 
 .team .container {
@@ -1387,5 +1396,49 @@ header {
 @media only screen and (max-width: 767px) {
   .team-contact-form {
     margin-top: 80px;
+  }
+}
+
+.gallery .container {
+  padding: 200px 50px 95px;
+  background-color: #FAF6F2;
+  margin: 0 0 0 auto;
+}
+@media only screen and (max-width: 1200px) {
+  .gallery .container {
+    padding-top: 100px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .gallery .container {
+    margin: 0 auto;
+  }
+}
+.gallery .container:last-of-type {
+  border: 0px;
+}
+.gallery .row {
+  margin-bottom: 50px;
+}
+@media only screen and (max-width: 991px) {
+  .gallery .row {
+    margin-bottom: 0;
+  }
+}
+
+.gallery__image {
+  padding: 19px;
+  background-color: white;
+  border: 2px solid #F4D1AE;
+}
+@media only screen and (max-width: 991px) {
+  .gallery__image {
+    margin: 0 auto 35px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .gallery__image:last-of-type {
+    margin-bottom: 0;
   }
 }

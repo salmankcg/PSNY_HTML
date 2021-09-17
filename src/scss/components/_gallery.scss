@@ -1,0 +1,46 @@
+.gallery {
+    .container {
+        padding: 200px 50px 95px;
+        background-color: $vistaWhite;
+        margin: 0 0 0 auto;
+
+        @media only screen and (max-width: $lg) {
+            padding-top: 100px;
+        }
+
+        @media only screen and (max-width: $lg) {
+            margin: 0 auto;
+        }
+
+        &:last-of-type {
+            border: 0px;
+        }
+    }
+
+    .row {
+        margin-bottom: 50px;
+
+        @media only screen and (max-width: $md) {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.gallery__image {
+    padding: 19px;
+    background-color: white;
+    border: 2px solid $wheat;
+
+    @extend .img-hover;
+
+    @media only screen and (max-width: $md) {
+        margin: 0 auto 35px;
+        width: 100%;
+    }
+
+    &:last-of-type {
+        @media only screen and (max-width: $md) {
+            margin-bottom: 0;
+        }
+    }
+}
