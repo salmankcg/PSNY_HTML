@@ -1194,10 +1194,10 @@ header {
 
 .team-banner {
   background-image: url(/assets/images/team/BANNER.jpg);
-  padding-bottom: 115px;
+  padding-bottom: 250px;
   background-size: 100%;
 }
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1200px) {
   .team-banner {
     padding-bottom: 75px;
   }
@@ -1213,10 +1213,39 @@ header {
   }
 }
 
+.banner-bottom {
+  position: relative;
+}
+@media only screen and (max-width: 1200px) {
+  .banner-bottom {
+    display: none;
+  }
+}
+
+.banner-bottom__inner {
+  width: 736px;
+  height: 245px;
+  background: #F4F4F4;
+  position: absolute;
+  top: -125px;
+  padding: 100px 92px 80px 98px;
+  font-family: TTNorms;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  color: #0C3046;
+}
+
 .team .container {
-  padding: 100px 50px 95px;
+  padding: 200px 50px 95px;
   background-color: #FAF6F2;
   margin: 0 0 0 auto;
+}
+@media only screen and (max-width: 1200px) {
+  .team .container {
+    padding-top: 100px;
+  }
 }
 @media only screen and (max-width: 1200px) {
   .team .container {

@@ -1,9 +1,9 @@
 .team-banner {
     background-image: url(/assets/images/team/BANNER.jpg);
-    padding-bottom: 115px;
+    padding-bottom: 250px;
     background-size: 100%;
 
-    @media only screen and (max-width: $xl) {
+    @media only screen and (max-width: $lg) {
         padding-bottom: 75px;
     }
 
@@ -18,11 +18,38 @@
     }
 }
 
+.banner-bottom {
+    position: relative;
+
+    @media only screen and (max-width: $lg) {
+        display: none;
+    }
+}
+
+.banner-bottom__inner {
+    width: 736px;
+    height: 245px;
+    background: #F4F4F4;
+    position: absolute;
+    top: -125px;
+    padding: 100px 92px 80px 98px;
+    font-family: TTNorms;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    color: $elephant;
+}
+
 .team {
     .container {
-        padding: 100px 50px 95px;
+        padding: 200px 50px 95px;
         background-color: $vistaWhite;
         margin: 0 0 0 auto;
+
+        @media only screen and (max-width: $lg) {
+            padding-top: 100px;
+        }
 
         @media only screen and (max-width: $lg) {
             margin: 0 auto;
