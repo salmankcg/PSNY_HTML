@@ -57,7 +57,8 @@ h3 {
 }
 
 p,
-p.secondary {
+p.secondary,
+div {
   font-family: "TTNorms";
   font-weight: 300;
   font-size: 20px;
@@ -67,18 +68,23 @@ p.secondary {
 }
 @media only screen and (max-width: 991px) {
   p,
-p.secondary {
+p.secondary,
+div {
     font-size: 16px;
     line-height: 150%;
   }
 }
 
-.p-secondary, .form p, .categories__inner p {
+div {
+  margin-bottom: 0;
+}
+
+.p-secondary, .categories__inner p, .form p {
   font-size: 22px;
   line-height: 26px;
 }
 @media only screen and (max-width: 991px) {
-  .p-secondary, .form p, .categories__inner p {
+  .p-secondary, .categories__inner p, .form p {
     font-size: 18px;
     line-height: 150%;
   }
@@ -269,29 +275,6 @@ span {
   border-right: 3px solid #F4D1AE;
 }
 
-.subpage-banner__title {
-  font-family: TTNorms;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 72px;
-  line-height: 90px;
-  letter-spacing: 0.24em;
-  text-transform: uppercase;
-  padding-top: 166px;
-}
-@media only screen and (max-width: 1200px) {
-  .subpage-banner__title {
-    font-size: 50px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .subpage-banner__title {
-    padding-top: 30px;
-    font-size: 28px;
-    line-height: normal;
-  }
-}
-
 .img-hover, .gallery__image {
   transition: all 0.5s ease;
 }
@@ -301,19 +284,19 @@ span {
 }
 
 .banner,
-.banner-subpage {
+.banner__subpage {
   padding: 130px 0 283px;
   background-repeat: no-repeat;
 }
 @media only screen and (max-width: 767px) {
   .banner,
-.banner-subpage {
+.banner__subpage {
     padding: 95px 0 100px;
     background-size: cover;
   }
 }
 .banner h2,
-.banner-subpage h2 {
+.banner__subpage h2 {
   padding-top: 84px;
   font-size: 72px;
   line-height: 90px;
@@ -325,21 +308,21 @@ span {
 }
 @media only screen and (max-width: 991px) {
   .banner h2,
-.banner-subpage h2 {
+.banner__subpage h2 {
     padding-top: 30px;
     font-size: 28px;
     line-height: normal;
   }
 }
 .banner p,
-.banner-subpage p {
+.banner__subpage p {
   font-size: 30px;
   line-height: 35px;
   margin-bottom: 62px;
 }
 @media only screen and (max-width: 767px) {
   .banner p,
-.banner-subpage p {
+.banner__subpage p {
     font-size: 20px;
     line-height: normal;
     margin-bottom: 30px;
@@ -449,6 +432,194 @@ span {
     height: 55px;
     font-size: 16px;
   }
+}
+
+.contact-form {
+  margin-top: 34px;
+  margin-right: 0;
+  margin-left: auto;
+}
+@media only screen and (max-width: 991px) {
+  .contact-form {
+    margin: 0px auto;
+  }
+}
+.contact-form img {
+  width: 500px;
+}
+@media only screen and (max-width: 1200px) {
+  .contact-form img {
+    margin-top: 35px;
+    width: 100%;
+  }
+}
+
+.contact-form__inner {
+  padding: 42px 64px;
+  border: 1px solid #F4D1AE;
+}
+@media only screen and (max-width: 767px) {
+  .contact-form__inner {
+    padding: 35px;
+  }
+}
+.contact-form__inner .booking {
+  margin-bottom: 41px;
+  padding-bottom: 43px;
+  display: flex;
+  align-items: center;
+}
+.contact-form__inner .booking::before {
+  position: absolute;
+  content: "";
+  width: calc(100% - 20px);
+  background-color: #F4D1AE;
+  height: 1px;
+  bottom: 0;
+  left: 10px;
+}
+.contact-form__inner h2 {
+  font-family: "Audrey";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 0.185em;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 991px) {
+  .contact-form__inner h2 {
+    padding-bottom: 30px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contact-form__inner h2 {
+    padding-bottom: 20px;
+    font-size: 22px;
+    line-height: normal;
+  }
+}
+
+.contact-form__info {
+  width: 540px;
+  margin-right: 0;
+  margin-left: auto;
+}
+@media only screen and (max-width: 991px) {
+  .contact-form__info {
+    width: 100%;
+  }
+}
+.contact-form__info::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 50px;
+  background: #F4D1AE;
+  left: 54%;
+  top: 5px;
+}
+@media only screen and (max-width: 991px) {
+  .contact-form__info::before {
+    left: 55%;
+  }
+}
+.contact-form__info > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (max-width: 991px) {
+  .contact-form__info > div {
+    flex-direction: column;
+  }
+}
+.contact-form__info button {
+  background: linear-gradient(270.23deg, #f1cda8 0.19%, #f6dec6 99.82%);
+}
+@media only screen and (max-width: 991px) {
+  .contact-form__info button {
+    margin-bottom: 20px;
+  }
+}
+.contact-form__info span {
+  font-size: 15px;
+  line-height: 18px;
+}
+@media only screen and (max-width: 991px) {
+  .contact-form__info span {
+    font-size: 14px;
+    text-align: center;
+    display: block;
+  }
+}
+.contact-form__info p {
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.145em;
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 991px) {
+  .contact-form__info p {
+    text-align: center;
+    margin-top: 15px;
+  }
+}
+
+.form input,
+.form textarea,
+.form select {
+  height: 44px !important;
+  width: 575px !important;
+  border-radius: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+  font-family: futura;
+  font-size: 14px;
+  line-height: 16px;
+}
+@media only screen and (max-width: 1400px) {
+  .form input,
+.form textarea,
+.form select {
+    width: 100% !important;
+  }
+}
+.form option {
+  font-family: futura;
+  font-size: 14px;
+  line-height: 16px;
+}
+.form .form-floating > label {
+  padding: 10px;
+  top: -3px;
+}
+.form .row input,
+.form .row select {
+  width: 278px !important;
+  padding: 10px;
+}
+@media only screen and (max-width: 1400px) {
+  .form .row input,
+.form .row select {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .form .row select {
+    margin-bottom: 16px;
+  }
+}
+.form button {
+  width: 136px;
+  height: 64px;
+  margin: 18px 0 0 auto;
+  display: block;
+  padding: 0;
 }
 
 header {
@@ -1081,195 +1252,6 @@ header {
   }
 }
 
-.contact-form {
-  margin-top: 34px;
-  margin-right: 0;
-  margin-left: auto;
-}
-@media only screen and (max-width: 991px) {
-  .contact-form {
-    margin: 0px auto;
-  }
-}
-.contact-form img {
-  width: 500px;
-}
-@media only screen and (max-width: 1200px) {
-  .contact-form img {
-    margin-top: 35px;
-    width: 100%;
-  }
-}
-
-.contact-form__inner {
-  padding: 42px 64px;
-  border: 1px solid #F4D1AE;
-}
-@media only screen and (max-width: 767px) {
-  .contact-form__inner {
-    padding: 35px;
-  }
-}
-.contact-form__inner .booking {
-  margin-bottom: 41px;
-  padding-bottom: 43px;
-}
-.contact-form__inner .booking::before {
-  position: absolute;
-  content: "";
-  width: calc(100% - 20px);
-  background-color: #F4D1AE;
-  height: 1px;
-  bottom: 0;
-  left: 10px;
-}
-.contact-form__inner h2 {
-  font-family: "Audrey";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 25px;
-  line-height: 30px;
-  letter-spacing: 0.185em;
-  text-transform: uppercase;
-}
-@media only screen and (max-width: 991px) {
-  .contact-form__inner h2 {
-    padding-bottom: 30px;
-    text-align: center;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .contact-form__inner h2 {
-    padding-bottom: 20px;
-    font-size: 22px;
-    line-height: normal;
-  }
-}
-
-.contact-form__info {
-  width: 540px;
-  margin-right: 0;
-  margin-left: auto;
-}
-@media only screen and (max-width: 991px) {
-  .contact-form__info {
-    width: 100%;
-  }
-}
-.contact-form__info::before {
-  position: absolute;
-  content: "";
-  width: 1px;
-  height: 50px;
-  background: #F4D1AE;
-  left: 54%;
-  top: 5px;
-}
-@media only screen and (max-width: 991px) {
-  .contact-form__info::before {
-    left: 55%;
-  }
-}
-.contact-form__info > div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-@media only screen and (max-width: 991px) {
-  .contact-form__info > div {
-    flex-direction: column;
-  }
-}
-.contact-form__info button {
-  -webkit-background: linear-gradient(270.23deg, #f1cda8 0.19%, #f6dec6 99.82%);
-  -moz-background: linear-gradient(270.23deg, #f1cda8 0.19%, #f6dec6 99.82%);
-  -ms-background: linear-gradient(270.23deg, #f1cda8 0.19%, #f6dec6 99.82%);
-  -o-background: linear-gradient(270.23deg, #f1cda8 0.19%, #f6dec6 99.82%);
-  background: linear-gradient(270.23deg, #f1cda8 0.19%, #f6dec6 99.82%);
-}
-@media only screen and (max-width: 991px) {
-  .contact-form__info button {
-    margin-bottom: 20px;
-  }
-}
-.contact-form__info span {
-  font-size: 15px;
-  line-height: 18px;
-}
-@media only screen and (max-width: 991px) {
-  .contact-form__info span {
-    font-size: 14px;
-    text-align: center;
-    display: block;
-  }
-}
-.contact-form__info p {
-  font-size: 22px;
-  line-height: 26px;
-  letter-spacing: 0.145em;
-  margin-bottom: 0;
-}
-@media only screen and (max-width: 991px) {
-  .contact-form__info p {
-    text-align: center;
-    margin-top: 15px;
-  }
-}
-
-.form input,
-.form textarea,
-.form select {
-  height: 44px !important;
-  width: 575px !important;
-  border-radius: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 15px;
-  font-family: futura;
-  font-size: 14px;
-  line-height: 16px;
-}
-@media only screen and (max-width: 1400px) {
-  .form input,
-.form textarea,
-.form select {
-    width: 100% !important;
-  }
-}
-.form option {
-  font-family: futura;
-  font-size: 14px;
-  line-height: 16px;
-}
-.form .form-floating > label {
-  padding: 10px;
-  top: -3px;
-}
-.form .row input,
-.form .row select {
-  width: 278px !important;
-  padding: 10px;
-}
-@media only screen and (max-width: 1400px) {
-  .form .row input,
-.form .row select {
-    width: 100% !important;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .form .row select {
-    margin-bottom: 16px;
-  }
-}
-.form button {
-  width: 136px;
-  height: 64px;
-  margin: 18px 0 0 auto;
-  display: block;
-  padding: 0;
-}
-
 .team-banner {
   background-image: url(/assets/images/team/BANNER.jpg);
 }
@@ -1433,25 +1415,17 @@ header {
 
 .philosophy-banner {
   background-image: url(/assets/images/philosophy/banner.png);
-  padding-bottom: 250px;
   background-size: 122%;
 }
-@media only screen and (max-width: 1200px) {
-  .philosophy-banner {
-    padding-bottom: 75px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .philosophy-banner {
-    padding-bottom: 35px;
-  }
-}
-@media only screen and (max-width: 1200px) {
-  .philosophy-banner .subpage-banner__title {
-    padding-top: 45px;
-  }
-}
 
+.philosophy {
+  margin-bottom: 150px;
+}
+@media only screen and (max-width: 991px) {
+  .philosophy {
+    margin-bottom: 80px;
+  }
+}
 .philosophy .container {
   padding: 200px 50px 95px;
   background-color: #FAF6F2;
@@ -1469,43 +1443,16 @@ header {
   }
 }
 
-.philosophy-inner .title {
-  font-family: TTNorms;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 50px;
-  line-height: 59px;
-  margin-bottom: 31px;
-  color: #0C3046;
+.philosophy-inner h2 {
+  margin-bottom: 25px;
 }
-@media only screen and (max-width: 767px) {
-  .philosophy-inner .title {
-    font-size: 30px;
-    line-height: normal;
-  }
-}
-.philosophy-inner .description,
-.philosophy-inner div {
-  font-family: TTNorms;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 30px;
+.philosophy-inner p {
   margin-bottom: 46px;
   width: 837px;
-  color: #0C3046;
 }
 @media only screen and (max-width: 991px) {
-  .philosophy-inner .description,
-.philosophy-inner div {
+  .philosophy-inner p {
     width: 100%;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .philosophy-inner .description,
-.philosophy-inner div {
-    font-size: 16px;
-    line-height: 150%;
   }
 }
 .philosophy-inner div {
