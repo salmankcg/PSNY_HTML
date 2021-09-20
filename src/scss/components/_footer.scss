@@ -1,6 +1,9 @@
 .footer {
     margin-top: 134px;
     padding: 142px 0 49px;
+    position: relative;
+
+    @extend .background-primary;
 
     @media only screen and (max-width: $sm) {
 
@@ -8,13 +11,16 @@
 }
 
 .footer__logo {
-    top: 0;
+    top: -10px;
     left: 50%;
     transform: translate(-50%, -25%);
 
-    p {
-        font-size: 12px;
-        line-height: 14px;
+    span {
+        display: block;
+        color: white;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: futura;
     }
 }
 
@@ -23,23 +29,23 @@
         color: $wheat;
         font-size: 14px;
         line-height: 17px;
+        text-transform: uppercase;
+        margin-bottom: 5px;
     }
+}
 
-    .menu {
-        ul {
-            padding: 0;
-            list-style: none;
+.menu {
+    ul {
+        padding: 0;
+        list-style: none;
 
-            li > a {
-                font-family: 'TTNorms';
-                font-style: normal;
-                font-weight: 300;
-                font-size: 16px;
-                line-height: 38px;
-                font-feature-settings: 'liga' off;
-                color: $geyser;
-                text-decoration: none;
-            }
+        li > a {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 38px;
+            color: $geyser;
+            text-decoration: none;
         }
     }
 }
@@ -110,6 +116,12 @@
             a {
                 margin-right: 44px;
                 text-decoration: none;
+                @include transition(all 0.3s ease-in-out);
+
+                &:hover {
+                    @include transition(all 0.3s ease-in-out);
+                    @include transform(scale(1.1))
+                }
 
                 @media only screen and (max-width: $sm) {
                     margin-right: 30px;
@@ -120,25 +132,20 @@
 
     .mail-info {
         span {
-            font-family: 'TTNorms';
-            font-style: normal;
-            font-weight: normal;
             font-size: 14px;
             line-height: 17px;
             text-transform: uppercase;
             color: $geyser;
-
+            display: block;
         }
 
         a {
-            font-family: 'TTNorms';
             font-style: normal;
             font-weight: 300;
             font-size: 22px;
             line-height: 26px;
             letter-spacing: 0.145em;
             text-transform: uppercase;
-            text-decoration: none;
             color: $wheat;
             padding: 5px 0 0 39px;
 
@@ -154,7 +161,6 @@
     color: $geyser;
     
     p {
-        font-family: 'Futura';
         font-size: 14px;
         line-height: 13px;
         color: $geyser;

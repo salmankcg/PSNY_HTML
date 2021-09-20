@@ -1,64 +1,6 @@
-.banner {
-  padding: 130px 0 283px;
+.homepage-banner {
   background: url(/assets/images/home/banner.png) no-repeat right top;
   background-size: contain;
-
-  @media only screen and (max-width: $sm) {
-    padding: 95px 0 100px;
-    background-size: cover;
-  }
-}
-
-.notice-icon {
-    margin-top: 6px;
-  }
-
-.notice {
-  padding-left: 6px;
-
-  p {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 21px;
-  }
-
-  a {
-    font-size: 12px;
-    line-height: 14px;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-}
-
-.banner__title {
-  padding-top: 84px;
-  font-size: 72px;
-  line-height: 90px;
-  letter-spacing: 0.265em;
-  text-transform: uppercase;
-
-  @media only screen and (max-width: $sm) {
-    padding-top: 30px;
-    font-size: 28px;
-    line-height: normal;
-  }
-}
-
-.banner__subtitle {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 30px;
-  line-height: 35px;
-  margin-bottom: 62px;
-
-  @media only screen and (max-width: $sm) {
-    font-size: 20px;
-    line-height: normal;
-    margin-bottom: 30px;
-  }
 }
 
 .about {
@@ -85,43 +27,35 @@
     position: relative;
     width: 100%;
   }
-}
 
-.about__title {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 30px;
-  line-height: 35px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: white;
-
-  @media only screen and (max-width: $sm) {
-    font-size: 24px;
-    line-height: normal;
-  }
-}
-
-.about__description {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 30px;
-  color: rgba(255, 255, 255, 0.8);
-
-  @media only screen and (max-width: $sm) {
-    font-size: 16px;
-    line-height: normal;
-  }
-
-  span {
-    font-size: 24px;
-    font-weight: 500;
+  h3 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
     color: white;
+    margin-bottom: 25px;
 
     @media only screen and (max-width: $sm) {
-      font-size: 20px;
-      line-height: 150%;
+      font-size: 24px;
+      line-height: normal;
+    }
+  }
+
+  p {
+    color: rgba(255, 255, 255, 0.8);
+
+    strong {
+      font-size: 24px;
+      font-weight: 500;
+      color: white;
+
+      @media only screen and (max-width: $sm) {
+        font-size: 20px;
+        line-height: 150%;
+      }
     }
   }
 }
@@ -147,31 +81,14 @@
     margin-top: 70px;
     padding: 50px 35px;
   }
-}
 
-.contact__title {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 50px;
-  line-height: 59px;
-
-  @media only screen and (max-width: $sm) {
-    font-size: 28px;
-    line-height: normal;
-  }
-}
-
-.contact__description {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 22px;
-  line-height: 30px;
-  margin-bottom: 43px;
-  
-  @media only screen and (max-width: $sm) {
-    font-size: 16px;
-    line-height: 150%;
-    margin-bottom: 25px;
+  p {
+    font-size: 22px;
+    margin-bottom: 43px;
+    
+    @media only screen and (max-width: $sm) {
+      margin-bottom: 25px;
+    }
   }
 }
 
@@ -200,6 +117,16 @@
     }
   }
 
+  & > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media only screen and (max-width: $md) {
+      flex-direction: column;
+    }
+  }
+
   button {
     @include linear-gradient(270.23deg, #f1cda8 0.19%, #f6dec6 99.82%);
 
@@ -209,22 +136,15 @@
   }
 
   span {
-    font-style: normal;
-    font-weight: normal;
     font-size: 15px;
     line-height: 18px;
   }
 
   p {
-    font-style: normal;
-    font-weight: normal;
     font-size: 22px;
     line-height: 26px;
     letter-spacing: 0.145em;
-
-    @media only screen and (max-width: $sm) {
-      font-size: 22px;
-    }
+    margin-bottom: 0;
   }
 
   a {
@@ -236,8 +156,6 @@
     
     @media only screen and (max-width: $sm) {
       margin-top: 0;
-      padding-top: 0;
-      font-size: 16px;
     }
   }
 }
@@ -256,67 +174,46 @@
       margin-bottom: 0;
     }
   }
-}
 
-.categories__image {
-  width: 618px;
+  img {
+    width: 618px;
 
-  @media only screen and (max-width: $md) {
-    margin: 45px 0;
-  }
+    @media only screen and (max-width: $md) {
+      margin: 45px 0;
+    }
 
-  @media only screen and (max-width: $sm) {
-    width: 80%;
-    margin-bottom: 25px;
+    @media only screen and (max-width: $sm) {
+      width: 80%;
+      margin-bottom: 25px;
+    }
   }
 }
 
 .categories__inner {
-  
-  .categories__title {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 50px;
-    line-height: 59px;
-
+  h2 {
     @media only screen and (max-width: $sm) {
-      font-size: 30px;
-      line-height: 150%;
       margin-bottom: 15px;
     }
   }
 
-  .categories__description {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 22px;
-    line-height: 30px;
+  p {
+    @extend .p-secondary;
     
     @media only screen and (max-width: $sm) {
-      margin: 15px 0 0;
-      font-size: 16px;
-      line-height: 150%;
+      margin: 15px 0;
     }
   }
 
   a {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 30px;
-    text-decoration: none;
     position: relative;
 
     @extend .link-hover-bottom;
-
-    @media only screen and (max-width: $sm) {
-      font-size: 18px;
-    }
   }
 }
 
 .slides {
   margin: 156px 0 224px;
+  position: relative;
 
   @media only screen and (max-width: $md) {
     margin-bottom: 160px;
@@ -395,43 +292,39 @@
 }
 
 .carousel-item {
-  &__text {
+  p {
     font-size: 22px;
     line-height: 42px;
     padding-bottom: 33px;
     opacity: 0.7;
-
-    @media only screen and (max-width: $sm) {
-      font-size: 16px;
-      line-height: 150%;
-    }
+    color: white;
   }
 
   .author-designation {
     font-size: 22px;
     line-height: 42px;
     opacity: 0.4;
-
-    @media only screen and (max-width: $sm) {
-      font-size: 18px;
-      line-height: 150%;
-    }
+    color: white;
   }
 
   .author-name {
-    font-style: normal;
-    font-weight: normal;
     font-size: 27px;
     line-height: 32px;
     text-transform: uppercase;
+    color: white;
   }
 
-  &__image {
+  span {
+    display: block;
+  }
+
+  img {
+    position: absolute;
     width: 385px;
-    left: -70%;
+    left: -65%;
     bottom: -36%;
 
-    @media only screen and (min-width: $md) and (max-width: $lg) {
+    @media only screen and (min-width: $md) and (max-width: $xl) {
       width: 50%;
       left: -55%;
     }
@@ -446,10 +339,21 @@
 }
 
 .contact-form {
-  margin-top: 376px;
+  margin-top: 34px;
+  margin-right: 0;
+  margin-left: auto;
 
   @media only screen and (max-width: $md) {
-    margin-top: 0px;
+    margin: 0px auto;
+  }
+
+  img {
+    width: 500px;
+
+    @media only screen and (max-width: $lg) {
+      margin-top: 35px;
+      width: 100%;
+    }
   }
 }
 
@@ -475,30 +379,33 @@
       left: 10px;
     }
   }
-}
 
-.contact-form__title {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 25px;
-  line-height: 30px;
-  letter-spacing: 0.185em;
-  text-transform: uppercase;
+  h2 {
+    font-family: 'Audrey';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0.185em;
+    text-transform: uppercase;
 
-  @media only screen and (max-width: $md) {
-    padding-bottom: 30px;
-    text-align: center;
-  }
+    @media only screen and (max-width: $md) {
+      padding-bottom: 30px;
+      text-align: center;
+    }
 
-  @media only screen and (max-width: $sm) {
-    padding-bottom: 20px;
-    font-size: 22px;
-    line-height: normal;
+    @media only screen and (max-width: $sm) {
+      padding-bottom: 20px;
+      font-size: 22px;
+      line-height: normal;
+    }
   }
 }
 
 .contact-form__info {
   width: 540px;
+  margin-right: 0;
+  margin-left: auto;
 
   @media only screen and (max-width: $md) {
     width: 100%;
@@ -518,6 +425,16 @@
     }
   }
 
+  & > div {
+    display:flex; 
+    justify-content: space-between;
+    align-items: center;
+    
+    @media only screen and (max-width: $md) {
+      flex-direction: column;
+    }
+  }
+
   button {
     @include linear-gradient(270.23deg, #f1cda8 0.19%, #f6dec6 99.82%);
 
@@ -527,12 +444,10 @@
   }
 
   span {
-    font-style: normal;
-    font-weight: normal;
     font-size: 15px;
     line-height: 18px;
 
-    @media only screen and (max-width: $sm) {
+    @media only screen and (max-width: $md) {
       font-size: 14px;
       text-align: center;
       display: block;
@@ -540,24 +455,22 @@
   }
 
   p {
-    font-style: normal;
-    font-weight: normal;
     font-size: 22px;
     line-height: 26px;
     letter-spacing: 0.145em;
+    margin-bottom: 0;
+
     
-    @media only screen and (max-width: $sm) {
-      font-size: 18px;
+    @media only screen and (max-width: $md) {
       text-align: center;
-      margin-bottom: 0;
+      margin-top: 15px;
     }
   }
 }
 
 .form {
   p {
-    font-size: 22px;
-    line-height: 26px;
+    @extend .p-secondary;
   }
 
   input,
@@ -609,25 +522,12 @@
       }
     }
   }
-}
-
-.form-img {
-  width: 500px;
-
-  @media only screen and (max-width: $lg) {
-    margin-top: 35px;
-    width: 100%;
-  }
-}
-
-.form-btn {
-  margin-top: 18px;
-  display: flex;
-  justify-content: flex-end;
 
   button {
     width: 136px;
     height: 64px;
+    margin: 18px 0 0 auto;
+    display: block;
     padding: 0;
   }
 }

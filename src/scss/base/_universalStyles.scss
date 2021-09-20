@@ -1,6 +1,7 @@
 h1 {
     font-size: 72px;
     font-size: 72px;
+    color: $elephant;
     font-family: 'TTNorms';
 
     @media only screen and (max-width: $md) {
@@ -12,6 +13,7 @@ h1 {
 h2 {
     font-family: 'TTNorms';
     font-size: 50px;
+    line-height: 59px;
     color: $elephant;
     font-weight: 300;
 
@@ -21,7 +23,20 @@ h2 {
     }
 }
 
-p {
+h3 {
+  font-family: 'TTNorms';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 42px;
+
+  @media only screen and (max-width: $sm) {
+      font-size: 26px;
+  }
+}
+
+p,
+p.secondary {
     font-family: 'TTNorms';
     font-weight: 300;
     font-size: 20px;
@@ -35,12 +50,9 @@ p {
     }
 }
 
-p.secondary {
-    font-family: 'TTNorms';
-    font-weight: 300;
-    color: $elephant;
-    font-size: 22px !important;
-    line-height: 30px;
+.p-secondary {
+    font-size: 22px;
+    line-height: 26px;
 
     @media only screen and (max-width: $md) {
         font-size: 18px;
@@ -53,6 +65,9 @@ a {
     font-weight: 500;
     color: $elephant;
     font-size: 20px;
+    line-height: 30px;
+    text-decoration: none;
+    font-style: normal;
 
     &:hover {
         text-decoration: none;
@@ -63,6 +78,15 @@ a {
         font-size: 16px;
         line-height: normal;
     }
+}
+
+span {
+    font-size: 12px;
+    line-height: 14px;
+    color: $elephant;
+    font-family: 'TTNorms';
+    font-style: normal;
+    font-weight: normal;
 }
 
 .container {
@@ -254,8 +278,155 @@ a {
     transition: all 0.5s ease;
     
     &:hover {
-        // filter: grayscale(100%);
         transform: scale(1.05);
         transition: all 0.5s ease;
     }
+}
+
+.banner,
+.banner-subpage {
+  padding: 130px 0 283px;
+  background-repeat: no-repeat;
+
+  @media only screen and (max-width: $sm) {
+    padding: 95px 0 100px;
+    background-size: cover;
+  }
+
+  h2 {
+    padding-top: 84px;
+    font-size: 72px;
+    line-height: 90px;
+    letter-spacing: 0.265em;
+    text-transform: uppercase;
+    color: $elephant;
+    margin-bottom: 0;
+    font-family: futura;
+
+    @media only screen and (max-width: $md) {
+      padding-top: 30px;
+      font-size: 28px;
+      line-height: normal;
+    }
+  }
+
+  p {
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 62px;
+  
+    @media only screen and (max-width: $sm) {
+      font-size: 20px;
+      line-height: normal;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.notice-inner {
+  svg {
+    margin-top: 6px;
+  }
+}
+
+.notice {
+  padding-left: 6px;
+
+  p {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 0;
+  }
+
+  a {
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.banner-subpage {
+  padding-bottom: 250px;
+  background-size: 100%;
+
+  @media only screen and (max-width: $lg) {
+      padding-bottom: 75px;
+  }
+
+  @media only screen and (max-width: $sm) {
+      padding-bottom: 35px;
+  }
+
+  h2 {
+      @media only screen and (max-width: $lg) {
+          padding-top: 45px;
+      }
+  }
+}
+
+.banner-bottom {
+  p {
+    width: 736px;
+    height: 245px;
+    background: #F4F4F4;
+    position: absolute;
+    top: -125px;
+    padding: 100px 92px 80px 98px;
+    font-family: TTNorms;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    color: $elephant;
+    margin-left: -20px;
+  }
+}
+
+.btns_group {
+  display: flex;
+  justify-content: space-between;
+  width: max-content;
+  position: relative;
+  width: 522px;
+  border-top: 1px solid $wheat;
+  padding-top: 30px;
+  
+  @media only screen and (max-width: $sm) {
+      width: 100%;
+      flex-direction: column;
+      gap: 30px;
+  }
+
+  &::after {
+      position: absolute;
+      content: '';
+      width: 1px;
+      height: calc(100% - 30px);
+      background-color: $wheat;
+      left: 50%;
+
+      @media only screen and (max-width: $sm) {
+          display: none;
+      }
+  }
+
+  button {
+      background: linear-gradient(270.23deg, #F1CDA8 0.19%, #F6DEC6 99.82%);
+      width: 222px;
+      font-size: 20px;
+      line-height: 24px;
+      height: 65px;
+      padding: 0;
+
+      @media only screen and (max-width: $sm) {
+          margin: 0 auto;
+          width: 200px;
+          height: 55px;
+          font-size: 16px;
+      }
+  }
 }

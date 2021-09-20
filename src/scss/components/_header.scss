@@ -1,6 +1,10 @@
 header {
     z-index: 999;
     @include transition(all 0.5s ease-in-out);
+    position: absolute;
+    left: 0;
+    top: 0; 
+    width: 100%; 
 }
 
 .header-sticky {
@@ -10,19 +14,21 @@ header {
 }
 
 .navbar-brand {
-    margin-right: 7px;
+    a {
+        margin-right: 7px;
 
-    img {
-        @media only screen and (max-width: $sm) {
-            max-width: 80%;
+        img {
+            @media only screen and (max-width: $sm) {
+                max-width: 80%;
+            }
         }
     }
-} 
 
-.brand-text {
-    font-size: 16px;
-    line-height: 19px;
-}
+    span {
+        font-size: 16px;
+        line-height: 19px;
+    }
+} 
 
 .nav-item {
     font-size: 14px;
@@ -43,7 +49,7 @@ header {
     }
 }
 
-.navbar-light .navbar-nav .nav-link {
+.nav-link {
     padding: .5rem 0;
     position: relative;
     @include transition(all 0.2s ease-in-out);
@@ -59,7 +65,7 @@ header {
     }
 }
 
-.header-text {
+.navbar p {
     font-size: 14px;
     line-height: 16px;
     color: $elephant;
