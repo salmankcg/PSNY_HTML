@@ -2,14 +2,6 @@
     background-image: url(/assets/images/team/BANNER.jpg);
 }
 
-.banner-bottom {
-    position: relative;
-
-    @media only screen and (max-width: $lg) {
-        display: none;
-    }
-}
-
 .team {
     margin-bottom: 150px;
 

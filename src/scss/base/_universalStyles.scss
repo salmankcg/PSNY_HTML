@@ -353,6 +353,12 @@ span {
 }
 
 .banner-bottom {
+  position: relative;
+
+  @media only screen and (max-width: $lg) {
+      display: none;
+  }
+  
   p {
     width: 736px;
     height: 245px;

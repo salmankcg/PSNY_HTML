@@ -16,3 +16,8 @@ function scrollFunction() {
     header.classList.remove('header-sticky');
   }
 }
+
+lightbox.option({
+  'resizeDuration': 200,
+  'wrapAround': true
+})

@@ -3113,6 +3113,11 @@ function scrollFunction() {
   }
 }
 
+lightbox.option({
+  'resizeDuration': 200,
+  'wrapAround': true
+});
+
 /***/ }),
 
 /***/ "./node_modules/bootstrap/dist/js/bootstrap.esm.js":
