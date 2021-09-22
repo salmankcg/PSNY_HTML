@@ -1,5 +1,5 @@
 .homepage-banner {
-  background: url(/assets/images/home/banner.png) no-repeat right top;
+  background-image: url(/assets/images/home/banner.png);
   background-size: contain;
 }
 
@@ -255,85 +255,87 @@
   }
 }
 
-.slide {
-  padding: 77px 112px 50px 121px;
-  @include radial-gradient(
-    95.8% 137.27% at 0% 1.86%,
-    #124260 0%,
-    #0c3046 100%
-  );
-
-  @media only screen and (max-width: $md) {
-    padding: 50px 35px;
-  }
-
-  &__col {
-    width: 937px;
-
-    @media only screen and (min-width: $md) and (max-width: $lg) {
-      width: 65vw;
+.slide__col {
+  .slide {
+    padding: 77px 112px 50px 121px;
+    @include radial-gradient(
+      95.8% 137.27% at 0% 1.86%,
+      #124260 0%,
+      #0c3046 100%
+    );
+  
+    @media only screen and (max-width: $md) {
+      padding: 50px 35px;
     }
-
-    @media only screen and (max-width: $lg) {
-      width: 100%;
+  
+    &__col {
+      width: 937px;
+  
+      @media only screen and (min-width: $md) and (max-width: $lg) {
+        width: 65vw;
+      }
+  
+      @media only screen and (max-width: $lg) {
+        width: 100%;
+      }
+    }
+  
+    &__btns {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 55px;
+  
+      button {
+        background-color: transparent;
+        border-color: $elephant;
+      }
     }
   }
-
-  &__btns {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 55px;
-
-    button {
-      background-color: transparent;
-      border-color: $elephant;
+  
+  .carousel-item {
+    p {
+      font-size: 22px;
+      line-height: 42px;
+      padding-bottom: 33px;
+      opacity: 0.7;
+      color: white;
     }
-  }
-}
-
-.carousel-item {
-  p {
-    font-size: 22px;
-    line-height: 42px;
-    padding-bottom: 33px;
-    opacity: 0.7;
-    color: white;
-  }
-
-  .author-designation {
-    font-size: 22px;
-    line-height: 42px;
-    opacity: 0.4;
-    color: white;
-  }
-
-  .author-name {
-    font-size: 27px;
-    line-height: 32px;
-    text-transform: uppercase;
-    color: white;
-  }
-
-  span {
-    display: block;
-  }
-
-  img {
-    position: absolute;
-    width: 385px;
-    left: -65%;
-    bottom: -36%;
-
-    @media only screen and (min-width: $md) and (max-width: $xl) {
-      width: 50%;
-      left: -55%;
+  
+    .author-designation {
+      font-size: 22px;
+      line-height: 42px;
+      opacity: 0.4;
+      color: white;
     }
-
-    @media only screen and (max-width: $lg) {
-      width: 100%;
-      position: relative !important;
-      left: 0;
-      margin-top: 30px;
+  
+    .author-name {
+      font-size: 27px;
+      line-height: 32px;
+      text-transform: uppercase;
+      color: white;
+    }
+  
+    span {
+      display: block;
+    }
+  
+    img {
+      position: absolute;
+      width: 385px;
+      left: -65%;
+      bottom: -36%;
+  
+      @media only screen and (min-width: $md) and (max-width: $xl) {
+        width: 50%;
+        left: -55%;
+      }
+  
+      @media only screen and (max-width: $lg) {
+        width: 100%;
+        position: relative !important;
+        left: 0;
+        margin-top: 30px;
+      }
     }
   }
 }

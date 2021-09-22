@@ -48,17 +48,9 @@
 }
 
 @mixin radial-gradient($gradient...) {
-  -webkit-background: radial-gradient($gradient);
-  -moz-background: radial-gradient($gradient);
-  -ms-background: radial-gradient($gradient);
-  -o-background: radial-gradient($gradient);
   background: radial-gradient($gradient);
 }
 
 @mixin linear-gradient($gradient...) {
-  -webkit-background: linear-gradient($gradient);
-  -moz-background: linear-gradient($gradient);
-  -ms-background: linear-gradient($gradient);
-  -o-background: linear-gradient($gradient);
   background: linear-gradient($gradient);
 }

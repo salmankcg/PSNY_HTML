@@ -16,7 +16,7 @@
         }
 
         @media only screen and (max-width: $md) {
-            padding: 60px 30px;
+            padding: 60px 30px 40px;
         }
 
         &:last-of-type {
@@ -27,7 +27,7 @@
     .row {
         margin-bottom: 50px;
 
-        @media only screen and (max-width: $md) {
+        @media only screen and (max-width: $sm) {
             margin-bottom: 0;
         }
     }
@@ -42,12 +42,6 @@
         @media only screen and (max-width: $md) {
             margin: 0 auto 35px;
             width: 100%;
-        }
-    
-        &:last-of-type {
-            @media only screen and (max-width: $md) {
-                margin-bottom: 0;
-            }
         }
     }
 }
@@ -74,6 +68,9 @@
 
     .lb-close {
         background-image: url(/assets/images/close.png);
+        top: 25px;
+        right: 25px;
+        position: fixed;
     }
 }
 
@@ -95,5 +92,17 @@
         &:hover {
             opacity: 1;
         }
+    }
+}
+
+.lb-outerContainer,
+.lightbox .lb-image {
+    width: 750px;
+    height: 400px;
+}
+
+.lightbox {
+    .lb-image {
+        border: 0px;
     }
 }

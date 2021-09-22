@@ -29,9 +29,23 @@ h3 {
   font-weight: 300;
   font-size: 36px;
   line-height: 42px;
+  color: $elephant;
 
   @media only screen and (max-width: $sm) {
       font-size: 26px;
+  }
+}
+
+h4 {
+  font-family: 'TTNorms';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  color: $elephant;
+
+  @media only screen and (max-width: $sm) {
+      font-size: 18px;
   }
 }
 
@@ -43,7 +57,6 @@ div {
     font-size: 20px;
     color: $elephant;
     line-height: 30px;
-    margin-bottom: 30px;
 
     @media only screen and (max-width: $md) {
         font-size: 16px;
@@ -92,6 +105,25 @@ span {
     font-family: 'TTNorms';
     font-style: normal;
     font-weight: normal;
+}
+
+ul {
+  font-family: 'TTNorms';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  padding-left: 20px;
+  color: $elephant;
+
+  @media only screen and (max-width: $md) {
+    font-size: 14px;
+    line-height: 150%;
+  }
+} 
+
+strong, b {
+  font-weight: bold;
 }
 
 .container {
@@ -171,13 +203,21 @@ span {
         width: 0;
         height: 3px;
         background: #0e3751;
-        transition: all 0.5s ease;
+          -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;;
+              -ms-transition: all 0.5s ease;
+                -o-transition: all 0.5s ease;
+                  transition: all 0.5s ease;
     }
 
     &:hover {
         &::before {
             width: 100%;
-            transition: all 0.5s ease;
+              -webkit-transition: all 0.5s ease;
+                -moz-transition: all 0.5s ease;;
+                  -ms-transition: all 0.5s ease;
+                    -o-transition: all 0.5s ease;
+                      transition: all 0.5s ease;
         }
     }
 }
@@ -188,6 +228,7 @@ span {
     &::before {
         width: 100%;
         bottom: -5px;
+        left: 0;
     }
 }
 
@@ -212,7 +253,11 @@ span {
         width: 0%;
         height: 0%;
         opacity: 0;
-        transition: width 0.2s linear, height 0.15s 0.2s ease-out, opacity 0s 0.35s;
+        -webkit-transition: width 0.2s linear, height 0.15s 0.2s ease-out, opacity 0s 0.35s;
+          -moz-transition: width 0.2s linear, height 0.15s 0.2s ease-out, opacity 0s 0.35s;
+            -ms-transition: width 0.2s linear, height 0.15s 0.2s ease-out, opacity 0s 0.35s;
+              -o-transition: width 0.2s linear, height 0.15s 0.2s ease-out, opacity 0s 0.35s;
+                transition: width 0.2s linear, height 0.15s 0.2s ease-out, opacity 0s 0.35s;
     }
 
     &::before {
@@ -234,7 +279,11 @@ span {
         width: 30%;
         height: 100%;
         opacity: 1;
-        transition: width 0.2s 0.15s ease-out, height 0.15s ease-in, opacity 0s;
+        -webkit-transition: width 0.2s 0.15s ease-out, height 0.15s ease-in, opacity 0s;
+          -moz-transition: width 0.2s 0.15s ease-out, height 0.15s ease-in, opacity 0s;
+            -ms-transition: width 0.2s 0.15s ease-out, height 0.15s ease-in, opacity 0s;
+              -o-transition: width 0.2s 0.15s ease-out, height 0.15s ease-in, opacity 0s;
+                transition: width 0.2s 0.15s ease-out, height 0.15s ease-in, opacity 0s;
     }
 }
 
@@ -259,11 +308,23 @@ span {
 }
 
 .img-hover {
-    transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;;
+      -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+          transition: all 0.5s ease;
     
     &:hover {
-        transform: scale(1.05);
-        transition: all 0.5s ease;
+      -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+          -ms-transform: scale(1.05);
+            -o-transform: scale(1.05);
+              transform: scale(1.05);
+          -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;;
+              -ms-transition: all 0.5s ease;
+                -o-transition: all 0.5s ease;
+                  transition: all 0.5s ease;
     }
 }
 
@@ -271,6 +332,8 @@ span {
 .banner__subpage {
   padding: 130px 0 283px;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top right;
 
   @media only screen and (max-width: $sm) {
     padding: 95px 0 100px;
@@ -278,7 +341,6 @@ span {
   }
 
   h2 {
-    padding-top: 84px;
     font-size: 72px;
     line-height: 90px;
     letter-spacing: 0.265em;
@@ -288,7 +350,6 @@ span {
     font-family: futura;
 
     @media only screen and (max-width: $md) {
-      padding-top: 30px;
       font-size: 28px;
       line-height: normal;
     }
@@ -305,6 +366,22 @@ span {
       margin-bottom: 30px;
     }
   }
+
+  span {
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: 300;
+
+    @media only screen and (max-width: $sm) {
+      font-size: 14px;
+    }
+  }
+}
+
+.banner__subpage {
+  background-size: cover;
 }
 
 .notice-inner {
@@ -315,6 +392,11 @@ span {
 
 .notice {
   padding-left: 6px;
+  margin-bottom: 84px;
+
+  @media only screen and (max-width: $md) {
+    margin-bottom: 30px;
+  }
 
   p {
     font-size: 18px;

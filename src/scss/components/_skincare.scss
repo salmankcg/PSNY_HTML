@@ -1,0 +1,179 @@
+.skincare-banner {
+    background-image: url(/assets/images/skincare/banner.png);
+    padding-bottom: 125px;
+}
+
+.skincare {
+    margin-bottom: 150px;
+
+    @media only screen and (max-width: $md) {
+        margin-bottom: 80px
+    }
+
+    .container {
+        padding: 95px 50px;
+        background-color: $vistaWhite;
+        margin: 0 0 0 auto;
+
+        @media only screen and (max-width: $lg) {
+            margin: 0 auto;
+        }
+
+        @media only screen and (max-width: $md) {
+            padding: 60px 30px;
+        }
+
+        &:last-of-type {
+            border: 0px;
+        }
+    }
+
+    img {
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+.skincare__inner {
+    h3 {
+        margin-bottom: 20px;
+    }
+
+    div {
+        margin-top: 40px;
+        padding-top: 40px;
+        border-top: 1px solid $wheat;
+    }
+}
+
+.testimonial {
+    background: white;
+    padding: 40px;
+    margin: 40px 0 0 -50px;
+
+    @media only screen and (max-width: $sm) {
+        margin-left: 0;
+        padding: 30px;
+    }
+
+    p {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "\f10d";
+            font-weight: 900;
+            display: inline-block;
+            z-index: 0;
+            font-family: 'Font Awesome 5 Free';
+            opacity: 0.1;
+            font-size: 55px;
+            left: -20px;
+
+            @media only screen and (max-width: $sm) {
+                font-size: 30px;
+                left: -15px;
+            }
+        }
+    }
+
+    h4 {
+        margin-bottom: 0;
+    }
+
+    span {
+        font-size: 16px;
+    }
+}
+
+.before-after__slider,
+.videos__slider {
+    margin: 50px 0 0;
+    padding-bottom: 50px;
+    border-bottom: 1px solid $wheat;
+
+    h3 {
+        margin-bottom: 40px;
+    }
+
+    .carousel-item {
+        background: white;
+        padding: 15px;
+        border: 1px solid $wheat;
+    }
+}
+
+.slider__handlers {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+
+    .carousel-control-next, 
+    .carousel-control-prev {
+        position: static;
+        display: inline-flex;
+        z-index: 10;
+        opacity: 1;
+        width: auto;
+        border: 1px solid $elephant;
+        padding: 10px;
+    }
+
+    .carousel-control-prev-icon {
+        background-image: url(/assets/images/arrowPrev.png);
+    }
+
+    .carousel-control-next-icon {
+        background-image: url(/assets/images/arrowNext.png);
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-size: 25%;
+    }
+}
+
+.QnA {
+    margin-top: 50px;
+}
+
+.accordion-button {
+    padding: 10px 20px 10px 35px;
+    border-top: 1px solid $wheat;
+    border-bottom: 1px solid $wheat;
+    margin-bottom: 20px;
+    background-color: $vistaWhite;
+    font-size: 14px;
+    font-family: 'TTNorms';
+    color: $elephant;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        background-color: $elephant;
+        border-radius: 100%;
+        left: 20px;
+    }
+}
+
+.accordion-item {
+    background-color: $vistaWhite;
+    border: 0px;
+}
+
+.accordion-button:not(.collapsed) {
+    border-top: 1px solid $wheat;
+    border-bottom: 1px solid $wheat;
+    background-color: $vistaWhite;
+    margin-bottom: 0;
+    box-shadow: none;
+}
+
+.accordion-item:last-of-type {
+    .accordion-button.collapsed {
+        margin-bottom: 0px;
+    }
+}
