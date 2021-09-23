@@ -33,9 +33,7 @@
     }
 
     img {
-        padding: 19px;
-        background-color: white;
-        border: 2px solid $wheat;
+        @extend .img-bordered;
     
         @extend .img-hover;
     

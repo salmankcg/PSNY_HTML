@@ -97,9 +97,7 @@
     }
 
     .carousel-item {
-        background: white;
-        padding: 15px;
-        border: 1px solid $wheat;
+        @extend .img-bordered;
     }
 }
 

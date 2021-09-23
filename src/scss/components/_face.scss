@@ -1,0 +1,65 @@
+.face-banner {
+    background-image: url(/assets/images/face/banner.png);
+    padding-bottom: 125px;
+}
+
+.face {
+    margin-bottom: 150px;
+
+    @media only screen and (max-width: $md) {
+        margin-bottom: 80px
+    }
+
+    .container {
+        padding: 95px 50px;
+        background-color: $vistaWhite;
+        margin: 0 0 0 auto;
+
+        @media only screen and (max-width: $lg) {
+            margin: 0 auto;
+        }
+
+        @media only screen and (max-width: $md) {
+            padding: 60px 30px;
+        }
+
+        &:last-of-type {
+            border: 0px;
+        }
+    }
+
+    img {
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+.face__inner {
+    h2 {
+        margin-bottom: 25px;
+    }
+}
+
+.face__gallery {
+    margin-top: 25px;
+
+    img {
+        @extend .img-bordered;
+
+        @extend .img-hover;
+    }
+
+    span {
+        text-align: center;
+        width: 250px;
+        font-size: 18px;
+        display: block;
+        margin: 0 auto;
+        margin: 20px auto 30px;
+        line-height: 26px;
+
+        @media only screen and (max-width: $sm) {
+            font-size: 14px;
+        }
+    }
+}

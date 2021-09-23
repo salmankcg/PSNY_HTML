@@ -34,10 +34,10 @@ header {
     font-size: 14px;
     line-height: 16px;
     color: $elephant;
-    padding: 5px 0 5px 53px;
+    padding: 5px 26px;
 
     @media only screen and (max-width: $xl) {
-        padding: 5px 0 5px 28px;
+        padding: 5px 14px;
     }
 }
 
@@ -86,7 +86,7 @@ header {
         background-position: center;
         width: 16px;
         height: 16px;
-        margin-top: 2px;
+        margin-top: -1px;
     }
 }
 
