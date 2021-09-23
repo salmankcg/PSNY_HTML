@@ -1551,41 +1551,45 @@ header {
   padding-bottom: 125px;
 }
 
-.skincare {
+.skincare,
+.futNfue {
   margin-bottom: 150px;
 }
 @media only screen and (max-width: 991px) {
-  .skincare {
+  .skincare,
+.futNfue {
     margin-bottom: 80px;
   }
 }
-.skincare .container {
+.skincare .container,
+.futNfue .container {
   padding: 95px 50px;
   background-color: #FAF6F2;
   margin: 0 0 0 auto;
 }
 @media only screen and (max-width: 1200px) {
-  .skincare .container {
+  .skincare .container,
+.futNfue .container {
     margin: 0 auto;
   }
 }
 @media only screen and (max-width: 991px) {
-  .skincare .container {
+  .skincare .container,
+.futNfue .container {
     padding: 60px 30px;
   }
 }
-.skincare .container:last-of-type {
+.skincare .container:last-of-type,
+.futNfue .container:last-of-type {
   border: 0px;
 }
-.skincare img {
-  margin: 0 auto;
-  display: block;
-}
 
-.skincare__inner h3 {
+.skincare__inner h3,
+.futNfue__inner h3 {
   margin-bottom: 20px;
 }
-.skincare__inner div {
+.skincare__inner div,
+.futNfue__inner div {
   margin-top: 40px;
   padding-top: 40px;
   border-top: 1px solid #F4D1AE;
@@ -1738,10 +1742,6 @@ header {
 .face .container:last-of-type {
   border: 0px;
 }
-.face img {
-  margin: 0 auto;
-  display: block;
-}
 
 .face__inner h2 {
   margin-bottom: 25px;
@@ -1763,4 +1763,9 @@ header {
   .face__gallery span {
     font-size: 14px;
   }
+}
+
+.futNfue-banner {
+  background-image: url(/assets/images/futNfue/banner.png);
+  padding-bottom: 125px;
 }

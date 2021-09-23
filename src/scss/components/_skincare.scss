@@ -3,7 +3,8 @@
     padding-bottom: 125px;
 }
 
-.skincare {
+.skincare,
+.futNfue {
     margin-bottom: 150px;
 
     @media only screen and (max-width: $md) {
@@ -27,14 +28,10 @@
             border: 0px;
         }
     }
-
-    img {
-        margin: 0 auto;
-        display: block;
-    }
 }
 
-.skincare__inner {
+.skincare__inner,
+.futNfue__inner {
     h3 {
         margin-bottom: 20px;
     }
