@@ -310,10 +310,12 @@ strong, b {
   border-right: 3px solid #F4D1AE;
 }
 
-.img-hover, .face__gallery img, .gallery img {
+.img-hover, .face__gallery img,
+.breast__gallery img, .gallery img {
   transition: all 0.5s ease;
 }
-.img-hover:hover, .face__gallery img:hover, .gallery img:hover {
+.img-hover:hover, .face__gallery img:hover,
+.breast__gallery img:hover, .gallery img:hover {
   transform: scale(1.05);
   transition: all 0.5s ease;
 }
@@ -689,7 +691,8 @@ strong, b {
   padding: 0;
 }
 
-.img-bordered, .face__gallery img, .before-after__slider .carousel-item,
+.img-bordered, .face__gallery img,
+.breast__gallery img, .before-after__slider .carousel-item,
 .videos__slider .carousel-item, .gallery img {
   padding: 19px;
   background-color: white;
@@ -1295,13 +1298,14 @@ header {
 .slide__col .carousel-item img {
   position: absolute;
   width: 385px;
-  left: -65%;
+  left: -40%;
   bottom: -36%;
 }
-@media only screen and (min-width: 991px) and (max-width: 1400px) {
+@media only screen and (min-width: 991px) and (max-width: 1950px) {
   .slide__col .carousel-item img {
-    width: 50%;
-    left: -55%;
+    width: 170px;
+    left: -20%;
+    bottom: -25%;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -1716,41 +1720,50 @@ header {
   padding-bottom: 125px;
 }
 
-.face {
+.face,
+.breast {
   margin-bottom: 150px;
 }
 @media only screen and (max-width: 991px) {
-  .face {
+  .face,
+.breast {
     margin-bottom: 80px;
   }
 }
-.face .container {
+.face .container,
+.breast .container {
   padding: 95px 50px;
   background-color: #FAF6F2;
   margin: 0 0 0 auto;
 }
 @media only screen and (max-width: 1200px) {
-  .face .container {
+  .face .container,
+.breast .container {
     margin: 0 auto;
   }
 }
 @media only screen and (max-width: 991px) {
-  .face .container {
+  .face .container,
+.breast .container {
     padding: 60px 30px;
   }
 }
-.face .container:last-of-type {
+.face .container:last-of-type,
+.breast .container:last-of-type {
   border: 0px;
 }
 
-.face__inner h2 {
+.face__inner h2,
+.breast__inner h2 {
   margin-bottom: 25px;
 }
 
-.face__gallery {
+.face__gallery,
+.breast__gallery {
   margin-top: 25px;
 }
-.face__gallery span {
+.face__gallery span,
+.breast__gallery span {
   text-align: center;
   width: 250px;
   font-size: 18px;
@@ -1760,12 +1773,18 @@ header {
   line-height: 26px;
 }
 @media only screen and (max-width: 767px) {
-  .face__gallery span {
+  .face__gallery span,
+.breast__gallery span {
     font-size: 14px;
   }
 }
 
 .futNfue-banner {
   background-image: url(/assets/images/futNfue/banner.png);
+  padding-bottom: 125px;
+}
+
+.breast-banner {
+  background-image: url(/assets/images/face/banner.png);
   padding-bottom: 125px;
 }

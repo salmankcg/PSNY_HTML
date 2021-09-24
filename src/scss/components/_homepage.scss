@@ -322,12 +322,13 @@
     img {
       position: absolute;
       width: 385px;
-      left: -65%;
+      left: -40%;
       bottom: -36%;
   
-      @media only screen and (min-width: $md) and (max-width: $xl) {
-        width: 50%;
-        left: -55%;
+      @media only screen and (min-width: $md) and (max-width: $xxl) {
+        width: 170px;
+        left: -20%;
+        bottom: -25%;
       }
   
       @media only screen and (max-width: $lg) {

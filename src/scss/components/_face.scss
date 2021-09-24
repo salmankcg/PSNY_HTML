@@ -3,7 +3,8 @@
     padding-bottom: 125px;
 }
 
-.face {
+.face,
+.breast {
     margin-bottom: 150px;
 
     @media only screen and (max-width: $md) {
@@ -29,13 +30,15 @@
     }
 }
 
-.face__inner {
+.face__inner,
+.breast__inner {
     h2 {
         margin-bottom: 25px;
     }
 }
 
-.face__gallery {
+.face__gallery,
+.breast__gallery {
     margin-top: 25px;
 
     img {
