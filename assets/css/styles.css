@@ -1558,19 +1558,22 @@ header {
 
 .skincare,
 .futNfue,
-.male-breast {
+.male-breast,
+.skin {
   margin-bottom: 150px;
 }
 @media only screen and (max-width: 991px) {
   .skincare,
 .futNfue,
-.male-breast {
+.male-breast,
+.skin {
     margin-bottom: 80px;
   }
 }
 .skincare .container,
 .futNfue .container,
-.male-breast .container {
+.male-breast .container,
+.skin .container {
   padding: 95px 50px;
   background-color: #FAF6F2;
   margin: 0 0 0 auto;
@@ -1578,32 +1581,37 @@ header {
 @media only screen and (max-width: 1200px) {
   .skincare .container,
 .futNfue .container,
-.male-breast .container {
+.male-breast .container,
+.skin .container {
     margin: 0 auto;
   }
 }
 @media only screen and (max-width: 991px) {
   .skincare .container,
 .futNfue .container,
-.male-breast .container {
+.male-breast .container,
+.skin .container {
     padding: 60px 30px;
   }
 }
 .skincare .container:last-of-type,
 .futNfue .container:last-of-type,
-.male-breast .container:last-of-type {
+.male-breast .container:last-of-type,
+.skin .container:last-of-type {
   border: 0px;
 }
 .skincare img,
 .futNfue img,
-.male-breast img {
+.male-breast img,
+.skin img {
   display: block;
   margin: 0 0 0 auto;
 }
 @media only screen and (max-width: 767px) {
   .skincare img,
 .futNfue img,
-.male-breast img {
+.male-breast img,
+.skin img {
     margin: 0 auto;
   }
 }
@@ -1611,18 +1619,21 @@ header {
 @media only screen and (max-width: 767px) {
   .skincare__inner,
 .futNfue__inner,
-.male-breast__inner {
+.male-breast__inner,
+.skin__inner {
     margin-bottom: 25px;
   }
 }
 .skincare__inner h3,
 .futNfue__inner h3,
-.male-breast__inner h3 {
+.male-breast__inner h3,
+.skin__inner h3 {
   margin-bottom: 20px;
 }
 .skincare__inner div,
 .futNfue__inner div,
-.male-breast__inner div {
+.male-breast__inner div,
+.skin__inner div {
   margin-top: 40px;
   padding-top: 40px;
   border-top: 1px solid #F4D1AE;
@@ -1713,7 +1724,7 @@ header {
   line-height: 24px;
   margin-top: 5px;
 }
-.QnA ul:last-child p {
+.QnA ul li:last-child p {
   margin-bottom: 0;
 }
 
@@ -1831,5 +1842,10 @@ header {
 
 .maleBreast-banner {
   background-image: url(/assets/images/maleBreast/banner.png);
+  padding-bottom: 125px;
+}
+
+.skin-banner {
+  background-image: url(/assets/images/skin/banner.jpeg);
   padding-bottom: 125px;
 }

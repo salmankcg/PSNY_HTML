@@ -5,7 +5,8 @@
 
 .skincare,
 .futNfue,
-.male-breast {
+.male-breast,
+.skin {
     margin-bottom: 150px;
 
     @media only screen and (max-width: $md) {
@@ -42,7 +43,8 @@
 
 .skincare__inner,
 .futNfue__inner,
-.male-breast__inner {
+.male-breast__inner,
+.skin__inner {
     @media only screen and (max-width: $sm) {
         margin-bottom: 25px;
     }
@@ -157,9 +159,11 @@
             margin-top: 5px;
         }
 
-        &:last-child {
-            p {
-                margin-bottom: 0;
+        li {
+            &:last-child {
+                p {
+                    margin-bottom: 0;
+                }
             }
         }
     }
