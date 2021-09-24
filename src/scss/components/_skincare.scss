@@ -6,7 +6,8 @@
 .skincare,
 .futNfue,
 .male-breast,
-.skin {
+.skin,
+.hands {
     margin-bottom: 150px;
 
     @media only screen and (max-width: $md) {
@@ -44,7 +45,8 @@
 .skincare__inner,
 .futNfue__inner,
 .male-breast__inner,
-.skin__inner {
+.skin__inner,
+.hands__inner {
     @media only screen and (max-width: $sm) {
         margin-bottom: 25px;
     }
@@ -62,12 +64,12 @@
 
 .testimonial {
     background: white;
-    padding: 40px;
-    margin: 40px 0 0 -50px;
+    padding: 70px 40px;
+    margin: 80px 0 0 -50px;
 
     @media only screen and (max-width: $sm) {
         margin-left: 0;
-        padding: 30px;
+        padding: 35px;
     }
 
     p {
@@ -157,6 +159,7 @@
             font-size: 16px;
             line-height: 24px;
             margin-top: 5px;
+            margin-bottom: 20px;
         }
 
         li {

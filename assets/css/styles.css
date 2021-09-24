@@ -761,6 +761,11 @@ header {
   font-weight: bold;
   transition: all 0.2s ease-in-out;
 }
+@media only screen and (max-width: 991px) {
+  .nav-link {
+    display: inline-block;
+  }
+}
 
 .navbar p {
   font-size: 14px;
@@ -791,6 +796,12 @@ header {
   padding: 20px 30px;
   border-radius: 0;
   position: relative;
+  width: 280px;
+}
+@media only screen and (max-width: 991px) {
+  .dropdown-menu {
+    width: 100%;
+  }
 }
 .dropdown-menu li:last-child .dropdown-item {
   padding: 0 0 0px;
@@ -805,6 +816,13 @@ header {
   background-color: #F4D1AE;
   bottom: 0;
   left: 0;
+}
+@media only screen and (max-width: 991px) {
+  .dropdown-menu::after {
+    bottom: 5px;
+    left: 15px;
+    width: calc(100% - 30px);
+  }
 }
 
 .dropdown-item {
@@ -833,6 +851,11 @@ header {
   transform: rotate(180deg);
   top: -10px;
   left: 20px;
+}
+@media only screen and (max-width: 991px) {
+  .level-one::before {
+    top: 35px;
+  }
 }
 
 .navbar .nav-item:hover .dropdown-menu {
@@ -1559,21 +1582,24 @@ header {
 .skincare,
 .futNfue,
 .male-breast,
-.skin {
+.skin,
+.hands {
   margin-bottom: 150px;
 }
 @media only screen and (max-width: 991px) {
   .skincare,
 .futNfue,
 .male-breast,
-.skin {
+.skin,
+.hands {
     margin-bottom: 80px;
   }
 }
 .skincare .container,
 .futNfue .container,
 .male-breast .container,
-.skin .container {
+.skin .container,
+.hands .container {
   padding: 95px 50px;
   background-color: #FAF6F2;
   margin: 0 0 0 auto;
@@ -1582,7 +1608,8 @@ header {
   .skincare .container,
 .futNfue .container,
 .male-breast .container,
-.skin .container {
+.skin .container,
+.hands .container {
     margin: 0 auto;
   }
 }
@@ -1590,20 +1617,23 @@ header {
   .skincare .container,
 .futNfue .container,
 .male-breast .container,
-.skin .container {
+.skin .container,
+.hands .container {
     padding: 60px 30px;
   }
 }
 .skincare .container:last-of-type,
 .futNfue .container:last-of-type,
 .male-breast .container:last-of-type,
-.skin .container:last-of-type {
+.skin .container:last-of-type,
+.hands .container:last-of-type {
   border: 0px;
 }
 .skincare img,
 .futNfue img,
 .male-breast img,
-.skin img {
+.skin img,
+.hands img {
   display: block;
   margin: 0 0 0 auto;
 }
@@ -1611,7 +1641,8 @@ header {
   .skincare img,
 .futNfue img,
 .male-breast img,
-.skin img {
+.skin img,
+.hands img {
     margin: 0 auto;
   }
 }
@@ -1620,20 +1651,23 @@ header {
   .skincare__inner,
 .futNfue__inner,
 .male-breast__inner,
-.skin__inner {
+.skin__inner,
+.hands__inner {
     margin-bottom: 25px;
   }
 }
 .skincare__inner h3,
 .futNfue__inner h3,
 .male-breast__inner h3,
-.skin__inner h3 {
+.skin__inner h3,
+.hands__inner h3 {
   margin-bottom: 20px;
 }
 .skincare__inner div,
 .futNfue__inner div,
 .male-breast__inner div,
-.skin__inner div {
+.skin__inner div,
+.hands__inner div {
   margin-top: 40px;
   padding-top: 40px;
   border-top: 1px solid #F4D1AE;
@@ -1641,13 +1675,13 @@ header {
 
 .testimonial {
   background: white;
-  padding: 40px;
-  margin: 40px 0 0 -50px;
+  padding: 70px 40px;
+  margin: 80px 0 0 -50px;
 }
 @media only screen and (max-width: 767px) {
   .testimonial {
     margin-left: 0;
-    padding: 30px;
+    padding: 35px;
   }
 }
 .testimonial p {
@@ -1723,6 +1757,7 @@ header {
   font-size: 16px;
   line-height: 24px;
   margin-top: 5px;
+  margin-bottom: 20px;
 }
 .QnA ul li:last-child p {
   margin-bottom: 0;
@@ -1847,5 +1882,10 @@ header {
 
 .skin-banner {
   background-image: url(/assets/images/skin/banner.jpeg);
+  padding-bottom: 125px;
+}
+
+.hands-banner {
+  background-image: url(/assets/images/hands/banner.png);
   padding-bottom: 125px;
 }

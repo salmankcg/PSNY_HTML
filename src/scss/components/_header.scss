@@ -63,6 +63,10 @@ header {
         font-weight: bold;
         @include transition(all 0.2s ease-in-out);
     }
+
+    @media only screen and (max-width: $md) {
+        display: inline-block;
+    }
 }
 
 .navbar p {
@@ -95,6 +99,11 @@ header {
     padding: 20px 30px;
     border-radius: 0;
     position: relative;
+    width: 280px;
+
+    @media only screen and (max-width: $md) {
+        width: 100%;
+    }
 
     li {
         &:last-child {
@@ -114,6 +123,12 @@ header {
         background-color: $wheat;
         bottom: 0;
         left: 0;
+
+        @media only screen and (max-width: $md) {
+            bottom: 5px;
+            left: 15px;
+            width: calc(100% - 30px);
+        }
     }
 }
 
@@ -145,6 +160,10 @@ header {
         transform: rotate(180deg);
         top: -10px;
         left: 20px;
+
+        @media only screen and (max-width: $md) {
+            top: 35px;
+        }
     }
 }
 
