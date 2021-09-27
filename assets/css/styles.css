@@ -1586,7 +1586,8 @@ header {
 .futNfue,
 .male-breast,
 .skin,
-.hands {
+.hands,
+.venis {
   margin-bottom: 150px;
 }
 @media only screen and (max-width: 991px) {
@@ -1594,7 +1595,8 @@ header {
 .futNfue,
 .male-breast,
 .skin,
-.hands {
+.hands,
+.venis {
     margin-bottom: 80px;
   }
 }
@@ -1602,7 +1604,8 @@ header {
 .futNfue .container,
 .male-breast .container,
 .skin .container,
-.hands .container {
+.hands .container,
+.venis .container {
   padding: 95px 50px;
   background-color: #FAF6F2;
   margin: 0 0 0 auto;
@@ -1612,7 +1615,8 @@ header {
 .futNfue .container,
 .male-breast .container,
 .skin .container,
-.hands .container {
+.hands .container,
+.venis .container {
     margin: 0 auto;
   }
 }
@@ -1621,7 +1625,8 @@ header {
 .futNfue .container,
 .male-breast .container,
 .skin .container,
-.hands .container {
+.hands .container,
+.venis .container {
     padding: 60px 30px;
   }
 }
@@ -1629,14 +1634,16 @@ header {
 .futNfue .container:last-of-type,
 .male-breast .container:last-of-type,
 .skin .container:last-of-type,
-.hands .container:last-of-type {
+.hands .container:last-of-type,
+.venis .container:last-of-type {
   border: 0px;
 }
 .skincare img,
 .futNfue img,
 .male-breast img,
 .skin img,
-.hands img {
+.hands img,
+.venis img {
   display: block;
   margin: 0 0 0 auto;
 }
@@ -1645,7 +1652,8 @@ header {
 .futNfue img,
 .male-breast img,
 .skin img,
-.hands img {
+.hands img,
+.venis img {
     margin: 0 auto;
   }
 }
@@ -1753,7 +1761,8 @@ header {
 .QnA {
   margin-top: 50px;
 }
-.QnA h2 {
+.QnA h2,
+.QnA h3 {
   margin-bottom: 25px;
 }
 .QnA ul p {
@@ -1905,5 +1914,15 @@ header {
 
 .body-banner {
   background-image: url(/assets/images/body/banner.png);
+  padding-bottom: 125px;
+}
+
+.body-banner {
+  background-image: url(/assets/images/body/banner.png);
+  padding-bottom: 125px;
+}
+
+.venis-banner {
+  background-image: url(/assets/images/venis/banner.jpg);
   padding-bottom: 125px;
 }
