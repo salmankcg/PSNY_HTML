@@ -9,7 +9,9 @@
 .skin,
 .hands,
 .venis,
-.botox {
+.botox,
+.aesthetics,
+.tight {
     margin-bottom: 150px;
 
     @media only screen and (max-width: $md) {
@@ -49,7 +51,9 @@
 .male-breast__inner,
 .skin__inner,
 .hands__inner,
-.botox__inner {
+.botox__inner,
+.aesthetics__inner,
+.tight__inner {
     @media only screen and (max-width: $sm) {
         margin-bottom: 25px;
     }
