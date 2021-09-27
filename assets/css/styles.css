@@ -1587,7 +1587,8 @@ header {
 .male-breast,
 .skin,
 .hands,
-.venis {
+.venis,
+.botox {
   margin-bottom: 150px;
 }
 @media only screen and (max-width: 991px) {
@@ -1596,7 +1597,8 @@ header {
 .male-breast,
 .skin,
 .hands,
-.venis {
+.venis,
+.botox {
     margin-bottom: 80px;
   }
 }
@@ -1605,7 +1607,8 @@ header {
 .male-breast .container,
 .skin .container,
 .hands .container,
-.venis .container {
+.venis .container,
+.botox .container {
   padding: 95px 50px;
   background-color: #FAF6F2;
   margin: 0 0 0 auto;
@@ -1616,7 +1619,8 @@ header {
 .male-breast .container,
 .skin .container,
 .hands .container,
-.venis .container {
+.venis .container,
+.botox .container {
     margin: 0 auto;
   }
 }
@@ -1626,7 +1630,8 @@ header {
 .male-breast .container,
 .skin .container,
 .hands .container,
-.venis .container {
+.venis .container,
+.botox .container {
     padding: 60px 30px;
   }
 }
@@ -1635,7 +1640,8 @@ header {
 .male-breast .container:last-of-type,
 .skin .container:last-of-type,
 .hands .container:last-of-type,
-.venis .container:last-of-type {
+.venis .container:last-of-type,
+.botox .container:last-of-type {
   border: 0px;
 }
 .skincare img,
@@ -1643,7 +1649,8 @@ header {
 .male-breast img,
 .skin img,
 .hands img,
-.venis img {
+.venis img,
+.botox img {
   display: block;
   margin: 0 0 0 auto;
 }
@@ -1653,7 +1660,8 @@ header {
 .male-breast img,
 .skin img,
 .hands img,
-.venis img {
+.venis img,
+.botox img {
     margin: 0 auto;
   }
 }
@@ -1663,7 +1671,8 @@ header {
 .futNfue__inner,
 .male-breast__inner,
 .skin__inner,
-.hands__inner {
+.hands__inner,
+.botox__inner {
     margin-bottom: 25px;
   }
 }
@@ -1671,14 +1680,16 @@ header {
 .futNfue__inner h3,
 .male-breast__inner h3,
 .skin__inner h3,
-.hands__inner h3 {
+.hands__inner h3,
+.botox__inner h3 {
   margin-bottom: 20px;
 }
 .skincare__inner div,
 .futNfue__inner div,
 .male-breast__inner div,
 .skin__inner div,
-.hands__inner div {
+.hands__inner div,
+.botox__inner div {
   margin-top: 40px;
   padding-top: 40px;
   border-top: 1px solid #F4D1AE;
@@ -1924,5 +1935,10 @@ header {
 
 .venis-banner {
   background-image: url(/assets/images/venis/banner.jpg);
+  padding-bottom: 125px;
+}
+
+.botox-banner {
+  background-image: url(/assets/images/botox/banner.png);
   padding-bottom: 125px;
 }

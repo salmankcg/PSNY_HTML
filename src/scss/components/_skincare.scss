@@ -8,7 +8,8 @@
 .male-breast,
 .skin,
 .hands,
-.venis {
+.venis,
+.botox {
     margin-bottom: 150px;
 
     @media only screen and (max-width: $md) {
@@ -47,7 +48,8 @@
 .futNfue__inner,
 .male-breast__inner,
 .skin__inner,
-.hands__inner {
+.hands__inner,
+.botox__inner {
     @media only screen and (max-width: $sm) {
         margin-bottom: 25px;
     }
