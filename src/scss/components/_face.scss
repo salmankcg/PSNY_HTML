@@ -4,7 +4,8 @@
 }
 
 .face,
-.breast {
+.breast,
+.body {
     margin-bottom: 150px;
 
     @media only screen and (max-width: $md) {
@@ -31,14 +32,16 @@
 }
 
 .face__inner,
-.breast__inner {
+.breast__inner,
+.body__inner {
     h2 {
         margin-bottom: 25px;
     }
 }
 
 .face__gallery,
-.breast__gallery {
+.breast__gallery,
+.body__gallery {
     margin-top: 25px;
 
     img {

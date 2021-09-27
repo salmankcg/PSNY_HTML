@@ -311,11 +311,13 @@ strong, b {
 }
 
 .img-hover, .face__gallery img,
-.breast__gallery img, .gallery img {
+.breast__gallery img,
+.body__gallery img, .gallery img {
   transition: all 0.5s ease;
 }
 .img-hover:hover, .face__gallery img:hover,
-.breast__gallery img:hover, .gallery img:hover {
+.breast__gallery img:hover,
+.body__gallery img:hover, .gallery img:hover {
   transform: scale(1.05);
   transition: all 0.5s ease;
 }
@@ -692,7 +694,8 @@ strong, b {
 }
 
 .img-bordered, .face__gallery img,
-.breast__gallery img, .before-after__slider .carousel-item,
+.breast__gallery img,
+.body__gallery img, .before-after__slider .carousel-item,
 .videos__slider .carousel-item, .gallery img {
   padding: 19px;
   background-color: white;
@@ -1807,49 +1810,58 @@ header {
 }
 
 .face,
-.breast {
+.breast,
+.body {
   margin-bottom: 150px;
 }
 @media only screen and (max-width: 991px) {
   .face,
-.breast {
+.breast,
+.body {
     margin-bottom: 80px;
   }
 }
 .face .container,
-.breast .container {
+.breast .container,
+.body .container {
   padding: 95px 50px;
   background-color: #FAF6F2;
   margin: 0 0 0 auto;
 }
 @media only screen and (max-width: 1200px) {
   .face .container,
-.breast .container {
+.breast .container,
+.body .container {
     margin: 0 auto;
   }
 }
 @media only screen and (max-width: 991px) {
   .face .container,
-.breast .container {
+.breast .container,
+.body .container {
     padding: 60px 30px;
   }
 }
 .face .container:last-of-type,
-.breast .container:last-of-type {
+.breast .container:last-of-type,
+.body .container:last-of-type {
   border: 0px;
 }
 
 .face__inner h2,
-.breast__inner h2 {
+.breast__inner h2,
+.body__inner h2 {
   margin-bottom: 25px;
 }
 
 .face__gallery,
-.breast__gallery {
+.breast__gallery,
+.body__gallery {
   margin-top: 25px;
 }
 .face__gallery span,
-.breast__gallery span {
+.breast__gallery span,
+.body__gallery span {
   text-align: center;
   width: 250px;
   font-size: 18px;
@@ -1860,7 +1872,8 @@ header {
 }
 @media only screen and (max-width: 767px) {
   .face__gallery span,
-.breast__gallery span {
+.breast__gallery span,
+.body__gallery span {
     font-size: 14px;
   }
 }
@@ -1887,5 +1900,10 @@ header {
 
 .hands-banner {
   background-image: url(/assets/images/hands/banner.png);
+  padding-bottom: 125px;
+}
+
+.body-banner {
+  background-image: url(/assets/images/body/banner.png);
   padding-bottom: 125px;
 }
