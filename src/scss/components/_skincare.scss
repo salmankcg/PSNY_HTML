@@ -12,7 +12,8 @@
 .botox,
 .aesthetics,
 .tight,
-.tummy {
+.tummy,
+.laser {
     margin-bottom: 150px;
 
     @media only screen and (max-width: $md) {
@@ -55,7 +56,8 @@
 .botox__inner,
 .aesthetics__inner,
 .tight__inner,
-.tummy__inner {
+.tummy__inner,
+.laser__inner {
     @media only screen and (max-width: $sm) {
         margin-bottom: 25px;
     }

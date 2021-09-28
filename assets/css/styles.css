@@ -1591,7 +1591,8 @@ header {
 .botox,
 .aesthetics,
 .tight,
-.tummy {
+.tummy,
+.laser {
   margin-bottom: 150px;
 }
 @media only screen and (max-width: 991px) {
@@ -1604,7 +1605,8 @@ header {
 .botox,
 .aesthetics,
 .tight,
-.tummy {
+.tummy,
+.laser {
     margin-bottom: 80px;
   }
 }
@@ -1617,7 +1619,8 @@ header {
 .botox .container,
 .aesthetics .container,
 .tight .container,
-.tummy .container {
+.tummy .container,
+.laser .container {
   padding: 95px 50px;
   background-color: #FAF6F2;
   margin: 0 0 0 auto;
@@ -1632,7 +1635,8 @@ header {
 .botox .container,
 .aesthetics .container,
 .tight .container,
-.tummy .container {
+.tummy .container,
+.laser .container {
     margin: 0 auto;
   }
 }
@@ -1646,7 +1650,8 @@ header {
 .botox .container,
 .aesthetics .container,
 .tight .container,
-.tummy .container {
+.tummy .container,
+.laser .container {
     padding: 60px 30px;
   }
 }
@@ -1659,7 +1664,8 @@ header {
 .botox .container:last-of-type,
 .aesthetics .container:last-of-type,
 .tight .container:last-of-type,
-.tummy .container:last-of-type {
+.tummy .container:last-of-type,
+.laser .container:last-of-type {
   border: 0px;
 }
 .skincare img,
@@ -1671,7 +1677,8 @@ header {
 .botox img,
 .aesthetics img,
 .tight img,
-.tummy img {
+.tummy img,
+.laser img {
   display: block;
   margin: 0 0 0 auto;
 }
@@ -1685,7 +1692,8 @@ header {
 .botox img,
 .aesthetics img,
 .tight img,
-.tummy img {
+.tummy img,
+.laser img {
     margin: 0 auto;
   }
 }
@@ -1699,7 +1707,8 @@ header {
 .botox__inner,
 .aesthetics__inner,
 .tight__inner,
-.tummy__inner {
+.tummy__inner,
+.laser__inner {
     margin-bottom: 25px;
   }
 }
@@ -1711,7 +1720,8 @@ header {
 .botox__inner h3,
 .aesthetics__inner h3,
 .tight__inner h3,
-.tummy__inner h3 {
+.tummy__inner h3,
+.laser__inner h3 {
   margin-bottom: 20px;
 }
 .skincare__inner div,
@@ -1722,7 +1732,8 @@ header {
 .botox__inner div,
 .aesthetics__inner div,
 .tight__inner div,
-.tummy__inner div {
+.tummy__inner div,
+.laser__inner div {
   margin-top: 40px;
   padding-top: 40px;
   border-top: 1px solid #F4D1AE;
@@ -1988,5 +1999,10 @@ header {
 
 .tummy-banner {
   background-image: url(/assets/images/tummy/banner.png);
+  padding-bottom: 125px;
+}
+
+.laser-banner {
+  background-image: url(/assets/images/laser/banner.png);
   padding-bottom: 125px;
 }
