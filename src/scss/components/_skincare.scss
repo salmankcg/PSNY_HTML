@@ -195,6 +195,10 @@
     color: $elephant;
     position: relative;
 
+    @media only screen and (max-width: $md) {
+        padding: 15px 20px 15px 35px;
+    }
+
     &::before {
         content: "";
         position: absolute;
