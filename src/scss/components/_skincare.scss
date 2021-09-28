@@ -11,7 +11,8 @@
 .venis,
 .botox,
 .aesthetics,
-.tight {
+.tight,
+.tummy {
     margin-bottom: 150px;
 
     @media only screen and (max-width: $md) {
@@ -53,7 +54,8 @@
 .hands__inner,
 .botox__inner,
 .aesthetics__inner,
-.tight__inner {
+.tight__inner,
+.tummy__inner {
     @media only screen and (max-width: $sm) {
         margin-bottom: 25px;
     }

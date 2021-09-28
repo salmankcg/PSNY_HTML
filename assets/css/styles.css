@@ -1590,7 +1590,8 @@ header {
 .venis,
 .botox,
 .aesthetics,
-.tight {
+.tight,
+.tummy {
   margin-bottom: 150px;
 }
 @media only screen and (max-width: 991px) {
@@ -1602,7 +1603,8 @@ header {
 .venis,
 .botox,
 .aesthetics,
-.tight {
+.tight,
+.tummy {
     margin-bottom: 80px;
   }
 }
@@ -1614,7 +1616,8 @@ header {
 .venis .container,
 .botox .container,
 .aesthetics .container,
-.tight .container {
+.tight .container,
+.tummy .container {
   padding: 95px 50px;
   background-color: #FAF6F2;
   margin: 0 0 0 auto;
@@ -1628,7 +1631,8 @@ header {
 .venis .container,
 .botox .container,
 .aesthetics .container,
-.tight .container {
+.tight .container,
+.tummy .container {
     margin: 0 auto;
   }
 }
@@ -1641,7 +1645,8 @@ header {
 .venis .container,
 .botox .container,
 .aesthetics .container,
-.tight .container {
+.tight .container,
+.tummy .container {
     padding: 60px 30px;
   }
 }
@@ -1653,7 +1658,8 @@ header {
 .venis .container:last-of-type,
 .botox .container:last-of-type,
 .aesthetics .container:last-of-type,
-.tight .container:last-of-type {
+.tight .container:last-of-type,
+.tummy .container:last-of-type {
   border: 0px;
 }
 .skincare img,
@@ -1664,7 +1670,8 @@ header {
 .venis img,
 .botox img,
 .aesthetics img,
-.tight img {
+.tight img,
+.tummy img {
   display: block;
   margin: 0 0 0 auto;
 }
@@ -1677,7 +1684,8 @@ header {
 .venis img,
 .botox img,
 .aesthetics img,
-.tight img {
+.tight img,
+.tummy img {
     margin: 0 auto;
   }
 }
@@ -1690,7 +1698,8 @@ header {
 .hands__inner,
 .botox__inner,
 .aesthetics__inner,
-.tight__inner {
+.tight__inner,
+.tummy__inner {
     margin-bottom: 25px;
   }
 }
@@ -1701,7 +1710,8 @@ header {
 .hands__inner h3,
 .botox__inner h3,
 .aesthetics__inner h3,
-.tight__inner h3 {
+.tight__inner h3,
+.tummy__inner h3 {
   margin-bottom: 20px;
 }
 .skincare__inner div,
@@ -1711,7 +1721,8 @@ header {
 .hands__inner div,
 .botox__inner div,
 .aesthetics__inner div,
-.tight__inner div {
+.tight__inner div,
+.tummy__inner div {
   margin-top: 40px;
   padding-top: 40px;
   border-top: 1px solid #F4D1AE;
@@ -1972,5 +1983,10 @@ header {
 
 .tight-banner {
   background-image: url(/assets/images/tight/banner.png);
+  padding-bottom: 125px;
+}
+
+.tummy-banner {
+  background-image: url(/assets/images/tummy/banner.png);
   padding-bottom: 125px;
 }
