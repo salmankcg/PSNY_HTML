@@ -337,7 +337,6 @@ strong, b {
 
   @media only screen and (max-width: $sm) {
     padding: 95px 0 100px;
-    background-size: cover;
   }
 
   h2 {
@@ -381,7 +380,22 @@ strong, b {
 }
 
 .banner__subpage {
-  background-size: cover;
+  padding-bottom: 250px;
+
+  @media only screen and (max-width: $lg) {
+      padding-bottom: 75px;
+  }
+
+  @media only screen and (max-width: $sm) {
+      padding-bottom: 35px;
+      background-size: 100% 40% !important;
+  }
+
+  h2 {
+      @media only screen and (max-width: $lg) {
+          padding-top: 0;
+      }
+  }
 }
 
 .notice-inner {
@@ -412,25 +426,6 @@ strong, b {
     &:hover {
       text-decoration: underline;
     }
-  }
-}
-
-.banner-subpage {
-  padding-bottom: 250px;
-  background-size: 100%;
-
-  @media only screen and (max-width: $lg) {
-      padding-bottom: 75px;
-  }
-
-  @media only screen and (max-width: $sm) {
-      padding-bottom: 35px;
-  }
-
-  h2 {
-      @media only screen and (max-width: $lg) {
-          padding-top: 45px;
-      }
   }
 }
 
@@ -644,7 +639,6 @@ strong, b {
   input,
   textarea,
   select {
-    height: 44px !important;
     width: 575px !important;
     border-radius: 0;
     display: flex;
@@ -658,6 +652,11 @@ strong, b {
     @media only screen and (max-width: $xl) {
       width: 100% !important;
     }
+  }
+
+  input,
+  select {
+    height: 44px !important;
   }
 
   option {
@@ -700,8 +699,38 @@ strong, b {
   }
 }
 
+.form-control:focus,
+.form-select:focus {
+  border-color: $wheat;
+}
+
 .img-bordered {
   padding: 19px;
   background-color: white;
   border: 1px solid $wheat;
+}
+
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+select:focus,
+label:focus
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+}
+
+.btn-to-top {
+  background: none;
+  border: 0px;
+  padding: 0;
+  position: fixed;
+  z-index: 999;
+  bottom: 20px;
+  right: 20px;
+  font-size: 30px;
 }

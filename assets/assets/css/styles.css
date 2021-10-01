@@ -392,12 +392,12 @@ strong, b {
 @media only screen and (max-width: 767px) {
   .banner__subpage {
     padding-bottom: 35px;
-    background-size: 100% 40% !important;
+    background-size: 100% 50% !important;
   }
 }
 @media only screen and (max-width: 1200px) {
   .banner__subpage h2 {
-    padding-top: 0;
+    padding-top: 45px;
   }
 }
 
@@ -637,6 +637,7 @@ strong, b {
 .form input,
 .form textarea,
 .form select {
+  height: 44px !important;
   width: 575px !important;
   border-radius: 0;
   display: flex;
@@ -653,10 +654,6 @@ strong, b {
 .form select {
     width: 100% !important;
   }
-}
-.form input,
-.form select {
-  height: 44px !important;
 }
 .form option {
   font-family: futura;
@@ -691,11 +688,6 @@ strong, b {
   padding: 0;
 }
 
-.form-control:focus,
-.form-select:focus {
-  border-color: #F4D1AE;
-}
-
 .img-bordered, .face__gallery img,
 .breast__gallery img,
 .body__gallery img, .before-after__slider .carousel-item,
@@ -703,30 +695,6 @@ strong, b {
   padding: 19px;
   background-color: white;
   border: 1px solid #F4D1AE;
-}
-
-textarea:hover,
-input:hover,
-textarea:active,
-input:active,
-textarea:focus,
-input:focus,
-select:focus,
-label:focus {
-  outline: 0px !important;
-  -webkit-appearance: none;
-  box-shadow: none !important;
-}
-
-.btn-to-top {
-  background: none;
-  border: 0px;
-  padding: 0;
-  position: fixed;
-  z-index: 999;
-  bottom: 20px;
-  right: 20px;
-  font-size: 30px;
 }
 
 header {

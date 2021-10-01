@@ -169,24 +169,24 @@
                 <div class="col-12">
                     <div class="before-after__slider">
                         <h3>Before and after</h3>
-                        <div id="beforeAfterControls" class="carousel slide" data-bs-ride="carousel">
+                        <div id="carouselExampleFade" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                               <div class="carousel-item active">
                                 <img src="assets/images/skincare/sliderPlaceholder.png" class="d-block w-100 img-fluid" alt="slider image">
                               </div>
                               <div class="carousel-item">
-                                <img src="assets/images/skincare/sliderPlaceholder.png" class="d-block w-100 img-fluid" alt="slider image">
+                                <img src="https://dummyimage.com/1125x470/000000/0011ff" class="d-block w-100 img-fluid" alt="slider image">
                               </div>
                               <div class="carousel-item">
-                                <img src="assets/images/skincare/sliderPlaceholder.png" class="d-block w-100 img-fluid" alt="slider image">
+                                <img src="https://dummyimage.com/1125x470/000000/8300ab" class="d-block w-100 img-fluid" alt="slider image">
                               </div>
                             </div>
                             <div class="slider__handlers">
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Previous</span>
                                 </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Next</span>
                                 </button>
@@ -200,16 +200,25 @@
                 <div class="col-12">
                     <div class="videos__slider">
                         <h3>Videos</h3>
-                        <div id="videosControls" class="carousel slide" data-bs-ride="carousel">
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                               <div class="carousel-item active">
-                                <img src="assets/images/skincare/sliderPlaceholder.png" class="d-block w-100 img-fluid" alt="slider image">
+                                <video class="mejs__player" style="width: 100%;"
+                                src="assets/vendors/mediaelement/astha-video.mp4" type="video/mp4" id="player1"
+                                poster="assets/vendors/mediaelement/astha-video-poster.jpg" controls="controls"
+                                preload="none"></video>
                               </div>
                               <div class="carousel-item">
-                                <img src="assets/images/skincare/sliderPlaceholder.png" class="d-block w-100 img-fluid" alt="slider image">
+                                <video class="mejs__player" style="width: 100%;"
+                                src="assets/vendors/mediaelement/astha-video.mp4" type="video/mp4" id="player1"
+                                poster="assets/vendors/mediaelement/astha-video-poster.jpg" controls="controls"
+                                preload="none"></video>
                               </div>
                               <div class="carousel-item">
-                                <img src="assets/images/skincare/sliderPlaceholder.png" class="d-block w-100 img-fluid" alt="slider image">
+                                <video class="mejs__player" style="width: 100%;"
+                                src="assets/vendors/mediaelement/astha-video.mp4" type="video/mp4" id="player1"
+                                poster="assets/vendors/mediaelement/astha-video-poster.jpg" controls="controls"
+                                preload="none"></video>
                               </div>
                             </div>
                             <div class="slider__handlers">
@@ -448,6 +457,8 @@
     <script src="https://kit.fontawesome.com/321abfd063.js" crossorigin="anonymous"></script>
     <!-- WOW JS -->
     <script src="assets/vendors/wow-js/wow.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.min.js"></script>
     <!-- Main Script -->
     <script src="assets/js/app.js"></script>
 </body>

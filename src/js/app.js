@@ -1,23 +1,25 @@
-import 'bootstrap';
-
 new WOW().init();
 
-const header = document.querySelector('.header');
+const header = document.querySelector(".header");
 
-window.onscroll = function() {
-    // scrollFunction()
+window.onscroll = function () {
+  // scrollFunction()
 };
 
 function scrollFunction() {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    header.classList.add('header-sticky');
-  } 
-  else {
-    header.classList.remove('header-sticky');
+  if (
+    document.body.scrollTop > 100 ||
+    document.documentElement.scrollTop > 100
+  ) {
+    header.classList.add("header-sticky");
+  } else {
+    header.classList.remove("header-sticky");
   }
 }
 
 lightbox.option({
-  'resizeDuration': 200,
-  'wrapAround': true
-})
+  resizeDuration: 200,
+  wrapAround: true,
+});
+
+$("video, audio").mediaelementplayer({});
