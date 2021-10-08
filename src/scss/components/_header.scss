@@ -27,6 +27,11 @@ header {
     span {
         font-size: 16px;
         line-height: 19px;
+
+        @media only screen and (max-width: $lg) {
+            font-size: 12px;
+            line-height: 150%;
+        }
     }
 } 
 
@@ -38,6 +43,10 @@ header {
 
     @media only screen and (max-width: $xl) {
         padding: 5px 14px;
+    }
+
+    @media only screen and (min-width: $md) and (max-width: $lg) {
+        padding: 5px 3px;
     }
 }
 
@@ -62,6 +71,10 @@ header {
     &:hover {
         font-weight: bold;
         @include transition(all 0.2s ease-in-out);
+    }
+
+    @media only screen and (max-width: $lg) {
+        font-size: 12px;
     }
 
     @media only screen and (max-width: $md) {
