@@ -34,8 +34,14 @@
 
     img {
         @extend .img-bordered;
-    
-        @extend .img-hover;
+        
+        transition: all 1s ease;
+
+        @extend .hover__tilt;
+
+        &:hover {
+            transition: all 1s ease;
+        }
     
         @media only screen and (max-width: $md) {
             margin: 0 auto 35px;
@@ -78,11 +84,11 @@
     }
 
     a.lb-next {
-        background-image: url(/assets/images/lightbpxNext.png);
+        background-image: url(/assets/images/lightboxNext.png);
     }
 
     .lb-cancel {
-        background-image: url(/assets/images/loading.gif)
+        background-image: url(/assets/images/loading.gif) !important;
     }
 
     a.lb-prev, 

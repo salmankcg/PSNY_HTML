@@ -8,7 +8,7 @@
 /***/ (() => {
 
 $(document).ready(function () {
-  var $button = $("button, .animation__one");
+  var $button = $("button");
   console.log($button);
 
   if ($button.length) {
@@ -126,16 +126,38 @@ $("a").on("mouseenter", function () {
 });
 $("a").on("mouseleave", function () {
   follower.removeClass("active_mouse");
+}); //Animated Square
+
+$('.animated-square').on('mouseenter', function () {
+  // console.log('entered')
+  $('.animation__one').addClass('rotation');
+});
+$('.animated-square').on('mouseleave', function () {
+  $('.animation__one').removeClass('rotation');
+}); // Scroll To top
+
+$(window).on('scroll', function () {
+  if ($(this).scrollTop() > 100) {
+    $('#scroll').fadeIn();
+  } else {
+    $('#scroll').fadeOut();
+  }
+});
+$('#scroll').on('click', function () {
+  $("html, body").animate({
+    scrollTop: 0
+  }, 500);
+  return false;
 }); //Moving blob
 
-var window_width = $(window).width() - $('#object').width();
+var window_width = $(window).width() - $("#object").width();
 var document_height = $(document).height() - $(window).height();
 $(function () {
   $(window).scroll(function () {
     var scroll_position = $(window).scrollTop();
     var object_position_left = window_width * (scroll_position / document_height);
-    $('#object').css({
-      'top': object_position_left
+    $("#object").css({
+      top: object_position_left
     });
   });
 });
@@ -152,13 +174,12 @@ function scrollFunction() {
   }
 }
 
-new WOW().init(); // $("video, audio").mediaelementplayer({});
-// Lightbox
+new WOW().init(); // Lightbox
 
 lightbox.option({
-  resizeDuration: 200,
-  wrapAround: true
-});
+  'resizeDuration': 200,
+  'wrapAround': true
+}); // $("video, audio").mediaelementplayer({});
 
 /***/ }),
 

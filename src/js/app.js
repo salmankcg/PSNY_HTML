@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  var $button = $("button, .animation__one");
+  var $button = $(".animated_btn");
   console.log($button);
 
   if ($button.length) {
@@ -90,60 +90,89 @@ $(document).ready(function () {
 
 // CURSOR
 var cursor = $(".cursor"),
-follower = $(".cursor-follower");
+  follower = $(".cursor-follower");
 
 var posX = 0,
-    posY = 0;
+  posY = 0;
 
 var mouseX = 0,
-    mouseY = 0;
+  mouseY = 0;
 
 TweenMax.to({}, 0.016, {
   repeat: -1,
-  onRepeat: function() {
+  onRepeat: function () {
     posX += (mouseX - posX) / 9;
     posY += (mouseY - posY) / 9;
 
     TweenMax.set(follower, {
-        css: {
+      css: {
         left: posX - 12,
-        top: posY - 12
-        }
+        top: posY - 12,
+      },
     });
 
     TweenMax.set(cursor, {
-        css: {
+      css: {
         left: mouseX,
-        top: mouseY
-        }
+        top: mouseY,
+      },
     });
-  }
+  },
 });
 
-$(document).on("mousemove", function(e) {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
+$(document).on("mousemove", function (e) {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
 });
-$("a").on("mouseenter", function() {
-    follower.addClass("active_mouse");
+$("a").on("mouseenter", function () {
+  follower.addClass("active_mouse");
 });
-$("a").on("mouseleave", function() {
-    follower.removeClass("active_mouse");
+$("a").on("mouseleave", function () {
+  follower.removeClass("active_mouse");
+});
+
+//Animated Square
+$('.animated-square').on(
+  'mouseenter', function () {
+    // console.log('entered')
+    $('.animation__one').addClass('rotation')
+  }
+)
+
+$('.animated-square').on(
+  'mouseleave', function () {
+    $('.animation__one').removeClass('rotation')
+  }
+)
+
+// Scroll To top
+$(window).on('scroll', function () { 
+  if ($(this).scrollTop() > 100) { 
+      $('#scroll').fadeIn(); 
+  } else { 
+      $('#scroll').fadeOut(); 
+  } 
+}); 
+
+$('#scroll').on('click', function(){ 
+  $("html, body").animate({ scrollTop: 0 }, 500); 
+  return false; 
 });
 
 //Moving blob
-var window_width = $(window).width() - $('#object').width();
+var window_width = $(window).width() - $("#object").width();
 
 var document_height = $(document).height() - $(window).height();
 
 $(function () {
-    $(window).scroll(function () {
-        var scroll_position = $(window).scrollTop();
-        var object_position_left = window_width * (scroll_position / document_height);
-        $('#object').css({
-            'top': object_position_left
-        });
+  $(window).scroll(function () {
+    var scroll_position = $(window).scrollTop();
+    var object_position_left =
+      window_width * (scroll_position / document_height);
+    $("#object").css({
+      top: object_position_left,
     });
+  });
 });
 
 const header = document.querySelector(".header");
@@ -165,12 +194,11 @@ function scrollFunction() {
 
 new WOW().init();
 
-// $("video, audio").mediaelementplayer({});
-
 // Lightbox
 
 lightbox.option({
-  resizeDuration: 200,
-  wrapAround: true,
+  'resizeDuration' : 200,
+  'wrapAround' : true
 });
 
+// $("video, audio").mediaelementplayer({});

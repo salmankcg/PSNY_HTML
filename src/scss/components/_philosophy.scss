@@ -1,6 +1,10 @@
 .philosophy-banner {
     background-image: url(/assets/images/philosophy/banner.png);
     background-size: 122%;
+
+    @media only screen and (max-width: $sm) {
+        background-size: 100% 55% !important;
+    }
 }
 
 .philosophy {

@@ -47,7 +47,13 @@
     img {
         @extend .img-bordered;
 
-        @extend .img-hover;
+        @extend .hover__tilt;
+        
+        transition: all 1s ease-in-out;
+
+        &:hover {
+            transition: all 1s ease-in-out;
+        }
     }
 
     span {

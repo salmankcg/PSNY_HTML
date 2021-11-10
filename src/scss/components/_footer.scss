@@ -1,177 +1,183 @@
 .footer {
-    margin-top: 134px;
-    padding: 142px 0 49px;
-    position: relative;
+  margin-top: 134px;
+  padding: 142px 0 49px;
+  position: relative;
 
-    @extend .background-primary;
+  @extend .background-primary;
 
-    @media only screen and (max-width: $sm) {
-
-    }
+  @media only screen and (max-width: $sm) {
+  }
 }
 
 .footer__logo {
-    top: -10px;    
-    left: 50%;
-    transform: translate(-55%, -25%);
+  top: -10px;
+  left: 50%;
+  transform: translate(-55%, -25%);
 
-    span {
-        display: block;
-        color: white;
-        text-transform: uppercase;
-        text-align: center;
-        font-family: futura;
-    }
+  span {
+    display: block;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: futura;
+  }
 }
 
 .footer__menu {
-    p {
-        color: $wheat;
-        font-size: 14px;
-        line-height: 17px;
-        text-transform: uppercase;
-        margin-bottom: 5px;
-    }
+  p {
+    color: $wheat;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
 }
 
 .menu {
-    ul {
-        padding: 0;
-        list-style: none;
+  ul {
+    padding: 0;
+    list-style: none;
 
-        li > a {
-            font-style: normal;
-            font-weight: 300;
-            font-size: 16px;
-            line-height: 38px;
-            color: $geyser;
-            text-decoration: none;
-        }
+    li > a {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 38px;
+      color: $geyser;
+      text-decoration: none;
+      position: relative;
+
+      @extend .link-hover-bottom;
+
+      &:before {
+          background-color: $wheat;
+      }
     }
+  }
 }
 
 .footer__socials {
-    width: 356px;
-    border: 1px solid $geyser;
-    padding: 17px 0 15px;
+  width: 356px;
+  border: 1px solid $geyser;
+  padding: 17px 0 15px;
 
-    @media only screen and (max-width: $md) {
-        margin: 0 auto;
-        width: 100%;
+  @media only screen and (max-width: $md) {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    padding-left: 39px;
+    color: $geyser;
+    font-family: "TTNorms";
+    color: $geyser;
+  }
+
+  p {
+    font-family: "TTNorms";
+    padding-left: 41px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 0.055em;
+    color: $wheat;
+    margin-bottom: 28px;
+    border-bottom: 1px solid $wheat;
+    padding-bottom: 21px;
+    margin: 0 24px 16px;
+    padding-left: 14px;
+
+    @media only screen and (max-width: $sm) {
+      font-size: 18px;
     }
+  }
+
+  .socials {
+    margin: 0 24px 18px;
+    border-bottom: 1px solid $geyser;
+    padding-bottom: 21px;
 
     span {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 17px;
-        padding-left: 39px;
-        color: $geyser;
-        font-family: 'TTNorms';
-        color: $geyser;
+      font-family: "TTNorms";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      text-transform: uppercase;
+      color: $geyser;
+      padding-left: 18px;
     }
 
-    p {
-        font-family: 'TTNorms';
-        padding-left: 41px;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 30px;
-        line-height: 35px;
-        letter-spacing: 0.055em;
-        color: $wheat;
-        margin-bottom: 28px;
-        border-bottom: 1px solid $wheat;
-        padding-bottom: 21px;
-        margin: 0 24px 16px;
-        padding-left: 14px;
+    div {
+      display: flex;
+      padding: 0 43px;
+      padding-left: 18px;
+      margin-top: 5px;
+
+      a {
+        margin-right: 44px;
+        text-decoration: none;
+        @include transition(all 0.3s ease-in-out);
+
+        &:hover {
+          @include transition(all 0.3s ease-in-out);
+          @include transform(scale(1.1));
+        }
 
         @media only screen and (max-width: $sm) {
-            font-size: 18px;
+          margin-right: 30px;
         }
+      }
     }
+  }
 
-    .socials {
-        margin: 0 24px 18px;
-        border-bottom: 1px solid $geyser;
-        padding-bottom: 21px;
-
-        span {
-            font-family: 'TTNorms';
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            line-height: 17px;
-            text-transform: uppercase;
-            color: $geyser;
-            padding-left: 18px;
-        }
-
-        div {
-            display: flex;
-            padding: 0 43px;
-            padding-left: 18px;
-            margin-top: 5px;
-
-            a {
-                margin-right: 44px;
-                text-decoration: none;
-                @include transition(all 0.3s ease-in-out);
-
-                &:hover {
-                    @include transition(all 0.3s ease-in-out);
-                    @include transform(scale(1.1))
-                }
-
-                @media only screen and (max-width: $sm) {
-                    margin-right: 30px;
-                }
-            }
-        }
-    }
-
-    .mail-info {
-        span {
-            font-size: 14px;
-            line-height: 17px;
-            text-transform: uppercase;
-            color: $geyser;
-            display: block;
-        }
-
-        a {
-            font-style: normal;
-            font-weight: 300;
-            font-size: 22px;
-            line-height: 26px;
-            letter-spacing: 0.145em;
-            text-transform: uppercase;
-            color: $wheat;
-            padding: 5px 0 0 39px;
-
-            @media only screen and (max-width: $sm) {
-                font-size: 18px;
-            }
-        }
-    }
-}
-
-.footer__copyright {
-    margin-top: 42px;
-    color: $geyser;
-    
-    p {
-        font-size: 14px;
-        line-height: 13px;
-        color: $geyser;
-        margin-bottom: 0;
+  .mail-info {
+    span {
+      font-size: 14px;
+      line-height: 17px;
+      text-transform: uppercase;
+      color: $geyser;
+      display: block;
     }
 
     a {
-        font-family: 'Futura';
-        font-size: 14px;
-        line-height: 13px;
-        color: $geyser;
-        text-decoration: none;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 26px;
+      letter-spacing: 0.145em;
+      text-transform: uppercase;
+      color: $wheat;
+      padding: 5px 0 0 39px;
+
+      @media only screen and (max-width: $sm) {
+        font-size: 18px;
+      }
     }
+  }
+}
+
+.footer__copyright {
+  margin-top: 42px;
+  color: $geyser;
+
+  p {
+    font-size: 14px;
+    line-height: 13px;
+    color: $geyser;
+    margin-bottom: 0;
+  }
+
+  a {
+    font-family: "Futura";
+    font-size: 14px;
+    line-height: 13px;
+    color: $geyser;
+    text-decoration: none;
+  }
 }
